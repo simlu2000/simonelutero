@@ -1,7 +1,6 @@
 import React from 'react';
 import './style/style.css';
 import { Route, Routes, Link } from 'react-router-dom';
-import logo from './img/logo.jpg';
 import slImage from './img/sl.jpg';
 import githubIcon from './img/github.png';
 import linkedinIcon from './img/linkedin.png';
