@@ -1,0 +1,782 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: rgb(216,243,220);
+background: linear-gradient(0deg, rgba(216,243,220,1) 0%, rgba(15,60,67,1) 80%, rgba(0,0,0,1) 98%);
+
+
+color: #F6F6F6;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+/*------------------------------------------------------HEADER------------------------------------------------------*/
+#mode,
+#logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centra l'icona verticalmente */
+}
+
+#mode{ 
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: -20px;
+
+
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    
+
+}
+
+.logo {
+    width: 50px; /* Imposta la larghezza del logo */
+    height: 50px; /* Imposta l'altezza del logo */
+    margin-right: 20px; /* Aggiunge un margine destro per separare il logo dagli altri elementi della navbar */
+}
+
+.header-container {
+    display: flex; /* Utilizza il layout flessibile per allineare correttamente il logo e gli altri elementi della navbar */
+    align-items: center; /* Allinea verticalmente gli elementi della navbar */
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra i testi orizzontalmente */
+    align-items: center; /* Centra i testi verticalmente */
+}
+
+.menu ul li {
+    margin-right: 24px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+
+}
+
+.menu ul li a {
+    text-align: center; /* Centra il testo all'interno del suo contenitore */
+    font-size:1em;
+
+}
+
+/*---------------------------------------------TITLE AREA------------------------------------------------------*/
+.name {
+    color: #FCA311;
+
+}
+
+.hero-image{ 
+    width:30%;
+    border-radius:50%;
+}
+#me{
+    margin-top: 10%;
+   
+
+}
+h1,
+h2,
+h3 {
+    margin-bottom: 48px;
+
+}
+
+h1 {
+    font-size: 58px;
+    font-weight: 600px;
+    line-height: 115px;
+}
+.name{
+    margin-top: -25px;
+
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 600px;
+    line-height: 75px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 56px;
+}
+ #profession{
+    margin-top: -25px;}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 600px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    margin-top: 15px;
+    color:#FCA311;
+}
+
+.func {
+    margin-top: -20px;
+}
+
+#title {
+    margin-top: 100px;
+
+}
+
+a {
+    font-size: 36px;
+    font-weight: 600px;
+    line-height: 42px;
+    text-decoration: none;
+    color: #F6F6F6;
+    text-transform: uppercase;
+
+}
+
+a:hover {
+    color: #3a7f67;;
+}
+
+.link {
+    font-size: 16px;
+    font-weight: 600px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FCA311;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    color: #d8f3dc;
+}
+.hero {
+    
+    height: 100vh;
+    /*background-color: rgb(7,5,20);
+    background: linear-gradient(0deg, rgba(7,5,20,1) 0%, rgba(15,25,93,1) 31%);
+*/
+}
+
+.hero-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Allinea il testo al centro */
+    flex-direction: column; /* Allinea il contenuto al centro */
+    margin-top: 100px;
+}
+
+.hero-cta {
+    margin-top: 50px; /* Puoi regolare il margine superiore a tuo piacimento */
+    text-align: center;
+}
+
+.hero-cta.button {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    font-size: 16px; /* Riduci la dimensione del carattere */
+    line-height: 24px; /* Imposta l'altezza della riga in base alla dimensione del carattere */
+}
+
+.button {
+    background-color: #134B53;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 36px;
+    margin-right: 24px;
+}
+
+.button:hover {
+    background-color: #FCA311;
+    color: white;
+}
+button {}
+
+/*-------------------------------------------------DATA AREA------------------------------------------------------*/
+
+.pj{
+    background-color: #0F3C43;
+}
+.pj:hover{
+    background-color: #d8f3dc;
+    color: #0B2D32;
+
+}
+.box {
+    padding: 24px;
+    background-color:#0F3C43;
+    color: #d8f3dc;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    margin-top: 100px;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1140px;
+    
+}
+
+section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+}
+
+#first {
+    height:30%;
+}
+
+#about {}
+
+
+
+#info {
+    margin-top: -100px;
+}
+
+.works-menu{
+    margin-top: 50px;
+}
+.works-menu ul,
+.me-menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.works.menu ul li,
+.me-menu ul li {
+    margin-right: 24px;
+}
+
+.works {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1140px;
+
+
+}
+
+.aboutme {
+    margin-top: -175px;
+    margin-bottom: 50px;
+
+}
+
+.works-item {}
+
+.work-info {
+    display: flex;
+}
+
+.work-info-label {
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.work-info-content {
+    width: 70%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 0 auto;
+}
+
+.works-item-tags {
+    font-size: 24px;
+    color: #FCA311;
+}
+
+.lang_skill, .edu{
+    border:3px solid #3a7f67;
+    border-radius: 50px;
+    font-size:1em;
+    width:15%;
+    height:50px;
+    text-align:center;
+    padding: 12px;
+    margin-right: 24px;
+    margin-top: 24px;
+    display: inline-block; /* Imposta il display su "inline-block" per posizionarli uno accanto all'altro */
+}
+
+.exp{
+    border:3px solid #3a7f67;
+    border-radius: 50px;
+    font-size:1em;
+    width:15%;
+    height:50px;
+    text-align:center;
+    padding: 12px;
+    margin-right: 24px;
+    margin-top: 24px;
+    display: inline-block;
+}
+#exp_row{
+    margin-top:-10%;
+}
+.exp-desc{
+    margin-top:-15%;
+}
+.lang_skill:hover{
+    background-color: #d8f3dc;
+    color: #0B2D32;
+}
+
+.int_emoji{
+    border:3px solid #3a7f67;
+    border-radius: 50px;
+    font-size:1em;
+    width:15%;
+    height:50px;
+    text-align:center;
+    padding: 12px;
+    margin-right: 24px;
+    margin-top: 24px;
+    display: inline-block; /* Imposta il display su "inline-block" per posizionarli uno accanto all'altro */
+}
+
+.int_emoji:hover{
+    background-color: #d8f3dc;
+    color: #0B2D32;
+}
+
+
+.row{
+    text-align:center;
+}
+.edu{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width:300px;
+    height:200px;
+}
+.edu:hover{
+    background-color: #d8f3dc;
+    color: #0B2D32;
+
+}
+.edu_years{
+    margin-top: 10px;
+}
+#edu_row{
+    margin-top: -100px;
+}
+
+/*---------------------------------------------CV AREA------------------------------------------------------*/
+#cv {
+    margin-top: -150px;
+}
+
+#cv_button{
+    margin-top: 50px;
+    background-color:#FCA311;
+}
+
+#cv_button:hover{
+    background-color:#d8f3dc;
+    color:#0B2D32;
+}
+
+/*-------------------------------------------------FOOTER------------------------------------------------------*/
+footer {
+    background-color: #0B2D32; /* Cambia colore di sfondo a tuo piacimento */
+    color: #fff; /* Cambia il colore del testo a tuo piacimento */
+    text-align: center; /* Centra il testo nel footer */
+    padding: 20px; /* Aggiunge spazio interno al footer */
+    position: static; /* Fissa il footer alla parte inferiore della finestra del browser */
+    left: 0; /* Posiziona il footer all'estrema sinistra */
+    bottom: 0; /* Posiziona il footer in basso */
+    width: 100%; /* Assicura che il footer abbia la larghezza totale della finestra del browser */
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 20px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu ul li a {
+    color: #d8f3dc;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.footer_info{
+    display: inline-block;
+    margin-right:100px;
+    margin-left:100px;
+
+}
+.footer_link {
+    font-size: 16px;
+    font-weight: 600px;
+    line-height: 28px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer_link:hover {
+    color: #FCA311;
+}
+#social{
+    margin-top: 25px;
+   
+}
+.social_icon{
+    margin: 10px auto;
+    display: inline-block;
+    width:2em;
+}
+#copyright{
+    margin-top: 25px;
+    font-size:0.6em;
+
+}
+/*---------------------------------------------GO ON TOP BUTTON------------------------------------------------------*/
+.top-button {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    color: d8f3dc;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.top-button:hover {
+    background-color: #134B53;
+}
+
+
+
+/*---------------------------------------------MENU HAMBURGER------------------------------------------------------*/
+.menu-toggle {
+    display: none;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #d8f3dc;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+    top: 0;
+    transform: translateY(0px);
+}
+
+.menu-toggle span:nth-child(2),
+.menu-toggle span:nth-child(3) {
+    top: 9px;
+    transform: translateY(-9px);
+}
+
+.menu-toggle span:nth-child(3) {
+    top: 9px;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+/*----------------------------------------------------------RESPONSIVE-----------------------------------------------------*/
+/* Aggiunta di regole per i dispositivi di dimensioni inferiori a 768px */
+@media screen and (max-width: 768px) {
+
+
+    .logo {
+        width: 100px; /* Imposta la larghezza del logo */
+        height: 68px; /* Imposta l'altezza del logo */
+    }
+    .menu {
+        display: none;
+        /* Nascondi il menu per impostazione predefinita */
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Mostra il pulsante del menu hamburger */
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu-toggle span {
+        margin-bottom: 5px;
+        margin-top: 5px;
+
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .menu.show {
+        display: block;
+        /* Mostra il menu quando il pulsante del menu hamburger è cliccato */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #0F3C43;
+        border-radius: 50px;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .menu.show ul {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .menu.show ul li {
+        margin-bottom: 20px;
+    }
+
+    .menu.show ul li a {
+        font-size: 18px;
+    }
+
+    .aboutme{
+    }
+    .name{
+        margin-top: 15px;
+    }
+    #me{
+        width:45%;
+        margin-top:15%;
+    }
+    #me_button{
+        margin-top: 5%;
+    }
+    #infobutton{
+        margin-top:5%;
+    }
+    #first {
+        height: 90%;
+        
+    }
+
+    #info{
+        margin-top: -75px;
+    }
+    .container {
+        width: 90%;
+        /* Ridimensiona la larghezza del contenitore principale */
+    }
+
+    .title {
+        font-size: 68px;
+        line-height: 70px;
+        margin-top: 50px;
+
+    }
+
+    .link {
+        font-size: 12px;
+    }
+
+    #skills {
+        margin-top: 25px;
+    }
+
+
+    #edubox2 {
+        margin-top: 0;
+    }
+    #edu_row{
+        margin-top: 0;
+    }
+    .edu_info{
+        margin-top: -35px;
+        font-size:1em;
+    }
+    .edu_years{
+        font-size:2em;
+
+    }
+    .lang_skill {
+        width: 35%; /* Imposta la larghezza dei blocchi di linguaggi di programmazione al 50% della larghezza del contenitore */
+        margin: 20px; /* Aggiungi un margine di 5px tra i blocchi */
+
+    }
+    .int_emoji {
+        width: 35%; /* Imposta la larghezza dei blocchi di linguaggi di programmazione al 50% della larghezza del contenitore */
+        margin: 20px; /* Aggiungi un margine di 5px tra i blocchi */
+    }
+    .edu {
+        width: 80%; /* Imposta la larghezza dei blocchi di linguaggi di programmazione al 50% della larghezza del contenitore */
+        margin: 20px; /* Aggiungi un margine di 5px tra i blocchi */
+    }
+
+    .me-menu,
+    .works-menu {
+        /*nascondi il menu*/
+        display: none;
+    }
+
+    h3 {
+        font-size: 18px;
+        /* Riduci la dimensione del font per la versione mobile */
+        margin-top: -30px;
+    }
+
+    .header {
+        font-size: 18px;
+        /* Riduci la dimensione del font per la versione mobile */
+        padding: 10px;
+    }
+
+    .logo {
+        background-size: 88px;
+        /* Ridimensiona l'immagine di sfondo del logo per dispositivi più piccoli */
+        padding-left: 40px;
+        /* Aggiungi un padding sinistro al logo per dispositivi più piccoli */
+        background-position: center;
+
+    }
+
+    .menu ul li {
+        margin-right: 12px;
+        /* Ridimensiona il margine destro degli elementi del menu per adattarsi ai dispositivi più piccoli */
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        /* Ridimensiona il testo dell'hero per dispositivi più piccoli */
+        line-height: 56px;
+        /* Ridimensiona l'altezza della riga del testo dell'hero per dispositivi più piccoli */
+    }
+
+    .hero-cta {
+        margin-top: 24px;
+        /* Ridimensiona il margine superiore del CTA dell'hero per dispositivi più piccoli */
+    }
+
+    .works {
+        width: 90%;
+        /* Ridimensiona la larghezza delle sezioni di lavoro per adattarsi ai dispositivi più piccoli */
+
+    }
+
+    .text {
+        margin-left: -50px;
+        text-align: justify
+    }
+
+    .subtitle {
+        margin-left: -50px;
+    }
+
+
+
+    .footer {
+        padding: 10px;
+        /* Ridimensiona il padding del footer per un aspetto più compatto */
+        font-size: 12px;
+
+        text-align: center;
+    }
+
+
+    .footer-logo {
+        font-size: 16px;
+        /* Ridimensiona il testo del logo del footer per adattarsi ai dispositivi più piccoli */
+    }
+
+    .footer-menu ul li {
+        margin-right: 12px;
+        /* Ridimensiona il margine destro degli elementi del menu del footer per adattarsi ai dispositivi più piccoli */
+    }
+
+    .transition-effect {
+        transition: background-color 0.5s, color 0.5s;
+    }
+}

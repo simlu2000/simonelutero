@@ -1,0 +1,59 @@
+
+/*------------------------------------------------------HEADER------------------------------------------------------*/
+#mode,
+#logo {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centra l'icona verticalmente */
+}
+
+#mode{ 
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: -20px;
+
+
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    
+
+}
+
+.logo {
+    width: 50px; /* Imposta la larghezza del logo */
+    height: 50px; /* Imposta l'altezza del logo */
+    margin-right: 20px; /* Aggiunge un margine destro per separare il logo dagli altri elementi della navbar */
+}
+
+.header-container {
+    display: flex; /* Utilizza il layout flessibile per allineare correttamente il logo e gli altri elementi della navbar */
+    align-items: center; /* Allinea verticalmente gli elementi della navbar */
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra i testi orizzontalmente */
+    align-items: center; /* Centra i testi verticalmente */
+}
+
+.navbar-text{
+    font-size:1rem;
+}
+
+#secondOption{
+    margin-left:15px;
+}
