@@ -20,8 +20,9 @@ function HomeScreen() {
       <section className="works-menu">
         <div className="container">
           <ul>
-            <li><a href="#ciakmov" className="button pj">Ciakmov</a></li>
+            <li><a href="#wapa" className="button pj">WAPA</a></li>
             <li><a href="#briji" className="button pj">Briji</a></li>
+            <li><a href="#ciakmov" className="button pj">Ciakmov</a></li>
           </ul>
         </div>
       </section>

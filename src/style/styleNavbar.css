@@ -73,13 +73,8 @@ a{
         font-size:1.5rem;
         padding: 10px;
     }
-    #user-btn{
-        text-align: center;
-    }
-    #google-btn,#logout {
-        width: 26%;
-        font-size:1.6rem;
-    }
+ 
+ 
 
 
 }
