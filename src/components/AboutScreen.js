@@ -10,18 +10,6 @@ import Navbar from './Navbar';
 const AboutScreen = () => {
   return (
     <div>
-      <Navbar />
-
-      <section id="first" className="hero">
-        <div className="container hero-content">
-          <img id="me" className="hero-image" src={me} alt="Simone Lutero" />
-          <h1 className="title">Something<br />
-            <p className="name">About me</p>
-          </h1>
-          <a id="me_button" className="hero-cta button" href="#aboutme">Discover myself</a>
-        </div>
-      </section>
-
       <section className="me-menu">
         <div className="container">
           <ul>

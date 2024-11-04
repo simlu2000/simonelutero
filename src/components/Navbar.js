@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import logo from '../img/logo.jpg'; 
 import '../style/styleNavbar.css';
 import { faHome, faCode, faAddressCard } from '@fortawesome/free-solid-svg-icons';
@@ -11,9 +10,9 @@ function Navbar() {
     return (
         <>
             <div id="navbar">
-                <Link to="/" id="home" className="option-menu"><FontAwesomeIcon icon={faHome}/></Link>
-                <Link to="/AboutScreen" id="user-btn" className="option-menu"><FontAwesomeIcon icon={faAddressCard}/></Link>
-                <Link to="/#wapa" id="projects-btn" className="option-menu"><FontAwesomeIcon icon={faCode}/></Link>
+                <a href="#first" id="home" className="option-menu"><FontAwesomeIcon icon={faHome}/></a>
+                <a href="#about" id="user-btn" className="option-menu"><FontAwesomeIcon icon={faAddressCard}/></a>
+                <a href="#wapa" id="projects-btn" className="option-menu"><FontAwesomeIcon icon={faCode}/></a>
 
             </div>
         </>
