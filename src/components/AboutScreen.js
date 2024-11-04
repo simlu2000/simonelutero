@@ -1,11 +1,11 @@
 import React from 'react';
-import './style/style.css';
-import me from './img/sl.jpg';
-import email from './img/email.png';
-import instagram from './img/instagram.png';
-import linkedin from './img/linkedin.png';
-import github from './img/github.png';
-import Navbar from './navbar';
+import '../style/style.css';
+import me from '../img/sl.jpg';
+import email from '../img/email.png';
+import instagram from '../img/instagram.png';
+import linkedin from '../img/linkedin.png';
+import github from '../img/github.png';
+import Navbar from './Navbar';
 
 const AboutScreen = () => {
   return (
