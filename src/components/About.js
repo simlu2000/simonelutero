@@ -7,20 +7,9 @@ import linkedin from '../img/linkedin.png';
 import github from '../img/github.png';
 import Navbar from './Navbar';
 
-const AboutScreen = () => {
+const About = () => {
   return (
     <div>
-      <section className="me-menu">
-        <div className="container">
-          <ul>
-            <li><a href="#mebox" className="button pj">Personal info</a></li>
-            <li><a href="#myedu" className="button pj">Education</a></li>
-            <li><a href="#myskills" className="button pj">Skills</a></li>
-            <li><a href="#interests" className="button pj">Interests</a></li>
-          </ul>
-        </div>
-      </section>
-
       <section id="me_data">
         <section className="aboutme" id="aboutme">
           <div className="container">
@@ -170,4 +159,4 @@ const AboutScreen = () => {
   );
 };
 
-export default AboutScreen;
+export default About;

@@ -1,7 +1,8 @@
 import slImage from '../img/sl.jpg';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from "react";
-import AboutScreen from './AboutScreen';
+import About from './About';
+import Works from './Works';
 function HomeScreen() {
 
   return (
@@ -17,170 +18,15 @@ function HomeScreen() {
         </div>
       </section>
 
-      <section className="works-menu">
-        <div className="container">
-          <ul>
-            <li><a href="#wapa" className="button pj">WAPA</a></li>
-            <li><a href="#briji" className="button pj">Briji</a></li>
-            <li><a href="#ciakmov" className="button pj">Ciakmov</a></li>
-          </ul>
-        </div>
-      </section>
+      
 
       <section id="info">
-        <section className="works box" id="wapa">
-          <div className="container">
-            <div className="works-item">
-              <div className="works-item-tags">Weather and Advanced Predictions App</div>
-              <h2>WAPA</h2>
-              <div className="work-info">
-                <div className="work-info-label">About</div>
-                <div className="work-info-content">
-                  <p className="text">
-                    Progressive Web App for climate forecasting created for the university thesis project.
-                    The front-end part is still being improved and Google account access has yet to be implemented.
-                  </p>
-                  <h3 className="subtitle">Features Implemented:</h3>
-                  <ul type="circle" className="func">
-                    <li>Real-time display of weather conditions</li>
-                    <li>Short and long-term forecasts, with details on data such as temperature, precipitation, humidity, and wind</li>
-                    <li>Customize the forecast based on the user's location, on a special search from the relative search bar, or by selecting one of the favorite locations.</li>
-                    <li>Opportunity to register and authenticate to WAPA for additional features such as the ability to add up to six preferred locations</li>
-                    <li>Access to advanced atmospheric data, directly from NASA</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="work-info">
-                <div className="work-info-label">Links</div>
-                <div className="work-info-content">
-                  <a className="link" href="https://wapaweather.com">WAPA</a>
-                </div>
-              </div>
-              <div className="work-info start">
-                <div className="work-info-label">Start</div>
-                <div className="work-info-content">
-                  <p>07/2024</p>
-                </div>
-              </div>
-              <div className="work-info end">
-                <div className="work-info-label">End</div>
-                <div className="work-info-content">
-                  <p>10/2024</p>
-                </div>
-              </div>
-              <section>
-                <div className="hero-content">
-                  <a href="/WAPA_Mockup_Linkedin.pdf" className="hero-cta button" download="WAPA_Mockup_Linkedin.pdf">See the Presentation</a>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
-
-        <section className="works box" id="briji">
-          <div className="container">
-            <div className="works-item">
-              <div className="works-item-tags">Website of Recruitments</div>
-              <h2>Briji</h2>
-              <div className="work-info">
-                <div className="work-info-label">About</div>
-                <div className="work-info-content">
-                  <p className="text">
-                    Project created for the Web Design course, in a group of twenty people made up
-                    of both computer scientists and designers. The objective of the project was to create a job
-                    search platform. The site aims to facilitate the process of finding a challenging job by a
-                    candidate and that of finding a candidate by companies. Data storage was done
-                    via an AirTable database, and the platform was designed to work primarily on screens with a
-                    resolution of 1920x1080px.
-                  </p>
-                  <h3 className="subtitle">Backend Side Features Implemented:</h3>
-                  <ul type="circle" className="func">
-                    <li>Print user data</li>
-                    <li>Modify user data</li>
-                    <li>Print a company profile corresponding to an advertisement</li>
-                    <li>Edit announcement data</li>
-                  </ul>
-                  <p className="text">The back-end development of Login and Registration features for users/companies is yet to be carried out. Material Design was used for some components.</p>
-                </div>
-              </div>
-              <div className="work-info">
-                <div className="work-info-label">Links</div>
-                <div className="work-info-content">
-                  <a className="link" href="https://gruppo5webd.altervista.org/progetto_finale/">Briji</a><br />
-                  <a className="link" href="https://github.com/simlu2000/WebDesign">Code</a>
-                </div>
-              </div>
-              <div className="work-info start">
-                <div className="work-info-label">Start</div>
-                <div className="work-info-content">
-                  <p>04/2023</p>
-                </div>
-              </div>
-              <div className="work-info end">
-                <div className="work-info-label">End</div>
-                <div className="work-info-content">
-                  <p>07/2023</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="works box" id="ciakmov">
-          <div className="container">
-            <div className="works-item">
-              <div className="works-item-tags">Website for Film Search</div>
-              <h2>Ciakmov</h2>
-              <div className="work-info">
-                <div className="work-info-label">About</div>
-                <div className="work-info-content">
-                  <p className="text">
-                    Project created for the Web Application Development course, academic year 2021/2022.
-                    The idea was to create a website that would allow users to search for films showing at cinemas near
-                    Genoa and to see and insert reviews (only if registered). Furthermore,
-                    the user can choose whether or not to receive
-                    weekly newsletters (which can be sent by administrators via a specific administrative area) relating
-                    to new films.
-                  </p>
-                  <h3 className="subtitle">Backend Side Features Implemented:</h3>
-                  <ul type="circle" className="func">
-                    <li>Signin / Login</li>
-                    <li>Newsletter (PHPMailer)</li>
-                    <li>Movie Ratings (score)</li>
-                    <li>Administrative area</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="work-info">
-                <div className="work-info-label">Links</div>
-                <div className="work-info-content">
-                  <a className="link" href="https://github.com/simlu2000/SAW">Code</a>
-                </div>
-              </div>
-              <div className="work-info start">
-                <div className="work-info-label">Start</div>
-                <div className="work-info-content">
-                  <p>02/2022</p>
-                </div>
-              </div>
-              <div className="work-info end">
-                <div className="work-info-label">End</div>
-                <div className="work-info-content">
-                  <p>09/2022</p>
-                </div>
-              </div>
-              <section>
-                <div className="hero-content">
-                  <a id="cv_button" href="/CIAKMOVPRES.pdf" className="hero-cta button" download="CIAKMOVPRES.pdf">See the Presentation</a>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
+        <Works />
       </section>
 
       <div id="about">
-        <AboutScreen />
+      <h1 className="container">About me</h1>
+        <About />
       </div>
 
     </div>
