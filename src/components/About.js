@@ -1,11 +1,13 @@
 import React from 'react';
 import '../style/style.css';
-import me from '../img/sl.jpg';
-import email from '../img/email.png';
-import instagram from '../img/instagram.png';
-import linkedin from '../img/linkedin.png';
-import github from '../img/github.png';
-import Navbar from './Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Education from './Education';
+import Experience from './Experience';
+import Technologies from './Technologies';
+
+
 
 const About = () => {
   return (
@@ -46,10 +48,18 @@ const About = () => {
               <div className="work-info">
                 <div className="work-info-label">Socials</div>
                 <div className="work-info-content">
-                  <a href="https://github.com/simlu2000" className="link"><img src={github} alt="GitHub" className="social_icon" /></a>
-                  <a href="https://www.linkedin.com/in/simone-lutero-027317216/" className="link"><img src={linkedin} alt="LinkedIn" className="social_icon" /></a>
-                  <a href="https://www.instagram.com/sim0ne_lu" className="link"><img src={instagram} alt="Instagram" className="social_icon" /></a>
-                  <a href="mailto:simone.lutero1@gmail.com" className="link"><img src={email} alt="E-mail" className="social_icon" /></a>
+                  <a href="https://github.com/simlu2000" className="link">
+                    <FontAwesomeIcon icon={faGithub} className='social_icon' />
+                  </a>
+                  <a href="https://www.linkedin.com/in/simone-lutero-027317216/" className="link">
+                    <FontAwesomeIcon icon={faLinkedin} className='social_icon' />
+                  </a>
+                  <a href="https://www.instagram.com/sim0ne_lu" className="link">
+                    <FontAwesomeIcon icon={faInstagram} className='social_icon' />
+                  </a>
+                  <a href="mailto:simone.lutero1@gmail.com" className="link">
+                    <FontAwesomeIcon icon={faEnvelope} className='social_icon' />
+                  </a>
                 </div>
               </div>
               <div className="work-info">
@@ -62,67 +72,18 @@ const About = () => {
           </div>
         </section>
 
-        <section className="aboutme" id="myedu">
-          <div className="container">
-            <div className="works-item box">
+        <section className="aboutme timeline" id="myexp">
+          <Experience />
+        </section>
 
-              <div className="works-item-tags">Education</div>
-              <div id="edu_row" className="row">
-                <div className="edu">
-                  <h3 className="edu_years">2014-2019</h3>
-                  <div className="edu_info">
-                    <h4>Istituto Fortunio Liceti, Rapallo</h4>
-                    <h5>Corporate information systems</h5>
-                  </div>
-                </div>
-                <div className="edu">
-                  <h3 className="edu_years">2019-Now</h3>
-                  <div className="edu_info">
-                    <h4>University of Genoa</h4>
-                    <h5>Computer science student</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="works-item box">
-              <div className="works-item-tags">Experiences</div>
-              <div id="exp_row" className="row">
-              <div className="edu">
-                  <h3 className="edu_years">April 2024 - Actually</h3>
-                  <div className="edu_info exp-desc">
-                    <h4>ALTEN ITALIA</h4>
-                    <h5>Internship in Full Stack Development</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
+        <section className="aboutme timeline" id="myedu">
+          <Education />
         </section>
 
         <section className="aboutme" id="myskills">
-          <div className="container">
-            <div className="works-item box">
-              <div className="works-item-tags">Languages & Technologies </div>
-              <div className="row">
-                <div className="lang_skill">C</div>
-                <div className="lang_skill">C++</div>
-                <div className="lang_skill">SQL</div>
-                <div className="lang_skill">PHP</div>
-                <div className="lang_skill">Google Firebase</div>
-
-              </div>
-              <div className="row">
-                <div className="lang_skill">HTML</div>
-                <div className="lang_skill">CSS</div>
-                <div className="lang_skill">JavaScript</div>
-                <div className="lang_skill">ReactJS</div>
-                <div className="lang_skill">Vue.js</div>
-              </div>
-            </div>
-          </div>
+          <Technologies/>
         </section>
+
 
         <section className="aboutme" id="interests">
           <div className="container">
@@ -145,16 +106,10 @@ const About = () => {
           </div>
         </section>
 
-        <section id="cv">
-          <div className="container hero-content">
-            <a id="cv_button" href="/simoneluterocv.pdf" className="hero-cta button" download="simoneluterocv.pdf">Download my CV!</a>
-          </div>
-        </section>
+
       </section>
 
-      <button id="GoOnTop" className="top-button" onClick={() => window.scrollTo(0, 0)} style={{ fontSize: '2em' }}>&#9757;</button>
 
-      
     </div>
   );
 };

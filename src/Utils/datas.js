@@ -11,7 +11,8 @@ import {
     php,
     firebase,
     c,
-    threejs,
+    airtable,
+    postgre,
 } from "../assets/icons";
 
 
@@ -41,20 +42,12 @@ const technologies = [
         icon: sql,
     },
     {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
         name: "figma",
         icon: figma,
     },
     {
         name: "PHP",
         icon: php,
-    },
-    {
-        name: "Google Firebase",
-        icon: firebase,
     },
     {
         name: "C",
@@ -65,16 +58,11 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-    
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        title: "Full Stack Dev. Internship",
+        company_name: "ALTEN Italia",
+        date: "April 2024 - Actually",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
 ];
@@ -88,18 +76,23 @@ const projects = [
         tags: [
             {
                 name: "react",
+                icon:reactjs,
             },
             {
                 name: "firebase",
+                icon:firebase,
             },
             {
                 name: "HTML",
+                icon:html,
             },
             {
                 name: "JavaScript",
+                icon:javascript,
             },
             {
                 name: "CSS",
+                icon:css,
             },
         ],
         features: [
@@ -119,15 +112,19 @@ const projects = [
         tags: [
             {
                 name: "AirTable",
+                icon:airtable,
             },
             {
                 name: "HTML",
+                icon:html,
             },
             {
                 name: "JavaScript",
+                icon:javascript,
             },
             {
                 name: "CSS",
+                icon:css,
             },
         ],
         features: [
@@ -148,24 +145,31 @@ const projects = [
         tags: [
             {
                 name: "PHP",
+                icon:php,
             },
             {
                 name: "PostgreSQL",
+                icon:postgre,
             },
             {
                 name: "SQL",
+                icon:sql,
             },
             {
                 name: "MariaDB",
+                icon:mariadb,
             },
             {
                 name: "HTML",
+                icon:html,
             },
             {
                 name: "JavaScript",
+                icon:javascript,
             },
             {
                 name: "CSS",
+                icon:css,
             },
         ],
         features: [
@@ -183,4 +187,17 @@ const projects = [
 
 ];
 
-export { technologies, experiences, projects };
+const education = [
+    {
+        year:"2019 - Now",
+        school:"University of Genoa, Italy",
+        course:"Computer Science - Bachelor"
+    },
+    {
+        year:"2014 - 2019",
+        school:"Istituto F. Liceti, Rapallo (Italy)",
+        course:"Corporate Information Systems"
+    },
+];
+
+export { technologies, experiences, projects, education };

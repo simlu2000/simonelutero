@@ -12,6 +12,8 @@ import sql from "./sql.png";
 import php from "./php.png";
 import firebase from "./firebase.png";
 import c from "./c.png";
+import postgre from "./postgre.png";
+import airtable from "./airtable.png";
 
 
 export {
@@ -27,5 +29,7 @@ export {
  sql,
  php,
  firebase,
- c
+ c,
+ airtable,
+ postgre,
 };

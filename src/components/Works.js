@@ -54,7 +54,7 @@ const Works = () => {
                                 <div className="work-info">
                                     <div className="work-info-label">Resources</div>
                                     <div className="work-info-content">
-                                        <a class="link" href={project.source_code_link}>Link</a>
+                                        <a class="link" href={project.source_code_link}><b>Link</b></a>
                                     </div>
                                 </div>
                             </div>
