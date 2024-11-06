@@ -13,6 +13,8 @@ import {
     c,
     airtable,
     postgre,
+    wapa,
+    ciakmov
 } from "../assets/icons";
 
 
@@ -103,6 +105,9 @@ const projects = [
             "Access to advanced atmospheric data, directly from NASA",
         ],
         source_code_link: "https://wapaweather.com/",
+        start: "07/2024",
+        end: "10/2024",
+        pdf_file:wapa,
     },
     {
         name: "Briji",
@@ -135,7 +140,7 @@ const projects = [
         ],
         source_code_link: "https://gruppo5webd.altervista.org/progetto_finale/home/homepage.html",
         start: "04/2023",
-        end: "07/2023"
+        end: "07/2023",
     },
     {
         name: "Ciakmov",
@@ -181,7 +186,8 @@ const projects = [
         ],
         source_code_link: "https://github.com/simlu2000/SAW",
         start :"02/2022",
-        end:"08/2022"
+        end:"08/2022",
+        pdf_file:ciakmov,
     },
 
 

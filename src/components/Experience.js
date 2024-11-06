@@ -6,7 +6,7 @@ const Experience = () => {
 
     return (
         <div className="container">
-            <div className="works-item-tags">Experiences</div>
+            <div className="works-item-tags timeline-text">Experiences</div>
 
             <VerticalTimeline>
                 {experiences.map((exp, index) => (
@@ -14,7 +14,7 @@ const Experience = () => {
                         key={index}
                         className="vertical-timeline-element--work"
                         date={exp.date}
-                        iconStyle={{ background: '#FCA311', color: '#000000' }}
+                        iconStyle={{ background: '#d4f2ff', color: '#000000' }}
                     >
                         <h3 className="vertical-timeline-element-title">{exp.title}</h3>
                         <h4 className="vertical-timeline-element-subtitle">{exp.company_name}</h4>

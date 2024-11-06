@@ -25,8 +25,8 @@ function HomeScreen() {
       </section>
 
       <div id="about">
-      <h1 className="container">About me</h1>
-        <About />
+      <h1 className="box-title">About me</h1>
+      <About />
       </div>
 
     </div>
