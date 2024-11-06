@@ -6,11 +6,11 @@
 
 body {
 
-    background: #780206;
+    background: #0F2027;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #061161, #780206);
+    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #061161, #780206);
+    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     color: #F6F6F6;
@@ -167,7 +167,7 @@ h3 {
 }
 
 a {
-    
+
     text-decoration: none;
     color: #F6F6F6;
     text-transform: uppercase;
@@ -436,7 +436,7 @@ section {
 
 /*-------------------------------------------------FOOTER------------------------------------------------------*/
 footer {
-    background-color: rgba(105, 2, 9, 255);
+    background-color: #203A43;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     text-align: center;
@@ -451,7 +451,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .footer-logo {
@@ -463,6 +463,7 @@ footer {
     padding: 0;
     margin: 0;
 }
+
 .footer-menu ul li {
     display: inline-block;
     margin-right: 20px;
@@ -763,17 +764,19 @@ footer {
 
 
 /*----------------------------TIMELINE------------------*/
-.vertical-timeline-element-title{
-    color:#000000;
+.vertical-timeline-element-title {
+    color: #000000;
     font-size: 1.5rem;
 }
-.vertical-timeline-element-subtitle{
-    color:#000000;
+
+.vertical-timeline-element-subtitle {
+    color: #000000;
 }
-#exp-points{
-    color:#000000;
+
+#exp-points {
+    color: #000000;
 }
 
 .timeline {
-    margin-bottom:15%;
+    margin-bottom: 15%;
 }
