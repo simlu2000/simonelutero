@@ -1,6 +1,5 @@
 import { projects, tags } from "../Utils/datas";
 import { useState } from 'react';
-
 const Works = () => {
     const [selectedProject, setSelectedProject] = useState(''); //stato per gestione progetti
 
@@ -14,9 +13,11 @@ const Works = () => {
 
     return (
         <>
-            <h1 className="box-title">My works</h1>
+
             <section className="works box">
                 <section className="works-menu">
+                <h1 className="container">My works</h1>
+
                     <div id="button-area">
                         <ul>
                             <li><a className="button pj" onClick={ () => updateProject('WAPA')}>WAPA</a></li>
@@ -41,7 +42,7 @@ const Works = () => {
                                 </ul>
                                 <div className="work-info-content">
                                     <div className="work-info-label">Description</div>
-                                    <p className="descr">{project.description}</p>
+                                    <p >{project.description}</p>
                                 </div>
                                 <div className="work-info-label">Features</div>
                                 <ul type="circle">
@@ -51,16 +52,9 @@ const Works = () => {
                                 </ul>
 
                                 <div className="work-info">
-                                <div className="work-info-label">Start - End</div>
-                                    <div className="work-info-content">
-                                        <p>{project.start} - {project.end}</p>
-                                    </div>
-                                </div>
-
-                                <div className="work-info">
                                     <div className="work-info-label">Resources</div>
                                     <div className="work-info-content">
-                                        <a className="link" href={project.source_code_link}><b>Link</b></a>
+                                        <a class="link" href={project.source_code_link}><b>Link</b></a>
                                     </div>
                                 </div>
                             </div>

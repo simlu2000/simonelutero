@@ -14,8 +14,7 @@ import firebase from "./firebase.png";
 import c from "./c.png";
 import postgre from "./postgre.png";
 import airtable from "./airtable.png";
-import wapa from "./WAPA_MockupLinkedin.pdf";
-import ciakmov from "./CIAKMOVPRES.pdf";
+
 
 export {
  github, 
@@ -33,6 +32,4 @@ export {
  c,
  airtable,
  postgre,
- wapa,
- ciakmov
 };

@@ -7,7 +7,7 @@ const Education = () => {
     return (
         <>
             <div className="container">
-                <div className="works-item-tags timeline-text">Education</div>
+                <div className="works-item-tags">Education</div>
 
                 <VerticalTimeline>
                     {education.map((edu, index) => (
@@ -15,7 +15,7 @@ const Education = () => {
                             key={index}
                             className="vertical-timeline-element--education"
                             date={edu.year}
-                            iconStyle={{ background: '#d4f2ff', color: '#000000' }}
+                            iconStyle={{ background: '#FCA311', color: '#000000' }}
                         >
                             <h3 className="vertical-timeline-element-title">{edu.school}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{edu.course}</h4>
