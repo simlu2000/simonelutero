@@ -6,6 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Education from './Education';
 import Experience from './Experience';
 import Technologies from './Technologies';
+import Interests from './Interests';
 
 
 
@@ -68,43 +69,27 @@ const About = () => {
                   <p>I am currently a computer science student at the University of Genoa. Passionate about consumer electronics and technology since I was a child, I have always found technological advancement a source of inspiration and curiosity. Since photography is my second passion, I also have an artistic mind. My goal is to become a full stack web developer, combining my passion for technology with my artistic streak. I am determined to create engaging and intuitive digital experiences, developing both the front and back-end for projects that combine innovation and aesthetics.</p>
                 </div>
               </div>
+
+              <section className="aboutme" id="interests">
+                <Interests />
+              </section>
+
+              <section className="aboutme" id="myskills">
+                <Technologies />
+              </section>
+
+              <section className="aboutme timeline" id="myexp">
+                <Experience />
+              </section>
+
+              <section className="aboutme timeline" id="myedu">
+                <Education />
+              </section>
             </div>
+
           </div>
         </section>
 
-        <section className="aboutme timeline" id="myexp">
-          <Experience />
-        </section>
-
-        <section className="aboutme timeline" id="myedu">
-          <Education />
-        </section>
-
-        <section className="aboutme" id="myskills">
-          <Technologies/>
-        </section>
-
-
-        <section className="aboutme" id="interests">
-          <div className="container">
-            <div className="works-item box">
-              <div className="works-item-tags">My interests</div>
-              <div className="row">
-                <div className="int_emoji">&#128187;</div>
-                <div className="int_emoji">&#128247;</div>
-                <div className="int_emoji">&#127909;</div>
-                <div className="int_emoji">&#9992;</div>
-              </div>
-              <div className="row">
-                <div className="int_emoji">&#127829;</div>
-                <div className="int_emoji">&#127749;</div>
-                <div className="int_emoji">&#128054;</div>
-                <div className="int_emoji">&#x1F30A;</div>
-
-              </div>
-            </div>
-          </div>
-        </section>
 
 
       </section>

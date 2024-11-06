@@ -314,9 +314,18 @@ section {
 }
 
 .aboutme {
-    margin-top: -175px;
-    margin-bottom: 50px;
+    margin-top:-15%;
 
+}
+#interests{
+    margin-top:0;
+}
+#myskills{
+    margin-top:0;
+}
+
+#myexp{
+    margin-top:0;
 }
 
 .works-item {
@@ -588,7 +597,10 @@ footer {
         font-size: 18px;
     }
 
-    .aboutme {}
+    .aboutme {
+        margin-top:-50%;
+    
+    }
 
     .name {
         margin-top: 15px;
@@ -618,7 +630,6 @@ footer {
 
     .container {
         width: 90%;
-        /* Ridimensiona la larghezza del contenitore principale */
     }
 
     .title {
@@ -657,73 +668,53 @@ footer {
 
     .lang_skill {
         width: 35%;
-        /* Imposta la larghezza dei blocchi di linguaggi di programmazione al 50% della larghezza del contenitore */
         margin: 20px;
-        /* Aggiungi un margine di 5px tra i blocchi */
 
     }
 
     .int_emoji {
         width: 35%;
-        /* Imposta la larghezza dei blocchi di linguaggi di programmazione al 50% della larghezza del contenitore */
         margin: 20px;
-        /* Aggiungi un margine di 5px tra i blocchi */
     }
 
     .edu {
         width: 80%;
-        /* Imposta la larghezza dei blocchi di linguaggi di programmazione al 50% della larghezza del contenitore */
         margin: 20px;
-        /* Aggiungi un margine di 5px tra i blocchi */
     }
 
-    .me-menu,
-    .works-menu {
-        /*nascondi il menu*/
-        display: none;
-    }
-
+   
     h3 {
         font-size: 18px;
-        /* Riduci la dimensione del font per la versione mobile */
         margin-top: -30px;
     }
 
     .header {
         font-size: 18px;
-        /* Riduci la dimensione del font per la versione mobile */
         padding: 10px;
     }
 
     .logo {
         background-size: 88px;
-        /* Ridimensiona l'immagine di sfondo del logo per dispositivi più piccoli */
         padding-left: 40px;
-        /* Aggiungi un padding sinistro al logo per dispositivi più piccoli */
         background-position: center;
 
     }
 
     .menu ul li {
         margin-right: 12px;
-        /* Ridimensiona il margine destro degli elementi del menu per adattarsi ai dispositivi più piccoli */
     }
 
     .hero h1 {
         font-size: 48px;
-        /* Ridimensiona il testo dell'hero per dispositivi più piccoli */
         line-height: 56px;
-        /* Ridimensiona l'altezza della riga del testo dell'hero per dispositivi più piccoli */
     }
 
     .hero-cta {
         margin-top: 24px;
-        /* Ridimensiona il margine superiore del CTA dell'hero per dispositivi più piccoli */
     }
 
     .works {
         width: 90%;
-        /* Ridimensiona la larghezza delle sezioni di lavoro per adattarsi ai dispositivi più piccoli */
 
     }
 
