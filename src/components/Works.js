@@ -1,4 +1,4 @@
-import { projects, tags } from "../Utils/datas";
+import { projects } from "../Utils/datas";
 import { useState } from 'react';
 const Works = () => {
     const [selectedProject, setSelectedProject] = useState(''); //stato per gestione progetti
