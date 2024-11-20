@@ -1,6 +1,4 @@
 import slImage from '../img/sl.jpg';
-import { useLocation } from 'react-router-dom';
-import { useEffect } from "react";
 import About from './About';
 import Works from './Works';
 function HomeScreen() {
