@@ -753,6 +753,13 @@ footer {
     }
 }
 
+@media screen and (max-width: 481px) {
+    .works-menu {
+        visibility: hidden;
+        display: none;
+    }
+    
+}
 
 /*----------------------------TIMELINE------------------*/
 .vertical-timeline-element-title {
