@@ -9,9 +9,9 @@ function Navbar() {
     return (
         <>
             <div id="navbar">
-                <a href="#first" className="option-menu"><FontAwesomeIcon icon={faHome}/></a>
-                <a href="#about"  className="option-menu"><FontAwesomeIcon icon={faAddressCard}/></a>
-                <a href="#projects" className="option-menu"><FontAwesomeIcon icon={faCode}/></a>
+                <button className="option-menu"><a href="#first"><FontAwesomeIcon icon={faHome}/></a></button>
+                <button className="option-menu"><a href="#about"><FontAwesomeIcon icon={faAddressCard}/></a></button>
+                <button className="option-menu"><a href="#projects"><FontAwesomeIcon icon={faCode}/></a></button>
 
             </div>
         </>
