@@ -20,10 +20,10 @@ const Works = () => {
 
                     <div id="button-area">
                         <ul>
-                            <li><a className="button pj" onClick={ () => updateProject('WAPA')}>WAPA</a></li>
-                            <li><a className="button pj" onClick={ () => updateProject('Briji')}>Briji</a></li>
-                            <li><a className="button pj" onClick={ () => updateProject('Ciakmov')}>Ciakmov</a></li>
-                            <li><a className="button pj" onClick={ () => updateProject('')}>All</a></li>
+                            <li><p className="button pj" onClick={ () => updateProject('WAPA')}>WAPA</p></li>
+                            <li><p className="button pj" onClick={ () => updateProject('Briji')}>Briji</p></li>
+                            <li><p className="button pj" onClick={ () => updateProject('Ciakmov')}>Ciakmov</p></li>
+                            <li><p className="button pj" onClick={ () => updateProject('')}>All</p></li>
                         </ul>
 
                     </div>
