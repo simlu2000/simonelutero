@@ -14,7 +14,7 @@ const Works = () => {
     return (
         <>
 
-            <section className="works box">
+            <section id="projects" className="works box">
                 <section className="works-menu">
                 <h1 className="container">My works</h1>
 

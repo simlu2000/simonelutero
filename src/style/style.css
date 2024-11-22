@@ -533,6 +533,9 @@ footer {
     font-size: 0.6em;
 
 }
+#myedu{
+    margin-top:0;
+}
 
 /*----------------------------------------------------------RESPONSIVE-----------------------------------------------------*/
 /* Aggiunta di regole per i dispositivi di dimensioni inferiori a 768px */
@@ -750,6 +753,10 @@ footer {
 
     .transition-effect {
         transition: background-color 0.5s, color 0.5s;
+    }
+    .works-menu {
+        visibility: hidden;
+        display: none;
     }
 }
 
