@@ -450,6 +450,31 @@ section {
     margin-top: -100px;
 }
 
+.awssld {
+    background-color: transparent !important; /* Imposta lo sfondo trasparente */
+  }
+  
+  .awssld__content {
+    background-color: transparent !important; /* Assicurati che anche il contenuto sia trasparente */
+  }
+
+  .awssld__bullets {
+    color: white !important;
+  }
+  
+  .awssld__bullets .awssld__bullet {
+    background-color: white !important;  /* Colore dei pallini attivi */
+  }
+  
+  /* Cambia il colore delle frecce */
+  .awssld__control--next, .awssld__control--prev {
+    color: white !important;  /* Colore delle frecce */
+  }
+  
+  .awssld__control--next:hover, .awssld__control--prev:hover {
+    color: white !important;  /* Colore delle frecce al passaggio del mouse */
+  }
+
 /*-------------------------------------------------FOOTER------------------------------------------------------*/
 footer {
     background-color: #203A43;
