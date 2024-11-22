@@ -551,53 +551,11 @@ footer {
 
     .menu {
         display: none;
-        /* Nascondi il menu per impostazione predefinita */
     }
 
-    .menu-toggle {
-        display: block;
-        /* Mostra il pulsante del menu hamburger */
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1000;
-    }
-
-    .menu-toggle span {
-        margin-bottom: 5px;
-        margin-top: 5px;
-
-    }
 
     .header-container {
         position: relative;
-    }
-
-    .menu.show {
-        display: block;
-        /* Mostra il menu quando il pulsante del menu hamburger è cliccato */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #0F3C43;
-        border-radius: 50px;
-        width: 100%;
-        z-index: 999;
-    }
-
-    .menu.show ul {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .menu.show ul li {
-        margin-bottom: 20px;
-    }
-
-    .menu.show ul li a {
-        font-size: 18px;
     }
 
     .aboutme {
@@ -763,6 +721,9 @@ footer {
 @media screen and (max-width: 481px) {
     .works-menu {
         visibility: hidden;
+        display: none;
+    }
+    #infobutton {
         display: none;
     }
     
