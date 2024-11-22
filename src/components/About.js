@@ -16,7 +16,7 @@ const About = () => {
       <section id="me_data">
         <section className="aboutme" id="aboutme">
           <div className="container">
-            <div className="works-item box" id="mebox">
+            <div className="box" id="mebox">
               <div className="works-item-tags">Personal info</div>
               <div className="work-info">
                 <div className="work-info-label">First Name</div>

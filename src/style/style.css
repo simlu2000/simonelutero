@@ -314,22 +314,29 @@ section {
 }
 
 .aboutme {
-    margin-top:-15%;
+    margin-top: -15%;
 
 }
-#interests{
-    margin-top:0;
-}
-#myskills{
-    margin-top:0;
+
+#interests {
+    margin-top: 0;
 }
 
-#myexp{
-    margin-top:0;
+#myskills {
+    margin-top: 0;
+}
+
+#myexp {
+    margin-top: 0;
 }
 
 .works-item {
     margin-bottom: 5%;
+    border-radius: 25px;
+    padding: 25px;
+    background-color:#0F2027;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
 
 .work-info {
@@ -347,7 +354,7 @@ section {
 }
 
 .work-info-content {
-    width: 70%;
+    width: 100%;
     flex-grow: 1;
     flex-shrink: 1;
     margin-left: 0 auto;
@@ -494,6 +501,7 @@ footer {
 .container {
     width: 80%;
     margin: 0 auto;
+    border-radius: 25px;
 
 }
 
@@ -533,9 +541,12 @@ footer {
     font-size: 0.6em;
 
 }
-#myedu{
-    margin-top:0;
+
+#myedu {
+    margin-top: -10%;
 }
+
+
 
 /*----------------------------------------------------------RESPONSIVE-----------------------------------------------------*/
 /* Aggiunta di regole per i dispositivi di dimensioni inferiori a 768px */
@@ -559,8 +570,8 @@ footer {
     }
 
     .aboutme {
-        margin-top:-50%;
-    
+        margin-top: -50%;
+
     }
 
     .name {
@@ -643,7 +654,7 @@ footer {
         margin: 20px;
     }
 
-   
+
     h3 {
         font-size: 18px;
         margin-top: -30px;
@@ -681,7 +692,7 @@ footer {
 
     .text {
         margin-left: -50px;
-        text-align: justify
+        text-align: justify;
     }
 
     .subtitle {
@@ -712,6 +723,7 @@ footer {
     .transition-effect {
         transition: background-color 0.5s, color 0.5s;
     }
+
     .works-menu {
         visibility: hidden;
         display: none;
@@ -723,10 +735,11 @@ footer {
         visibility: hidden;
         display: none;
     }
+
     #infobutton {
         display: none;
     }
-    
+
 }
 
 /*----------------------------TIMELINE------------------*/

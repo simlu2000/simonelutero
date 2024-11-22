@@ -18,7 +18,8 @@ function HomeScreen() {
 
       
 
-      <section id="info">
+      <section >
+
         <Works />
       </section>
 
