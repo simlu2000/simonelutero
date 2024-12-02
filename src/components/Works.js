@@ -1,15 +1,16 @@
 import { projects } from "../Utils/datas";
 import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react'; 
-import 'swiper/swiper-bundle.css'; 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import { Navigation } from 'swiper/modules';
 
 const Works = () => {
     const [selectedProject] = useState(''); // stato per gestione progetti
     const [index, setIndex] = useState(0);
 
-    const filteredProjects = selectedProject //progetti filtrati pari a quello selezionato
-        ? projects.filter(project => project.name === selectedProject) //se progetto attuale corrisponde al selez, filtro progetti
-        : projects; //sennò mostro tutti
+    const filteredProjects = selectedProject 
+        ? projects.filter(project => project.name === selectedProject)
+        : projects; // Mostra tutti i progetti se nessuno è selezionato
 
     const handleNext = () => {
         setIndex((prevIndex) => (prevIndex + 1) % filteredProjects.length);
@@ -31,8 +32,12 @@ const Works = () => {
                     slidesPerView={1}
                     onSlideChange={handleNext} // Cambia indice quando lo slide cambia
                     onSwiper={(swiper) => setIndex(swiper.activeIndex)} // Aggiorna l'indice quando lo swiper viene inizializzato
-                    pagination={{ clickable: true }} // Aggiunge la paginazione (pallini) e rende cliccabili
+                    modules={[Navigation]} // Aggiungi il modulo Navigation
                     style={{ backgroundColor: 'transparent' }}
+                    navigation={{ // Aggiungi i controlli per le frecce
+                        nextEl: '.swiper-button-next', 
+                        prevEl: '.swiper-button-prev',
+                    }}
                 >
                     {filteredProjects.map((project, index) => (
                         <SwiperSlide key={index} className="works-item">
@@ -61,7 +66,10 @@ const Works = () => {
                             </div>
                         </SwiperSlide>
                     ))}
+                     <div className="swiper-button-next"></div>
+                     <div className="swiper-button-prev"></div>
                 </Swiper>
+               
             </div>
         </>
     );
