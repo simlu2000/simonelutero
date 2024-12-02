@@ -4,7 +4,6 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css'; 
 
 const Works = () => {
-    const [selectedProject, setSelectedProject] = useState(''); //stato per gestione progetti
     const [index, setIndex] = useState(0);
 
     const filteredProjects = selectedProject //progetti filtrati pari a quello selezionato
