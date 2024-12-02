@@ -6,6 +6,7 @@ import { Navigation } from 'swiper/modules';
 
 const Works = () => {
     const [selectedProject] = useState(''); // stato per gestione progetti
+    const [index, setIndex] = useState(0);
 
     const filteredProjects = selectedProject 
         ? projects.filter(project => project.name === selectedProject)
