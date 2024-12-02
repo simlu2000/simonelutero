@@ -16,7 +16,6 @@ const Works = () => {
         setIndex((prevIndex) => (prevIndex + 1) % filteredProjects.length);
     }
 
-
     return (
         <>
             <section className="works-menu">
@@ -63,10 +62,9 @@ const Works = () => {
                             </div>
                         </SwiperSlide>
                     ))}
-                     <div className="swiper-button-next"></div>
-                     <div className="swiper-button-prev"></div>
+                    <div className="swiper-button-next"></div>
+                    <div className="swiper-button-prev"></div>
                 </Swiper>
-               
             </div>
         </>
     );
