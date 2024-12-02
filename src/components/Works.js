@@ -1,7 +1,8 @@
 import { projects } from "../Utils/datas";
 import { useState } from 'react';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+import { Swiper, SwiperSlide } from 'swiper/react'; 
+import 'swiper/swiper-bundle.css'; 
+import { Pagination } from 'swiper'; // Importazione corretta
 
 const Works = () => {
     const [selectedProject] = useState(''); // stato per gestione progetti
@@ -25,10 +26,17 @@ const Works = () => {
                 {/* Il menu per selezionare i progetti potrebbe essere qui */}
             </section>
 
-            <div id="project-box" className="project">
-                <AwesomeSlider selected={index} onTransitionEnd={handleNext} onTransitionStart={handleBack} style={{ backgroundColor: '#f7f7f7' }}>
+            <div id="project-box" className="project dynamic-height">
+                <Swiper
+                    spaceBetween={50} 
+                    slidesPerView={1}
+                    onSlideChange={handleNext} // Cambia indice quando lo slide cambia
+                    onSwiper={(swiper) => setIndex(swiper.activeIndex)} // Aggiorna l'indice quando lo swiper viene inizializzato
+                    pagination={{ clickable: true }} // Aggiunge la paginazione (pallini) e rende cliccabili
+                    style={{ backgroundColor: 'transparent' }}
+                >
                     {filteredProjects.map((project, index) => (
-                        <div key={index} className="works-item">
+                        <SwiperSlide key={index} className="works-item">
                             <h2 id="name-area" className="project name">{project.name} : {project.info}</h2>
                             <div className="work-info">
                                 <div className="work-info-label">Technologies</div>
@@ -49,14 +57,12 @@ const Works = () => {
                                 </ul>
                                 <div className="work-info-label">Period: {project.start}-{project.end}</div>
                                 <div className="work-info">
-                                    <div id="res" className="work-info-label">Resources: <a class="link" href={project.source_code_link}><b>Link</b></a></div>
+                                    <div id="res" className="work-info-label">Resources: <a className="link" href={project.source_code_link}><b>Link</b></a></div>
                                 </div>
                             </div>
-                        </div>
+                        </SwiperSlide>
                     ))}
-                </AwesomeSlider>
-
-
+                </Swiper>
             </div>
         </>
     );

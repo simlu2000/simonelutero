@@ -264,12 +264,10 @@ a:hover {
 }
 
 .project {
-    max-width: 1140px;
     width: 80%;
     margin: 0 auto;
     border-radius: 25px;
-    height: auto;
-
+    height: auto !important;
 }
 
 .name {
@@ -351,6 +349,7 @@ section {
     background-color: #0F2027;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    height: auto;
 }
 
 .work-info {
@@ -464,41 +463,7 @@ section {
     margin-top: -100px;
 }
 
-.awssld {
-    background-color: transparent !important;
-    /* Imposta lo sfondo trasparente */
 
-}
-
-.awssld__content {
-    background-color: transparent !important;
-    /* Assicurati che anche il contenuto sia trasparente */
-    border-radius: 25px;
-
-}
-
-.awssld__bullets {
-    color: white !important;
-    
-}
-
-.awssld__bullets .awssld__bullet {
-    background-color: white !important;
-    /* Colore dei pallini attivi */
-}
-
-/* Cambia il colore delle frecce */
-.awssld__control--next,
-.awssld__control--prev {
-    color: white !important;
-    /* Colore delle frecce */
-}
-
-.awssld__control--next:hover,
-.awssld__control--prev:hover {
-    color: white !important;
-    /* Colore delle frecce al passaggio del mouse */
-}
 
 /*-------------------------------------------------FOOTER------------------------------------------------------*/
 footer {
@@ -781,15 +746,28 @@ footer {
 }
 
 @media screen and (max-width: 481px) {
-    .works-menu {
-        visibility: hidden;
-        display: none;
+    .works-item {
     }
 
-    #infobutton {
-        display: none;
+    .project {
+        width: 95%; 
+        margin: 0 auto;
+        height: auto; 
+        
     }
 
+    .project h2 {
+        font-size: 1.5rem;
+    }
+
+    .project .work-info {
+        font-size: 0.9rem;
+    }
+
+    .works-item-tags {
+        font-size: 1rem;
+    }
+    
 }
 
 /*----------------------------TIMELINE------------------*/
@@ -808,4 +786,25 @@ footer {
 
 .timeline {
     margin-bottom: 15%;
+}
+
+
+
+/*--------------------------------SWIPER----------------------*/
+.swiper-pagination-bullet {
+    background-color: #000; /* Colore dei pallini */
+    width: 12px;
+    height: 12px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #007bff; /* Colore del pallino attivo */
+    opacity: 1;
+}
+
+/* Se vuoi aggiungere un effetto hover */
+.swiper-pagination-bullet:hover {
+    opacity: 1;
 }
