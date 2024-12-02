@@ -1,7 +1,7 @@
 import { projects } from "../Utils/datas";
 import { useState } from 'react';
 import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css'; 
+import 'react-awesome-slider/dist/styles.css';
 
 const Works = () => {
     const [selectedProject] = useState(''); // stato per gestione progetti
@@ -25,12 +25,11 @@ const Works = () => {
                 {/* Il menu per selezionare i progetti potrebbe essere qui */}
             </section>
 
-            <div className="container project">
-                <AwesomeSlider selected={index} onTransitionEnd={handleNext} onTransitionStart={handleBack} style={{backgroundColor:'#f7f7f7'}}>
+            <div id="project-box" className="project">
+                <AwesomeSlider selected={index} onTransitionEnd={handleNext} onTransitionStart={handleBack} style={{ backgroundColor: '#f7f7f7' }}>
                     {filteredProjects.map((project, index) => (
                         <div key={index} className="works-item">
-                            <h2 className="project">{project.name} :</h2>
-                            <h2 className="project">{project.info}</h2>
+                            <h2 id="name-area" className="project name">{project.name} : {project.info}</h2>
                             <div className="work-info">
                                 <div className="work-info-label">Technologies</div>
                                 <ul>
@@ -48,18 +47,16 @@ const Works = () => {
                                         <li key={featureIndex}>{feature}</li>
                                     ))}
                                 </ul>
+                                <div className="work-info-label">Period: {project.start}-{project.end}</div>
                                 <div className="work-info">
-                                    <div className="work-info-label">Resources</div>
-                                    <div className="work-info-content">
-                                        <a class="link" href={project.source_code_link}><b>Link</b></a>
-                                    </div>
+                                    <div id="res" className="work-info-label">Resources: <a class="link" href={project.source_code_link}><b>Link</b></a></div>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </AwesomeSlider>
-                
-                
+
+
             </div>
         </>
     );
