@@ -6,7 +6,6 @@ import { Navigation } from 'swiper/modules';
 
 const Works = () => {
     const [selectedProject] = useState(''); // stato per gestione progetti
-    const [index, setIndex] = useState(0);
 
     const filteredProjects = selectedProject 
         ? projects.filter(project => project.name === selectedProject)
@@ -16,9 +15,6 @@ const Works = () => {
         setIndex((prevIndex) => (prevIndex + 1) % filteredProjects.length);
     }
 
-    const handleBack = () => {
-        setIndex((prevIndex) => (prevIndex - 1 + filteredProjects.length) % filteredProjects.length);
-    }
 
     return (
         <>
@@ -30,11 +26,11 @@ const Works = () => {
                 <Swiper
                     spaceBetween={50} 
                     slidesPerView={1}
-                    onSlideChange={handleNext} // Cambia indice quando lo slide cambia
+                    onSlideChange={handleNext} 
                     onSwiper={(swiper) => setIndex(swiper.activeIndex)} // Aggiorna l'indice quando lo swiper viene inizializzato
-                    modules={[Navigation]} // Aggiungi il modulo Navigation
+                    modules={[Navigation]}
                     style={{ backgroundColor: 'transparent' }}
-                    navigation={{ // Aggiungi i controlli per le frecce
+                    navigation={{ 
                         nextEl: '.swiper-button-next', 
                         prevEl: '.swiper-button-prev',
                     }}
