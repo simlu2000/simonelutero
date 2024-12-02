@@ -2,7 +2,6 @@ import { projects } from "../Utils/datas";
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react'; 
 import 'swiper/swiper-bundle.css'; 
-import { Pagination } from 'swiper'; 
 
 const Works = () => {
     const [selectedProject] = useState(''); // stato per gestione progetti
