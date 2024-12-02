@@ -2,15 +2,10 @@ import { projects } from "../Utils/datas";
 import { useState } from 'react';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css'; 
-import { Button } from '@mui/material';
 
 const Works = () => {
     const [selectedProject, setSelectedProject] = useState(''); //stato per gestione progetti
     const [index, setIndex] = useState(0);
-
-    const updateProject = (projectName) => { //aggiornamento stato progetti con progetto selezionato
-        setSelectedProject(projectName);
-    }
 
     const filteredProjects = selectedProject //progetti filtrati pari a quello selezionato
         ? projects.filter(project => project.name === selectedProject) //se progetto attuale corrisponde al selez, filtro progetti
@@ -31,7 +26,7 @@ const Works = () => {
             </section>
 
             <div className="container project">
-                <AwesomeSlider selected={index} onTransitionEnd={handleNext} style={{backgroundColor:'#f7f7f7'}}>
+                <AwesomeSlider selected={index} onTransitionEnd={handleNext} onTransitionStart={handleBack} style={{backgroundColor:'#f7f7f7'}}>
                     {filteredProjects.map((project, index) => (
                         <div key={index} className="works-item">
                             <h2 className="project">{project.name} :</h2>
