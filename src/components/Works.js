@@ -27,7 +27,7 @@ const Works = () => {
                     spaceBetween={50} 
                     slidesPerView={1}
                     onSlideChange={handleNext} 
-                    onSwiper={(swiper) => setIndex(swiper.activeIndex)} // Aggiorna l'indice quando lo swiper viene inizializzato
+                    onSwiper={(swiper) => setIndex(swiper.activeIndex)} // Aggiorno l'indice quando lo swiper viene inizializzato
                     modules={[Navigation]}
                     style={{ backgroundColor: 'transparent' }}
                     navigation={{ 
@@ -56,9 +56,7 @@ const Works = () => {
                                     ))}
                                 </ul>
                                 <div className="work-info-label">Period: {project.start}-{project.end}</div>
-                                <div className="work-info">
                                     <div id="res" className="work-info-label">Resources: <a className="link" href={project.source_code_link}><b>Link</b></a></div>
-                                </div>
                             </div>
                         </SwiperSlide>
                     ))}

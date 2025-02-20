@@ -19,12 +19,10 @@ function HomeScreen() {
       
 
       <section >
-
         <Works />
       </section>
 
       <div id="about">
-      <h1 className="container">About me</h1>
         <About />
       </div>
 

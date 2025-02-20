@@ -11,6 +11,7 @@ import {
     c,
     airtable,
     postgre,
+    csharp,
 } from "../assets/icons";
 
 
@@ -51,6 +52,7 @@ const technologies = [
         name: "C",
         icon: c,
     },
+  
     
 ];
 

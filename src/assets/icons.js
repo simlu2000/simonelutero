@@ -14,6 +14,7 @@ import firebase from "./firebase.png";
 import c from "./c.png";
 import postgre from "./postgre.png";
 import airtable from "./airtable.png";
+import csharp from "./csharp.png";
 
 
 export {
@@ -32,4 +33,5 @@ export {
  c,
  airtable,
  postgre,
+ csharp
 };

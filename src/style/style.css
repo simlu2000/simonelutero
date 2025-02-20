@@ -355,15 +355,16 @@ section {
 .work-info {
     display: flex;
     flex-direction: column;
+    width:auto;
+    margin-left:10%;
+    margin-right:10%;
+    font-size: 1.5rem;
 }
 
 .work-info-label {
-    width: 200px;
-    flex-grow: 0;
-    flex-shrink: 1;
-    font-weight: 600;
+
     text-transform: uppercase;
-    margin-top: 5px;
+   
 }
 
 .work-info-content {
@@ -747,6 +748,14 @@ footer {
 
 @media screen and (max-width: 481px) {
     .works-item {
+    }
+    .work-info {
+        display: flex;
+        flex-direction: column;
+        width:auto;
+        margin-left:5%;
+        margin-right:5%;
+        font-size: 1rem;
     }
 
     .project {

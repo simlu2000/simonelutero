@@ -25,7 +25,7 @@ function Footer() {
                         </a>
                     </div>
                     <div id="copyright" className="row">
-                        <div className="footer_info">Simone Lutero copyright @2024</div>
+                        <div className="footer_info">Simone Lutero copyright @2025</div>
                     </div>
                 </div>
             </footer>
