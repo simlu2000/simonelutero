@@ -20,7 +20,7 @@ import Interests from './Interests';
 const About = () => {
     return (
         <Box sx={{ display: 'flex', justifyContent: 'center', p: 3 }}>
-            <Card sx={{ maxWidth: 900, width: '100%', boxShadow: 3 }}>
+            <Card sx={{ width: '80%', boxShadow: 3 }}>
                 <CardContent>
                     <Typography variant="h5" component="div" gutterBottom>
                         Personal Info
