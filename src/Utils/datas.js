@@ -178,9 +178,9 @@ const projects = [
     },
     {
         name: "YouTodo",
-        info:"Personal finance app to manage your wallet",
+        info:"ToDoList app",
         description:
-            "React app to manage your wallet and see graphs about the revenues and outflows",
+            "React app to add and control your tasks day by day and see charts about your productivity",
         tags: [
             {
                 name: "react",

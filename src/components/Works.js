@@ -18,9 +18,9 @@ const Works = () => {
             <div id="project-box" className="project">
                 <Grid container spacing={2}>
                     {filteredProjects.map((project, index) => (
-                        <Grid item xs={12} sm={6} md={4} key={index}>
-                            <Card sx={{borderRadius:'25px', height:'auto'}}>
-                                <CardContent>
+                        <Grid item xs={12} sm={6} md={4} key={index} style={{ display: 'flex', flexDirection: 'column' }}>
+                            <Card sx={{ borderRadius: '25px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                            <CardContent>
                                     <Typography variant="h5" component="div">
                                         {project.name} : {project.info}
                                     </Typography>
@@ -47,8 +47,8 @@ const Works = () => {
                                     </Typography>
 
                                 </CardContent>
-                                <CardActions>
-                                    <Button
+                                <CardActions style={{ justifyContent: 'center', marginTop: 'auto', marginBottom:'5%' }}>
+                                <Button
                                         variant="contained"
                                         color="primary"
                                         target="_blank"
