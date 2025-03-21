@@ -6,16 +6,14 @@
 
 body {
     background: #000428;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: -webkit-linear-gradient(to top, #010b47, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #010b47, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #F6F6F6;
     font-family: 'Work Sans', sans-serif;
     font-size: 100%;
     margin: 0;
     padding: 0;
     height: 100%;
-
 }
 
 /*------------------------------------------------------HEADER------------------------------------------------------*/
@@ -27,7 +25,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Centra l'icona verticalmente */
 }
 
 #mode {
@@ -35,8 +32,6 @@ body {
     right: 0;
     margin-right: 20px;
     margin-top: -20px;
-
-
 }
 
 
@@ -46,24 +41,17 @@ body {
     left: 0;
     width: 100%;
     background-color: #000000;
-
-
 }
 
 .logo {
     width: 50px;
-    /* Imposta la larghezza del logo */
     height: 50px;
-    /* Imposta l'altezza del logo */
     margin-right: 20px;
-    /* Aggiunge un margine destro per separare il logo dagli altri elementi della navbar */
 }
 
 .header-container {
     display: flex;
-    /* Utilizza il layout flessibile per allineare correttamente il logo e gli altri elementi della navbar */
     align-items: center;
-    /* Allinea verticalmente gli elementi della navbar */
 }
 
 
@@ -71,9 +59,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    /* Centra i testi orizzontalmente */
     align-items: center;
-    /* Centra i testi verticalmente */
 }
 
 .menu ul li {
@@ -81,14 +67,11 @@ body {
     margin-top: 13px;
     margin-bottom: 13px;
     font-size: 1rem;
-
 }
 
 .menu ul li a {
     text-align: center;
-    /* Centra il testo all'interno del suo contenitore */
     font-size: 1rem;
-
 }
 
 /*---------------------------------------------TITLE AREA------------------------------------------------------*/
@@ -126,7 +109,7 @@ h2 {
     font-size: 2rem;
     font-weight: 600px;
     text-transform: uppercase;
-    color: #d4eca5;
+    color: #002557;
     margin-bottom: 0;
 
 }
@@ -189,11 +172,7 @@ a:hover {
 }
 
 .hero {
-
     height: 100vh;
-    /*background-color: rgb(7,5,20);
-    background: linear-gradient(0deg, rgba(7,5,20,1) 0%, rgba(15,25,93,1) 31%);
-*/
 }
 
 .hero-content {
@@ -258,9 +237,6 @@ a:hover {
     margin: 0 auto;
     border-radius: 25px;
     height: auto !important;
-}
-
-.name {
 }
 
 ul, p {
@@ -366,11 +342,12 @@ section {
 
 .works-item-tags {
     font-size: 24px;
-    color: #d4eca5;
+    color: #002557
+
+    ;
 }
 
 .lang_skill {
-    border: 3px solid #d4eca5;
     border-radius: 50px;
     font-size: 1em;
     width: 15%;
@@ -380,7 +357,6 @@ section {
     margin-right: 24px;
     margin-top: 24px;
     display: inline-block;
-    /* Imposta il display su "inline-block" per posizionarli uno accanto all'altro */
 }
 
 .exp {
@@ -420,7 +396,6 @@ section {
     margin-right: 24px;
     margin-top: 24px;
     display: inline-block;
-    /* Imposta il display su "inline-block" per posizionarli uno accanto all'altro */
 }
 
 .int_emoji:hover {
@@ -709,7 +684,6 @@ footer {
 
     .footer {
         padding: 10px;
-        /* Ridimensiona il padding del footer per un aspetto più compatto */
         font-size: 12px;
 
         text-align: center;
@@ -718,12 +692,10 @@ footer {
 
     .footer-logo {
         font-size: 16px;
-        /* Ridimensiona il testo del logo del footer per adattarsi ai dispositivi più piccoli */
     }
 
     .footer-menu ul li {
         margin-right: 12px;
-        /* Ridimensiona il margine destro degli elementi del menu del footer per adattarsi ai dispositivi più piccoli */
     }
 
     .transition-effect {
@@ -737,8 +709,6 @@ footer {
 }
 
 @media screen and (max-width: 481px) {
-    .works-item {
-    }
     .work-info {
         display: flex;
         flex-direction: column;
@@ -765,6 +735,7 @@ footer {
 
     .works-item-tags {
         font-size: 1rem;
+
     }
     
 }

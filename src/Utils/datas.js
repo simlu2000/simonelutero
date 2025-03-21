@@ -99,6 +99,10 @@ const experiences = [
         date: "April 2024 - Actually",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
+            "In my professional experience, I have focused on developing web applications, with particular emphasis on a university thesis project centered around creating a meteorological web application. This project involved integrating APIs to display both basic and advanced weather data and using Google Firebase services for user authentication and real-time data management.",
+            "During this work experience i applied agile development methodologies, specifically Scrum, to ensure efficient collaboration, iterative progress, and the timely delivery of project features. This approach allowed me to manage complex tasks while maintaining flexibility and meeting deadlines.",
+            "In addition to my project work, I did some courses to deepen my skills in web app developing. I have gained proficiency in JavaScript, the React.js library for building dynamic user interfaces, PHP, and SQL for database management and querying.",
+            "This combination of hands-on project development and continuous learning has strengthened my technical skills, enabling me to contribute to the creation of robust, scalable, and user-centric web applications."
         ],
     },
 ];

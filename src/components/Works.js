@@ -15,11 +15,11 @@ const Works = () => {
                 {/*menu per selezionare i progetti  */}
             </section>
 
-            <div id="project-box" className="project dynamic-height">
+            <div id="project-box" className="project">
                 <Grid container spacing={2}>
                     {filteredProjects.map((project, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index}>
-                            <Card>
+                            <Card sx={{borderRadius:'25px', height:'auto'}}>
                                 <CardContent>
                                     <Typography variant="h5" component="div">
                                         {project.name} : {project.info}
@@ -31,7 +31,7 @@ const Works = () => {
                                     <Typography variant="subtitle2" style={{ marginTop: '1rem' }}>Technologies:</Typography>
                                     <div>
                                         {project.tags.map((tag, tagIndex) => (
-                                            <Chip key={tagIndex} label={tag.name} style={{ margin: '0.2rem' }} />
+                                            <Chip key={tagIndex} label={tag.name} style={{ margin: '0.2rem', backgroundColor:'#ffffff', border:'3px solid #d4eca5'}} />
                                         ))}
                                     </div>
 
@@ -50,10 +50,9 @@ const Works = () => {
                                 <CardActions>
                                     <Button
                                         variant="contained"
-                                        color=""
+                                        color="primary"
                                         target="_blank"
                                         href={project.source_code_link} sx={{
-                                            border:'2px solid #d4eca5',
                                             borderRadius:'25px',
                                         }}
                                     >
