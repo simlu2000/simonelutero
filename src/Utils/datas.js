@@ -9,7 +9,6 @@ import {
     php,
     firebase,
     c,
-    airtable,
     postgre,
     csharp,
     materialui,
