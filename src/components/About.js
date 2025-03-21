@@ -109,19 +109,20 @@ const About = () => {
                         <Grid item xs={12}>
                             <Typography variant="subtitle2">About me</Typography>
                             <Typography variant="body2">
-                                I am currently a computer science student at the
-                                University of Genoa. Passionate about consumer
-                                electronics and technology since I was a child,
-                                I have always found technological advancement a
-                                source of inspiration and curiosity. Since
-                                photography is my second passion, I also have
-                                an artistic mind. My goal is to become a full
-                                stack web developer, combining my passion for
-                                technology with my artistic streak. I am
-                                determined to create engaging and intuitive
-                                digital experiences, developing both the front
-                                and back-end for projects that combine
-                                innovation and aesthetics.
+                                I am currently a computer science student at the University
+                                of Genoa and I am doing a development training course at Alten Italia.
+                                Passionate about consumer electronics and technology since I was a child,
+                                I have always found technological
+                                advancement a source of inspiration and curiosity. Lately, my interest has
+                                also turned to the world of data, as I believe that understanding and using
+                                them are essential to make the most of the potential of digital innovation. Besides technology,
+                                photography is my second passion, which has allowed me to develop an artistic mind.
+                                My goal is to become a full stack developer, combining my passion for technology
+                                with my artistic streak. I am determined to create engaging and intuitive digital
+                                experiences, developing both the front and back-end for projects that combine
+                                innovation and aesthetics.Becoming a full stack web developer is my
+                                main focus, but I am also open to other opportunities in the IT world
+                                that can help me grow professionally.
                             </Typography>
                         </Grid>
                     </Grid>
