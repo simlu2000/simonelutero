@@ -29,27 +29,27 @@ const About = () => {
 
                     <Grid container spacing={2}>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2">First Name</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">First Name</Typography>
                             <Typography variant="body2">Simone</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2">Last Name</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">Last Name</Typography>
                             <Typography variant="body2">Lutero</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2">Age</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">Age</Typography>
                             <Typography variant="body2">24</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2">Nationality</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">Nationality</Typography>
                             <Typography variant="body2">Italian</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2">Based in</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">Based in</Typography>
                             <Typography variant="body2">Rapallo, GE</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2">E-mail</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">E-mail</Typography>
                             <Link
                                 href="mailto:simone.lutero1@gmail.com"
                                 variant="body2"
@@ -58,11 +58,11 @@ const About = () => {
                             </Link>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2">Languages</Typography>
-                            <Typography variant="body2">Italian, English</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">Languages</Typography>
+                            <Typography variant="body2">Italian (mothertongue), English (B1)</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2">Socials</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">Socials</Typography>
                             <Box sx={{ display: 'flex', gap: 1 }}>
                                 <Link
                                     href="https://github.com/simlu2000"
@@ -107,7 +107,7 @@ const About = () => {
                             </Box>
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant="subtitle2">About me</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold">About me</Typography>
                             <Typography variant="body2">
                                 I am currently a computer science student at the University
                                 of Genoa and I am doing a development training course at Alten Italia.
