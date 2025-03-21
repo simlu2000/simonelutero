@@ -116,23 +116,18 @@ const projects = [
         tags: [
             {
                 name: "react",
-                icon:reactjs,
             },
             {
                 name: "firebase",
-                icon:firebase,
             },
             {
                 name: "HTML",
-                icon:html,
             },
             {
                 name: "JavaScript",
-                icon:javascript,
             },
             {
                 name: "CSS",
-                icon:css,
             },
         ],
         features: [
@@ -145,6 +140,82 @@ const projects = [
         source_code_link: "https://wapaweather.com/",
     },
     {
+        name: "PiggyPenny",
+        info:"Personal finance app to manage your wallet",
+        description:
+            "React app to manage your wallet and see graphs about the revenues and outflows",
+        tags: [
+            {
+                name: "react",
+            },
+            {
+                name: "HTML",
+            },
+            {
+                name: "JavaScript",
+            },
+            {
+                name: "CSS",
+            },
+            {
+                name:"ReactApexChart",
+            },
+            {
+                name: "Firebase",
+            },
+            {
+                name: "Material UI",
+            },
+        ],
+        features: [
+            "Google Sign-in",
+            "Form to add expenses (revenues and outflows)",
+            "Filters on the period of your interest",
+            "List of all your expenses",
+            "Charts about the period of your interest",
+        ],
+        source_code_link: "https://piggypennyapp.com/",
+    },
+    {
+        name: "YouTodo",
+        info:"Personal finance app to manage your wallet",
+        description:
+            "React app to manage your wallet and see graphs about the revenues and outflows",
+        tags: [
+            {
+                name: "react",
+            },
+            {
+                name: "HTML",
+            },
+            {
+                name: "JavaScript",
+            },
+            {
+                name: "CSS",
+            },
+            {
+                name:"React Calendar",
+            },
+            {
+                name:"ReCharts",
+            },
+            {
+                name: "Firebase",
+            },
+            {
+                name: "Material UI",
+            },
+        ],
+        features: [
+            "Form to add new tasks",
+            "Check your tasks day by day, also in the calendar",
+            "Check your productivity with pie and line charts",
+            "Light / dark mode",
+        ],
+        source_code_link: "https://youtodoapp.netlify.app/",
+    },
+    {
         name: "Briji",
         info:"Website of Recruitments",
         description:
@@ -152,19 +223,15 @@ const projects = [
         tags: [
             {
                 name: "AirTable",
-                icon:airtable,
             },
             {
                 name: "HTML",
-                icon:html,
             },
             {
                 name: "JavaScript",
-                icon:javascript,
             },
             {
                 name: "CSS",
-                icon:css,
             },
         ],
         features: [
@@ -185,31 +252,24 @@ const projects = [
         tags: [
             {
                 name: "PHP",
-                icon:php,
             },
             {
                 name: "PostgreSQL",
-                icon:postgre,
             },
             {
                 name: "SQL",
-                icon:sql,
             },
             {
                 name: "MariaDB",
-                icon:mariadb,
             },
             {
                 name: "HTML",
-                icon:html,
             },
             {
                 name: "JavaScript",
-                icon:javascript,
             },
             {
                 name: "CSS",
-                icon:css,
             },
         ],
         features: [
