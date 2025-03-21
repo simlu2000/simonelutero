@@ -5,14 +5,10 @@
 }
 
 body {
-
-    background: #0F2027;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     color: #F6F6F6;
     font-family: 'Work Sans', sans-serif;
     font-size: 100%;
@@ -97,7 +93,7 @@ body {
 
 /*---------------------------------------------TITLE AREA------------------------------------------------------*/
 .name {
-    color: #FCA311;
+    color: #d4eca5;
 
 }
 
@@ -130,7 +126,7 @@ h2 {
     font-size: 2rem;
     font-weight: 600px;
     text-transform: uppercase;
-    color: #FCA311;
+    color: #d4eca5;
     margin-bottom: 0;
 
 }
@@ -153,7 +149,7 @@ h3 {
     text-transform: uppercase;
     margin-bottom: 24px;
     margin-top: 15px;
-    color: #FCA311;
+    color: #d4eca5;
 }
 
 .func {
@@ -175,7 +171,7 @@ a {
 }
 
 a:hover {
-    color: #FCA311;
+    color: #d4eca5;
     ;
 }
 
@@ -189,7 +185,7 @@ a:hover {
 }
 
 .link:hover {
-    color: #FCA311;
+    color: #d4eca5;
 }
 
 .hero {
@@ -246,7 +242,7 @@ a:hover {
 }
 
 .button:hover {
-    background-color: #FCA311;
+    background-color: #d4eca5;
     color: white;
 }
 
@@ -346,7 +342,7 @@ section {
     margin-bottom: 5%;
     border-radius: 25px;
     padding: 25px;
-    background-color: #0F2027;
+    background-color: #000428;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     height: auto;
@@ -376,7 +372,7 @@ section {
 
 .works-item-tags {
     font-size: 24px;
-    color: #FCA311;
+    color: #d4eca5;
 }
 
 .lang_skill {
@@ -468,7 +464,7 @@ section {
 
 /*-------------------------------------------------FOOTER------------------------------------------------------*/
 footer {
-    background-color: #203A43;
+    background-color: #000428;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     text-align: center;
@@ -538,7 +534,7 @@ footer {
 }
 
 .footer_link:hover {
-    color: #FCA311;
+    color: #d4eca5;
 }
 
 #social {
@@ -809,7 +805,7 @@ footer {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #FCA311; 
+    background-color: #d4eca5; 
     opacity: 1;
 }
 
@@ -820,7 +816,7 @@ footer {
 .swiper-button-next,
 .swiper-button-prev {
     background-color: transparent; 
-    color: #FCA311;
+    color: #d4eca5;
     border-radius: 50%; 
     padding: 10px;
     font-size: 1rem;

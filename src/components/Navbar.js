@@ -11,8 +11,6 @@ function Navbar() {
             <div id="navbar">
                 <button className="option-menu"><a href="#first"><FontAwesomeIcon icon={faHome}/></a></button>
                 <button className="option-menu"><a href="#about"><FontAwesomeIcon icon={faAddressCard}/></a></button>
-                <button className="option-menu"><a href="#projects"><FontAwesomeIcon icon={faCode}/></a></button>
-
             </div>
         </>
     );

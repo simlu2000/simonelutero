@@ -1,8 +1,10 @@
+import React from 'react';
 import slImage from '../img/sl.jpg';
 import About from './About';
 import Works from './Works';
-function HomeScreen() {
+import { Button } from '@mui/material'; // Import Button from Material UI
 
+function HomeScreen() {
   return (
     <div className='main-content'>
       <section id="first" className="hero">
@@ -12,22 +14,28 @@ function HomeScreen() {
             Hello, I'm <br />
             <span className="name">Simone Lutero</span>
           </h1>
-          <a id="infobutton" className="hero-cta button" href="#wapa">Discover my works</a>
+          <Button
+            variant="outlined"
+            color="primary"
+            href="#works"
+            sx={{
+              color: '#d4eca5',
+            }}
+          >
+            Discover my works
+          </Button>
         </div>
       </section>
 
-      
-
-      <section >
+      <section id="works">
         <Works />
       </section>
 
       <div id="about">
         <About />
       </div>
-
     </div>
-
   );
 }
-export default HomeScreen;  
+
+export default HomeScreen;
