@@ -12,10 +12,51 @@ import {
     airtable,
     postgre,
     csharp,
+    materialui,
+    teamworking,
+    ux,
+    webdeveloping,
+    problemsolving
 } from "../assets/icons";
 
 
 const technologies = [
+    {
+        name: "React JS",
+        icon: reactjs,
+    },
+    {
+        name: "Material UI",
+        icon: materialui,
+    },
+    {
+        name: "JavaScript",
+        icon: javascript,
+    },
+    {
+        name: "SQL",
+        icon: sql,
+    },
+    {
+        name: "Maria DB",
+        icon: mariadb,
+    },
+    {
+        name: "PostgreSQL",
+        icon: postgre,
+    },
+    {
+        name: "Firebase",
+        icon: firebase,
+    },
+    {
+        name: "PHP",
+        icon: php,
+    },
+    {
+        name: "C / C++",
+        icon: c,
+    },
     {
         name: "HTML 5",
         icon: html,
@@ -25,40 +66,35 @@ const technologies = [
         icon: css,
     },
     {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Maria DB",
-        icon: mariadb,
-    },
-    {
-        name: "SQL",
-        icon: sql,
-    },
-    {
-        name: "figma",
+        name: "Figma",
         icon: figma,
     },
     {
-        name: "PHP",
-        icon: php,
+        name: "C#",
+        icon: csharp,
     },
     {
-        name: "C",
-        icon: c,
+        name: "Coding",
+        icon: webdeveloping,
     },
-  
+    {
+        name: "UX",
+        icon: ux,
+    },
+    {
+        name: "Team working",
+        icon: teamworking,
+    },
+    {
+        name: "Problem solving",
+        icon: problemsolving,
+    },
     
 ];
 
 const experiences = [
     {
-        title: "Full Stack Dev. Internship",
+        title: "Full Stack Developer - IT Consultant",
         company_name: "ALTEN Italia",
         date: "April 2024 - Actually",
         points: [

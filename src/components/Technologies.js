@@ -1,18 +1,29 @@
+import React from 'react';
 import { technologies } from "../Utils/datas";
+import { Card, CardContent, Grid, Typography, CardMedia } from '@mui/material';
 
 const Technologies = () => {
-
     return (
         <div className="work-info">
-            <div className="works-item-tags">My Skills</div>
-            <div className="row">
+            <Typography variant="h6" className="works-item-tags">My Skills</Typography>
+            <Grid container spacing={2} justifyContent="center" style={{ marginTop: '1rem' }}>
                 {technologies.map((tech, index) => (
-                    <div key={index} className="col-md-2 col-sm-4 col-xs-6 lang_skill">
-                        <img src={tech.icon} alt={tech.name} className="tech-icon" />
-                        <p>{tech.name}</p>
-                    </div>
+                    <Grid item xs={12} sm={6} md={3} lg={2} key={index}>
+                        <Card>
+                            <CardMedia
+                                component="img"
+                                height="80"
+                                image={tech.icon}
+                                alt={tech.name}
+                                style={{ objectFit: 'contain', padding: '10px' }}
+                            />
+                            <CardContent style={{ textAlign: 'center' }}>
+                                <Typography variant="body2">{tech.name}</Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
                 ))}
-            </div>
+            </Grid>
         </div>
     );
 };

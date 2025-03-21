@@ -15,7 +15,11 @@ import c from "./c.png";
 import postgre from "./postgre.png";
 import airtable from "./airtable.png";
 import csharp from "./csharp.png";
-
+import materialui from "./materialui.png";
+import teamworking from "./teamworking.png";
+import ux from "./ux.png";
+import problemsolving from "./problemsolving.png";
+import webdeveloping from "./webdeveloping.png";
 
 export {
  github, 
@@ -33,5 +37,10 @@ export {
  c,
  airtable,
  postgre,
- csharp
+ csharp,
+ materialui,
+ teamworking,
+ webdeveloping,
+ ux,
+ problemsolving
 };

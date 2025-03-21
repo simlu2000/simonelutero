@@ -1,24 +1,34 @@
+import { Card, CardContent, Grid, Typography } from '@mui/material';
+
 function Interests() {
+    const interests = [
+        { emoji: '💻', text: 'Technology' },
+        { emoji: '📸', text: 'Photography' },
+        { emoji: '🎧', text: 'Music' },
+        { emoji: '✈️', text: 'Travel' },
+        { emoji: '🍕', text: 'Food' },
+        { emoji: '👻', text: 'Horror' },
+        { emoji: '🐕', text: 'Animals' },
+        { emoji: '🌊', text: 'Sea' },
+    ];
 
     return (
-        <>
-            <div className="work-info">
-            
-                    <div className="works-item-tags">My interests</div>
-                    <div className="row">
-                        <div className="int_emoji">&#128187;</div>
-                        <div className="int_emoji">&#128247;</div>
-                        <div className="int_emoji">&#127909;</div>
-                        <div className="int_emoji">&#9992;</div>
-                    </div>
-                    <div className="row">
-                        <div className="int_emoji">&#127829;</div>
-                        <div className="int_emoji">&#127749;</div>
-                        <div className="int_emoji">&#128054;</div>
-                        <div className="int_emoji">&#x1F30A;</div>
-                    </div>
-                </div>
-            
-        </>
-    )
-} export default Interests;
+        <div className="work-info">
+            <Typography variant="h6" className="works-item-tags">My interests</Typography>
+            <Grid container spacing={2} justifyContent="center" style={{ marginTop: '1rem' }}>
+                {interests.map((interest, index) => (
+                    <Grid item xs={12} sm={6} md={3} key={index}>
+                        <Card>
+                            <CardContent style={{ textAlign: 'center' }}>
+                                <Typography variant="h4">{interest.emoji}</Typography>
+                                <Typography variant="body2">{interest.text}</Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                ))}
+            </Grid>
+        </div>
+    );
+}
+
+export default Interests;
