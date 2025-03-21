@@ -180,7 +180,7 @@ a:hover {
     font-weight: 600px;
     line-height: 28px;
     text-decoration: none;
-    color: #cbd1ff;
+    color: #0e1023;
     text-transform: uppercase;
 }
 
@@ -201,17 +201,13 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Centra verticalmente */
     text-align: center;
-    /* Allinea il testo al centro */
     flex-direction: column;
-    /* Allinea il contenuto al centro */
     margin-top: 100px;
 }
 
 .hero-cta {
     margin-top: 50px;
-    /* Puoi regolare il margine superiore a tuo piacimento */
     text-align: center;
 }
 
@@ -220,9 +216,7 @@ a:hover {
     margin: 0 auto;
     max-width: 200px;
     font-size: 16px;
-    /* Riduci la dimensione del carattere */
     line-height: 24px;
-    /* Imposta l'altezza della riga in base alla dimensione del carattere */
 }
 
 #button-area {
@@ -376,7 +370,7 @@ section {
 }
 
 .lang_skill {
-    border: 3px solid #3a7f67;
+    border: 3px solid #d4eca5;
     border-radius: 50px;
     font-size: 1em;
     width: 15%;
@@ -390,7 +384,7 @@ section {
 }
 
 .exp {
-    border: 3px solid #3a7f67;
+    border: 3px solid #d4eca5;
     border-radius: 50px;
     font-size: 1em;
     width: 15%;
@@ -416,7 +410,7 @@ section {
 }
 
 .int_emoji {
-    border: 3px solid #3a7f67;
+    border: 3px solid #d4eca5;
     border-radius: 50px;
     font-size: 1em;
     width: 15%;

@@ -2,7 +2,7 @@ import React from 'react';
 import slImage from '../img/sl.jpg';
 import About from './About';
 import Works from './Works';
-import { Button } from '@mui/material'; // Import Button from Material UI
+import { Button } from '@mui/material'; 
 
 function HomeScreen() {
   return (
