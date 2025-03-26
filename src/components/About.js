@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../style/style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'; // Importa le icone dei brand
@@ -19,37 +19,37 @@ import Interests from './Interests';
 
 const About = () => {
     return (
-        <Box sx={{ display: 'flex', justifyContent: 'center', p: 3 }}>
-            <Card sx={{ width: '80%', boxShadow: 3 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', p: 3}}>
+            <Card sx={{ maxWidth: '100%', width: { xs: '100%', sm: '80%', md: '82%' },borderRadius:'25px', boxShadow: 3 }}>
                 <CardContent>
                     <Typography variant="h5" component="div" gutterBottom>
                         Personal Info
                     </Typography>
                     <Divider sx={{ mb: 2 }} />
 
-                    <Grid container spacing={2}>
+                    <Grid container spacing={2} >
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2" fontWeight="bold">First Name</Typography>
-                            <Typography variant="body2">Simone</Typography>
+                            <Typography variant="subtitle2" fontWeight="bold" sx={{fontSize:"1.2rem"}}>First Name</Typography>
+                            <Typography variant="body2" sx={{fontSize:"1.2rem"}}>Simone</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2" fontWeight="bold">Last Name</Typography>
-                            <Typography variant="body2">Lutero</Typography>
+                            <Typography variant="subtitle2" sx={{fontSize:"1.2rem"}} fontWeight="bold">Last Name</Typography>
+                            <Typography variant="body2" sx={{fontSize:"1.2rem"}}>Lutero</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2" fontWeight="bold">Age</Typography>
-                            <Typography variant="body2">24</Typography>
+                            <Typography variant="subtitle2" sx={{fontSize:"1.2rem"}} fontWeight="bold">Age</Typography>
+                            <Typography variant="body2" sx={{fontSize:"1.2rem"}}>24</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2" fontWeight="bold">Nationality</Typography>
-                            <Typography variant="body2">Italian</Typography>
+                            <Typography variant="subtitle2" sx={{fontSize:"1.2rem"}} fontWeight="bold">Nationality</Typography>
+                            <Typography variant="body2" sx={{fontSize:"1.2rem"}}>Italian</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2" fontWeight="bold">Based in</Typography>
-                            <Typography variant="body2">Rapallo, GE</Typography>
+                            <Typography variant="subtitle2" sx={{fontSize:"1.2rem"}} fontWeight="bold">Based in</Typography>
+                            <Typography variant="body2" sx={{fontSize:"1.2rem"}}>Rapallo, GE</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2" fontWeight="bold">E-mail</Typography>
+                            <Typography variant="subtitle2" sx={{fontSize:"1.2rem"}} fontWeight="bold">E-mail</Typography>
                             <Link
                                 href="mailto:simone.lutero1@gmail.com"
                                 variant="body2"
@@ -58,11 +58,11 @@ const About = () => {
                             </Link>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2" fontWeight="bold">Languages</Typography>
-                            <Typography variant="body2">Italian (mothertongue), English (B1)</Typography>
+                            <Typography variant="subtitle2" sx={{fontSize:"1.2rem"}} fontWeight="bold">Languages</Typography>
+                            <Typography variant="body2" sx={{fontSize:"1.2rem"}}>Italian (mothertongue), English (B1)</Typography>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Typography variant="subtitle2" fontWeight="bold">Socials</Typography>
+                            <Typography variant="subtitle2" sx={{fontSize:"1.2rem"}} fontWeight="bold">Socials</Typography>
                             <Box sx={{ display: 'flex', gap: 1 }}>
                                 <Link
                                     href="https://github.com/simlu2000"
@@ -107,8 +107,8 @@ const About = () => {
                             </Box>
                         </Grid>
                         <Grid item xs={12}>
-                            <Typography variant="subtitle2" fontWeight="bold">About me</Typography>
-                            <Typography variant="body2">
+                            <Typography variant="subtitle2" sx={{fontSize:"1.2rem"}} fontWeight="bold">About me</Typography>
+                            <Typography variant="body2" sx={{fontSize:"1.2rem"}} >
                                 I am currently a computer science student at the University
                                 of Genoa and I am doing a development training course at Alten Italia.
                                 Passionate about consumer electronics and technology since I was a child,
@@ -128,14 +128,14 @@ const About = () => {
                     </Grid>
                     <Divider sx={{ my: 3 }} />
 
-                    <section id="interests">
-                        <Interests />
+                    <section id="myskills">
+                        <Technologies />
                     </section>
 
                     <Divider sx={{ my: 3 }} />
 
-                    <section id="myskills">
-                        <Technologies />
+                    <section id="interests">
+                        <Interests />
                     </section>
 
                     <Divider sx={{ my: 3 }} />
