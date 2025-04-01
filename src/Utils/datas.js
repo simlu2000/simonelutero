@@ -233,9 +233,6 @@ const projects = [
                 name: "CSS",
             },
             {
-                name:"Chart.js",
-            },
-            {
                 name: "Material UI",
             },
         ],
