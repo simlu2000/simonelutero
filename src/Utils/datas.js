@@ -215,6 +215,38 @@ const projects = [
         source_code_link: "https://youtodoapp.netlify.app/",
     },
     {
+        name: "Pomo",
+        info:"Pomodoro timer app",
+        description:
+            "React app to improve your productivity growing tomatoes and see a trend chart",
+        tags: [
+            {
+                name: "react",
+            },
+            {
+                name: "HTML",
+            },
+            {
+                name: "JavaScript",
+            },
+            {
+                name: "CSS",
+            },
+            {
+                name:"Chart.js",
+            },
+            {
+                name: "Material UI",
+            },
+        ],
+        features: [
+            "Sign in only with your name",
+            "Pomodoro timer of 25 minutes",
+            "Check your productivity with a line chart about your tomatoes day by day",
+        ],
+        source_code_link: "https://focuspomoapp.netlify.app/",
+    },
+    {
         name: "Briji",
         info:"Website of Recruitments",
         description:
