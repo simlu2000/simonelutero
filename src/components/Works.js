@@ -11,15 +11,18 @@ const Works = () => {
 
     return (
         <>
+        
             <section className="works-menu">
                 {/*menu per selezionare i progetti  */}
             </section>
 
-            <div id="project-box" className="project">
+            <div id="project-box" className="me-container">
+            <h1 className="area-title">Projects</h1>
+
                 <Grid container spacing={2}>
                     {filteredProjects.map((project, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index} style={{ display: 'flex', flexDirection: 'column' }}>
-                            <Card sx={{ borderRadius: '25px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                            <Card sx={{ borderRadius: '25px', height: '100%', display: 'flex', flexDirection: 'column',alignItems:'center', gap: '10px', backgroundColor: 'rgba(255, 255, 255, 0.76)', backdropFilter: 'blur(10px)'}} >
                                 <CardContent>
 
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>

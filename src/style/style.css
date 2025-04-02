@@ -221,6 +221,10 @@ a:hover {
 
 /*-------------------------------------------------DATA AREA------------------------------------------------------*/
 
+.area-title{
+    text-align: center;
+    font-size:6rem;
+}
 .box {
     padding: 24px;
     background-color: rgba(0, 1, 2, 0.414);
@@ -231,9 +235,11 @@ a:hover {
     margin-top: 100px;
 
 }
-
-.project {
-    width: 80%;
+#project-box{
+    width:87%;
+}
+.me-container {
+    width: 90%;
     margin: 0 auto;
     border-radius: 25px;
     height: auto !important;
@@ -342,9 +348,7 @@ section {
 
 .works-item-tags {
     font-size: 24px;
-    color: #002557
-
-    ;
+    color: #002557;
 }
 
 .lang_skill {
@@ -721,18 +725,18 @@ footer {
         font-size: 1rem;
     }
 
-    .project {
+    .me-container {
         width: 95%; 
         margin: 0 auto;
         height: auto; 
         
     }
 
-    .project h2 {
+    .me-container h2 {
         font-size: 1.5rem;
     }
 
-    .project .work-info {
+    .me-container .work-info {
         font-size: 0.9rem;
     }
 

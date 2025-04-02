@@ -2,7 +2,8 @@ import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import { faHome, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faAddressCard} from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { styled } from '@mui/material/styles';
 import { Link } from '@mui/material';
@@ -23,7 +24,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   borderRadius: '25px',
   zIndex: 1000,
   backdropFilter: 'blur(5px)',
-  backgroundColor: 'rgba(255, 255, 255, 0.2)', // Aggiungi uno sfondo trasparente
+  backgroundColor: 'rgba(255, 255, 255, 0.2)', 
   [theme.breakpoints.down('sm')]: {
     top: '88%',
     justifyContent: 'center',
@@ -60,6 +61,9 @@ function Navbar() {
         </StyledIconButton>
         <StyledIconButton component={Link} href="#about">
           <FontAwesomeIcon icon={faAddressCard} />
+        </StyledIconButton>
+        <StyledIconButton component={Link} href="https://github.com/simlu2000">
+          <FontAwesomeIcon icon={faGithub} />
         </StyledIconButton>
       </Toolbar>
     </StyledAppBar>
