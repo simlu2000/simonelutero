@@ -15,7 +15,15 @@ import {
     teamworking,
     ux,
     webdeveloping,
-    problemsolving
+    problemsolving,
+    wapa,
+    TODO,
+    piggypenny,
+    circli,
+    shoesy,
+    pomo,
+    ciakmov,
+    briji
 } from "../assets/icons";
 
 
@@ -109,6 +117,7 @@ const experiences = [
 const projects = [
     {
         name: "WAPA",
+        logo:wapa,
         info:"Weather and Advanced Predictions App",
         description:
             "Progressive Web App for climate forecasting created for the university thesis project.The front- end part is still being improved and Google account access has yet to be implemented.",
@@ -140,6 +149,7 @@ const projects = [
     },
     {
         name: "PiggyPenny",
+        logo:piggypenny,
         info:"Personal finance app to manage your wallet",
         description:
             "React app to manage your wallet and see graphs about the revenues and outflows",
@@ -177,6 +187,7 @@ const projects = [
     },
     {
         name: "YouTodo",
+        logo:TODO,
         info:"ToDoList app",
         description:
             "React app to add and control your tasks day by day and see charts about your productivity",
@@ -216,6 +227,7 @@ const projects = [
     },
     {
         name: "Pomo",
+        logo:pomo,
         info:"Pomodoro timer app",
         description:
             "React app to improve your productivity growing tomatoes and see a trend chart",
@@ -245,6 +257,7 @@ const projects = [
     },
     {
         name: "Briji",
+        logo:briji,
         info:"Website of Recruitments",
         description:
             "Project created for the Web Design course, in a group of twenty people made up of both computer scientists and designers. The objective of the project was to create a job search platform. The site aims to facilitate the process of finding a challenging job by a candidate and that of finding a candidate by companies. Data storage was done via an AirTable database, and the platform was designed to work primarily on screens with a resolution of 1920x1080px.The back-end development of Login and Registration features user/company is not been carried out. As regards the design, Material was used for some components Design 2.",
@@ -274,6 +287,7 @@ const projects = [
     },
     {
         name: "Ciakmov",
+        logo:ciakmov,
         info:"Movie search website",
         description:
             "Project created for the Web Application Development course, academic year 2021/2022. The idea was to create a website that would allow users to search for films showing at cinemas near Genoa and to see and insert reviews (only if registered). Furthermore, the user can choose whether or not to receive weekly newsletters (which can be sent by administrators via a specific administrative area) relating to new films.",

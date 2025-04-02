@@ -1,6 +1,6 @@
 import { projects } from "../Utils/datas";
 import { useState } from 'react';
-import { Card, CardContent, CardActions, Typography, Button, Grid, Chip} from '@mui/material';
+import { Card, CardContent, CardActions, Typography, Button, Grid, Chip } from '@mui/material';
 
 const Works = () => {
     const [selectedProject] = useState(''); // stato per gestione progetti
@@ -20,10 +20,19 @@ const Works = () => {
                     {filteredProjects.map((project, index) => (
                         <Grid item xs={12} sm={6} md={4} key={index} style={{ display: 'flex', flexDirection: 'column' }}>
                             <Card sx={{ borderRadius: '25px', height: '100%', display: 'flex', flexDirection: 'column' }}>
-                            <CardContent>
-                                    <Typography variant="h5" component="div">
-                                        {project.name} : {project.info}
-                                    </Typography>
+                                <CardContent>
+
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                        <img 
+                                            src={project.logo} 
+                                            alt={`${project.name} logo`} 
+                                            style={{ width: '100px', height: '100px', objectFit: 'contain', borderRadius:'25px'}}
+                                        />
+                                        <Typography variant="h5" component="div" style={{ flex: 1 }}>
+                                            {project.name} : {project.info}
+                                        </Typography>
+                                    </div>
+
                                     <Typography variant="body2" color="text.secondary">
                                         {project.description}
                                     </Typography>
@@ -31,7 +40,7 @@ const Works = () => {
                                     <Typography variant="subtitle2" style={{ marginTop: '1rem' }}>Technologies:</Typography>
                                     <div>
                                         {project.tags.map((tag, tagIndex) => (
-                                            <Chip key={tagIndex} label={tag.name} style={{ margin: '0.2rem', backgroundColor:'#ffffff', border:'3px solid #d4eca5'}} />
+                                            <Chip key={tagIndex} label={tag.name} style={{ margin: '0.2rem', backgroundColor: '#ffffff', border: '3px solid #d4eca5' }} />
                                         ))}
                                     </div>
 
@@ -47,13 +56,13 @@ const Works = () => {
                                     </Typography>
 
                                 </CardContent>
-                                <CardActions style={{ justifyContent: 'center', marginTop: 'auto', marginBottom:'5%' }}>
-                                <Button
+                                <CardActions style={{ justifyContent: 'center', marginTop: 'auto', marginBottom: '5%' }}>
+                                    <Button
                                         variant="contained"
                                         color="primary"
                                         target="_blank"
                                         href={project.source_code_link} sx={{
-                                            borderRadius:'25px',
+                                            borderRadius: '25px',
                                         }}
                                     >
                                         View source

@@ -6,7 +6,7 @@ const Education = () => {
 
     return (
         <>
-            <div className="container">
+            <div id="edubox" className="container">
                 <div className="works-item-tags">Education</div>
 
                 <VerticalTimeline>

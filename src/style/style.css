@@ -9,7 +9,7 @@ body {
     background: -webkit-linear-gradient(to top, #010b47, #000428);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #010b47, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #F6F6F6;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -484,6 +484,9 @@ footer {
     margin: 0 auto;
     border-radius: 25px;
 
+}
+#edubox{
+    margin-top:10%
 }
 
 .footer_info {

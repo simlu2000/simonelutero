@@ -20,6 +20,14 @@ import teamworking from "./teamworking.png";
 import ux from "./ux.png";
 import problemsolving from "./problemsolving.png";
 import webdeveloping from "./webdeveloping.png";
+import circli from "./circli.png";
+import piggypenny from "./piggypenny.png";
+import pomo from "./pomo.png";
+import shoesy from "./shoesy.png";
+import TODO from "./TODO.png";
+import wapa from "./wapa.png";
+import ciakmov from "./ciakmov.jpg";
+import briji from "./briji.png";
 
 export {
  github, 
@@ -42,5 +50,13 @@ export {
  teamworking,
  webdeveloping,
  ux,
- problemsolving
+ problemsolving,
+ circli,
+ piggypenny,
+ pomo,
+ shoesy,
+ TODO,
+ wapa,
+ ciakmov,
+ briji
 };
