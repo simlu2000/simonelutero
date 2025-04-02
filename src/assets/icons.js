@@ -28,6 +28,7 @@ import TODO from "./TODO.png";
 import wapa from "./wapa.png";
 import ciakmov from "./ciakmov.jpg";
 import briji from "./briji.png";
+import segno from "./segno.png";
 
 export {
  github, 
@@ -58,5 +59,5 @@ export {
  TODO,
  wapa,
  ciakmov,
- briji
+ segno
 };

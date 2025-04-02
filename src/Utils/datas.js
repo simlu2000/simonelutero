@@ -23,7 +23,8 @@ import {
     shoesy,
     pomo,
     ciakmov,
-    briji
+    briji,
+    segno
 } from "../assets/icons";
 
 
@@ -146,6 +147,37 @@ const projects = [
             "Access to advanced atmospheric data, directly from NASA",
         ],
         source_code_link: "https://wapaweather.com/",
+    },
+    {
+        name: "Segno",
+        logo:segno,
+        info:"Notes web site",
+        description:
+            "This is a website for adding and managing notes. It is not currently hosted. ",
+        tags: [
+            {
+                name: "PHP",
+            },
+            {
+                name: "HTML",
+            },
+            {
+                name: "CSS",
+            },
+            {
+                name:"MySQL",
+            },
+            {
+                name:"PHPAdmin",
+            },
+        ],
+        features: [
+            "Sign in",
+            "Form to add notes, categories and tags",
+            "Delete Notes",
+            "Read all your notes",
+        ],
+        source_code_link: "https://github.com/simlu2000/segno",
     },
     {
         name: "PiggyPenny",
