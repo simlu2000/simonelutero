@@ -19,8 +19,6 @@ import {
     wapa,
     TODO,
     piggypenny,
-    circli,
-    shoesy,
     pomo,
     ciakmov,
     briji,
