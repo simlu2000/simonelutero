@@ -172,7 +172,7 @@ const projects = [
             "❤️ Like and comment on posts in real time",
             "👤 Personalized user profile with stored data",
             "📱 Mobile-friendly and responsive design",
-            "🚀⚠️ Coming soon – the project is still under development!"
+            "🚀⚠️ The project is still under development!"
         ],
         "technologies": [
             "⚛️ React",
@@ -180,7 +180,7 @@ const projects = [
             "🎨 Material UI",
             "💻 HTML, CSS, JavaScript"
         ],
-        "source_code_link": "https://github.com/your-repo/circli"
+        "source_code_link": "https://circli.netlify.app/SignIn"
     },  
     {
         name: "PiggyPenny",
