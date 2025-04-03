@@ -5,15 +5,29 @@
 }
 
 body {
-    background: #000428;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #010b47, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #010b47, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(181deg, #010b47, #000428, #2d3aaf, #d4eca5, #d4eca5);
+    background-size: 300% 300%;
+    animation: gradient-animation 20s ease infinite;
     color: #F6F6F6;
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /*------------------------------------------------------HEADER------------------------------------------------------*/
@@ -75,18 +89,22 @@ body {
 }
 
 /*---------------------------------------------TITLE AREA------------------------------------------------------*/
+#intro-area {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
 .name {
     color: #d4eca5;
 
 }
 
 .hero-image {
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
-}
-
-#me {
-    margin-top: 10%;
 }
 
 h1,
@@ -96,7 +114,7 @@ h3 {
 }
 
 h1 {
-    font-size: 58px;
+    font-size: 5rem;
     font-weight: 600px;
     line-height: 115px;
 }
@@ -137,11 +155,6 @@ h3 {
 
 .func {
     margin-top: -20px;
-
-}
-
-#title {
-    margin-top: 100px;
 
 }
 
@@ -219,12 +232,14 @@ a:hover {
     color: white;
 }
 
+
 /*-------------------------------------------------DATA AREA------------------------------------------------------*/
 
-.area-title{
+.area-title {
     text-align: center;
-    font-size:6rem;
+    font-size: 6rem;
 }
+
 .box {
     padding: 24px;
     background-color: rgba(0, 1, 2, 0.414);
@@ -235,9 +250,11 @@ a:hover {
     margin-top: 100px;
 
 }
-#project-box{
-    width:87%;
+
+#project-box {
+    width: 87%;
 }
+
 .me-container {
     width: 90%;
     margin: 0 auto;
@@ -245,12 +262,13 @@ a:hover {
     height: auto !important;
 }
 
-ul, p {
-    margin-left:5%;
+ul,
+p {
+    margin-left: 5%;
 }
 
-#name-area{
-    margin-top:0;
+#name-area {
+    margin-top: 0;
 }
 
 
@@ -327,16 +345,16 @@ section {
 .work-info {
     display: flex;
     flex-direction: column;
-    width:auto;
-    margin-left:10%;
-    margin-right:10%;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 1.5rem;
 }
 
 .work-info-label {
 
     text-transform: uppercase;
-   
+
 }
 
 .work-info-content {
@@ -489,8 +507,9 @@ footer {
     border-radius: 25px;
 
 }
-#edubox{
-    margin-top:10%
+
+#edubox {
+    margin-top: 10%
 }
 
 .footer_info {
@@ -716,20 +735,28 @@ footer {
 }
 
 @media screen and (max-width: 481px) {
+    #intro-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
     .work-info {
         display: flex;
         flex-direction: column;
-        width:auto;
-        margin-left:5%;
-        margin-right:5%;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
         font-size: 1rem;
     }
 
     .me-container {
-        width: 95%; 
+        width: 95%;
         margin: 0 auto;
-        height: auto; 
-        
+        height: auto;
+
     }
 
     .me-container h2 {
@@ -744,7 +771,10 @@ footer {
         font-size: 1rem;
 
     }
-    
+
+    .area-title {
+        font-size: 3rem;
+    }
 }
 
 /*----------------------------TIMELINE------------------*/

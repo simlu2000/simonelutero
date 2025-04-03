@@ -8,8 +8,8 @@ const Technologies = () => {
             <Typography variant="h6" className="works-item-tags">My Skills</Typography>
             <Grid container spacing={2} justifyContent="center" style={{ marginTop: '1rem' }}>
                 {technologies.map((tech, index) => (
-                    <Grid item xs={12} sm={6} md={3} lg={2} key={index}>
-                        <Card>
+                    <Grid item xs={6} sm={6} md={3} lg={2} key={index}>
+                        <Card sx={{borderRadius:'50px'}}>
                             <CardMedia
                                 component="img"
                                 height="80"
