@@ -23,14 +23,27 @@ import {
     ciakmov,
     briji,
     segno,
-    circli
+    circli,
+    tortoisesvn,
+    dbeaver
 } from "../assets/icons";
-
 
 const technologies = [
     {
         name: "React JS",
-        icon: reactjs,
+        icon: ['fab', 'react'],
+    },
+    {
+        name: "Python", 
+        icon: ['fab', 'python'],
+    },
+    {
+        name: "DBeaver", 
+        icon: dbeaver,
+    },
+    {
+        name: "TortoiseSVN", 
+        icon: tortoisesvn,
     },
     {
         name: "Material UI",
@@ -38,7 +51,7 @@ const technologies = [
     },
     {
         name: "JavaScript",
-        icon: javascript,
+        icon: ['fab', 'js'],
     },
     {
         name: "SQL",
@@ -54,11 +67,11 @@ const technologies = [
     },
     {
         name: "Firebase",
-        icon: firebase,
+        icon: ['fab', 'google'],
     },
     {
         name: "PHP",
-        icon: php,
+        icon: ['fab', 'php'],
     },
     {
         name: "C / C++",
@@ -66,15 +79,15 @@ const technologies = [
     },
     {
         name: "HTML 5",
-        icon: html,
+        icon: ['fab', 'html5'],
     },
     {
         name: "CSS 3",
-        icon: css,
+        icon: ['fab', 'css3-alt'],
     },
     {
         name: "Figma",
-        icon: figma,
+        icon: ['fab', 'figma'],
     },
     {
         name: "C#",
@@ -96,10 +109,20 @@ const technologies = [
         name: "Problem solving",
         icon: problemsolving,
     },
-    
 ];
-
 const experiences = [
+     {
+        title: "Junior Software Engineer - IT Consultant",
+        company_name: "aizOon Technology Consulting",
+        date: "July 2025 - Actually",
+        points: [
+        "Developed a demonstrative software for remote control of a train (Back-end: JavaScript, Python, C; Front-end: ReactJS, HTML, CSS).",
+        "Designed and developed reusable and modular components using ReactJS and TypeScript/JavaScript, integrating custom hooks (useState, useEffect, useContext, etc.) for component logic management.",
+        "Integrated external services via REST API (GET) requests, such as OpenWeatherMap.",
+        "Utilized code versioning systems, such as TortoiseSVN.",
+        "Employed Ubuntu virtual machines on Windows via Oracle VirtualBox for the execution and testing of C code.",
+    ],
+    },
     {
         title: "Full Stack Developer - IT Consultant",
         company_name: "ALTEN Italia",
@@ -185,7 +208,7 @@ const projects = [
     {
         name: "PiggyPenny",
         logo: piggypenny,
-        info: "🐷🚀 Personal finance app to manage your wallet",
+        info: "🐷🚀 Finance app to manage your wallet",
         description: "I've developed this React web app to help you track your income and expenses in a simple and intuitive way.",
         tags: [
             { name: "React" },
@@ -299,7 +322,7 @@ const projects = [
     {
         name: "Briji",
         logo: briji,
-        info: "🧑‍💼💼 Recruitment Platform",
+        info: "🧑‍💼💼 Recruitment Platform for companies and workers",
         description:
             "Briji is a recruitment platform developed for a Web Design course by a team of 20 members, including both developers and designers. The project aims to simplify job searching for candidates and talent acquisition for companies. 🔎🏢 Data storage is managed using AirTable, and the platform is optimized for 1920x1080px resolution. The backend for login and registration was not implemented, but some components use Material Design 2.",
         tags: [
@@ -321,7 +344,7 @@ const projects = [
     {
         name: "Ciakmov",
         logo: ciakmov,
-        info: "🎬🍿 Movie Search Website",
+        info: "🎬🍿 Website to search film in Genoa",
         description:
             "Ciakmov is a website developed for the Web Application Development course (academic year 2021/2022), allowing users to search for movies showing in Genoa's cinemas and post reviews. 🏙️🎞️ Registered users can also subscribe to a weekly newsletter managed by administrators via a dedicated admin panel.",
         tags: [

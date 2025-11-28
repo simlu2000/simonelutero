@@ -4,10 +4,15 @@
     padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    background: linear-gradient(181deg, #010b47, #000428, #2d3aaf, #d4eca5, #d4eca5);
+    /*background: linear-gradient(181deg, #010b47, #000428, #2d3aaf, #d4eca5, #d4eca5);
     background-size: 300% 300%;
-    animation: gradient-animation 20s ease infinite;
+    animation: gradient-animation 20s ease infinite;*/
+    background: #000000;
     color: #F6F6F6;
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
@@ -168,7 +173,7 @@ a {
 
 a:hover {
     color: #d4eca5;
-    ;
+
 }
 
 .link {
@@ -231,6 +236,25 @@ a:hover {
     background-color: #d4eca5;
     color: white;
 }
+
+.main-content {
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    background: transparent;
+
+}
+#tsparticles canvas {
+  display: block !important;
+}
+#tsparticles {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 
 
 /*-------------------------------------------------DATA AREA------------------------------------------------------*/
@@ -366,7 +390,7 @@ section {
 
 .works-item-tags {
     font-size: 24px;
-    color: #002557;
+    color: #d4eca5;
 }
 
 .lang_skill {
@@ -455,7 +479,9 @@ section {
 
 /*-------------------------------------------------FOOTER------------------------------------------------------*/
 footer {
-    background-color:  #000428;
+    /*background-color: #000428;*/
+    background-color: #d4eca5;
+    color:#000000;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     text-align: center;

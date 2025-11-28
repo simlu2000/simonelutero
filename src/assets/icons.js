@@ -29,6 +29,8 @@ import wapa from "./wapa.png";
 import ciakmov from "./ciakmov.jpg";
 import briji from "./briji.png";
 import segno from "./segno.png";
+import dbeaver from "./dbeaver.png";
+import tortoisesvn from "./tortoisesvn.png";
 
 export {
  github, 
@@ -60,5 +62,7 @@ export {
  wapa,
  ciakmov,
  segno,
- briji
+ briji,
+ dbeaver,
+ tortoisesvn
 };
