@@ -1,79 +1,116 @@
 import React from 'react';
 import { technologies } from "../Utils/datas";
-import { Card, CardContent, Grid, Typography, Box } from '@mui/material';
+import { Grid, Typography, Box, CardMedia, CircularProgress, useTheme } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// Importa le librerie Font Awesome: brands (fab) e solid (fas)
 import { 
-    faReact, faJs, faPhp, faHtml5, faCss3Alt, faFigma, faPython 
+    faReact, faJs, faPhp, faHtml5, faCss3Alt, faFigma, faPython, faGoogle 
 } from '@fortawesome/free-brands-svg-icons';
 import { 
-    faDatabase, faFire, faCode, faLaptopCode, faUserCheck, faUsers, faLightbulb, faCodeBranch // <--- SPOSTATO QUI!
+    faCode 
 } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-// Aggiungi tutte le icone necessarie alla libreria FA
 library.add(
-    faReact, faJs, faPhp, faHtml5, faCss3Alt, faFigma, faPython, faCodeBranch,
-    faDatabase, faFire, faCode, faLaptopCode, faUserCheck, faUsers, faLightbulb
+    faReact, faJs, faPhp, faHtml5, faCss3Alt, faFigma, faPython, faGoogle, faCode
 );
 
-
 const Technologies = () => {
+    const theme = useTheme();
 
-    const renderIcon = (iconProp) => {
-        // Gestisce i casi in cui l'icona è un array (es. ['fab', 'react']) o una stringa
+    const renderIcon = (tech) => {
+        const iconProp = tech.icon;
+        
+        const iconColor = '#ffffff'; 
+        const iconSize = '2x';
+
         if (Array.isArray(iconProp)) {
-            // Per icone FA Brand (es. React, Python)
-            return <FontAwesomeIcon icon={iconProp} size="4x" style={{ color: '#010b47' }} />;
-        } else if (typeof iconProp === 'string') {
-            // Per icone FA Solid (es. faDatabase, faFire)
-            // Se l'icona non è FA standard, usiamo un fallback generico
-            const finalIcon = library.definitions.hasOwnProperty('fas') && library.definitions.fas.hasOwnProperty(iconProp) 
+            return <FontAwesomeIcon icon={iconProp} size={iconSize} style={{ color: iconColor }} />;
+        } else if (typeof iconProp === 'string' && iconProp.startsWith('fa')) {
+             const finalIcon = library.definitions.hasOwnProperty('fas') && library.definitions.fas.hasOwnProperty(iconProp) 
                 ? iconProp : faCode;
 
-            return <FontAwesomeIcon icon={finalIcon} size="4x" style={{ color: '#010b47' }} />;
+            return <FontAwesomeIcon icon={finalIcon} size={iconSize} style={{ color: iconColor }} />;
+        } else {
+            return (
+                <CardMedia
+                    component="img"
+                    height="40"
+                    image={iconProp}
+                    alt={tech.name}
+                    style={{ objectFit: 'contain', padding: '5px' }}
+                />
+            );
         }
-        return null; // Fallback se non è fornita nessuna icona valida
     };
+
+    const DEFAULT_VISUAL_LEVEL = 100;
+    const SIZE = 100;
 
     return (
         <div className="work-info">
-            <Typography variant="h6" className="works-item-tags" sx={{ color: '#d4eca5', textAlign: 'center' }}>My Skills</Typography>
-            <Grid container spacing={2} justifyContent="center" style={{ marginTop: '1rem' }}>
-                {technologies.map((tech, index) => (
-                    <Grid item xs={6} sm={6} md={3} lg={2} key={index}>
-                        <Card 
-                            sx={{ 
-                                borderRadius: '25px', 
-                                backgroundColor: 'white',
-                                height: '100%',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                justifyContent: 'space-between',
-                                transition: 'transform 0.3s',
-                                '&:hover': {
-                                    transform: 'scale(1.05)',
-                                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-                                }
-                            }}
-                        >
+            <Typography variant="h6" className="works-item-tags" sx={{ color: '#d4eca5', textAlign: 'center', mb: 3 }}>My Skills</Typography>
+            
+            <Grid container spacing={4} justifyContent="center">
+                {technologies.map((tech, index) => {
+                    const skillLevel = DEFAULT_VISUAL_LEVEL; 
+
+                    return (
+                        <Grid item xs={6} sm={4} md={3} lg={2} key={index} sx={{ textAlign: 'center' }}>
                             <Box 
                                 sx={{ 
-                                    display: 'flex', 
-                                    justifyContent: 'center', 
-                                    alignItems: 'center', 
-                                    height: '100px', 
-                                    padding: '10px' 
+                                    position: 'relative', 
+                                    display: 'inline-flex', 
+                                    mb: 1.5,
                                 }}
                             >
-                                {renderIcon(tech.icon)}
+                                <CircularProgress
+                                    variant="determinate"
+                                    value={100}
+                                    size={SIZE}
+                                    thickness={4}
+                                    sx={{
+                                        color: '#e0e0e0',
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                    }}
+                                />
+                                <CircularProgress
+                                    variant="determinate"
+                                    value={skillLevel}
+                                    size={SIZE}
+                                    thickness={4}
+                                    sx={{
+                                        color: '#d4eca5',
+                                        transition: 'all 0.5s ease 0s',
+                                        transform: 'rotate(-90deg)',
+                                    }}
+                                />
+                                <Box
+                                    sx={{
+                                        top: 0,
+                                        left: 0,
+                                        bottom: 0,
+                                        right: 0,
+                                        position: 'absolute',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#010b47'
+                                    }}
+                                >
+                                    {renderIcon(tech)}
+                                </Box>
                             </Box>
-                            <CardContent sx={{ textAlign: 'center', padding: '8px', '&:last-child': { paddingBottom: '8px' } }}>
-                                <Typography variant="body2" sx={{ fontWeight: 'bold', color: '#010b47' }}>{tech.name}</Typography>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                ))}
+                            <Typography 
+                                variant="body2" 
+                                sx={{ fontWeight: 'bold', color: 'white' }}
+                            >
+                                {tech.name}
+                            </Typography>
+                        </Grid>
+                    );
+                })}
             </Grid>
         </div>
     );

@@ -13,6 +13,8 @@ import {
     Divider,
     Tabs, 
     Tab, 
+    useMediaQuery,
+    useTheme,
 } from '@mui/material';
 import Education from './Education';
 import Experience from './Experience';
@@ -46,9 +48,10 @@ function a11yProps(index) {
     };
 }
 
-
 const About = () => {
     const [tabValue, setTabValue] = useState('1'); 
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
     const handleChange = (event, newValue) => {
         setTabValue(newValue);
@@ -76,6 +79,13 @@ const About = () => {
     const typographyStyle = { fontSize: "1.2rem", color: 'white' };
     const typographyTitleStyle = { fontSize: "1.2rem", color: '#d4eca5', fontWeight: "bold" };
 
+    const personalData = [
+        { title: "Age", value: "25" },
+        { title: "Nationality", value: "Italian" },
+        { title: "Based in", value: "Rapallo, GE" },
+        { title: "Languages", value: "Italian (mothertongue), English (B1)" },
+    ];
+
     return (
 
         <div className="me-container">
@@ -89,26 +99,14 @@ const About = () => {
                         
                         <Divider sx={{ mb: 2, bgcolor: 'rgba(212, 236, 165, 0.5)' }} />
 
-                        <Grid container spacing={2} sx={{ mb: 3 }}>
-                            {/* Dati Generali */}
-                            <Grid item xs={12} sm={6}>
-                                <Typography variant="subtitle2" sx={typographyTitleStyle}>Age</Typography>
-                                <Typography variant="body2" sx={typographyStyle}>25</Typography>
-                            </Grid>
-                            <Grid item xs={12} sm={6}>
-                                <Typography variant="subtitle2" sx={typographyTitleStyle}>Nationality</Typography>
-                                <Typography variant="body2" sx={typographyStyle}>Italian</Typography>
-                            </Grid>
-                            <Grid item xs={12} sm={6}>
-                                <Typography variant="subtitle2" sx={typographyTitleStyle}>Based in</Typography>
-                                <Typography variant="body2" sx={typographyStyle}>Rapallo, GE</Typography>
-                            </Grid>
-                            <Grid item xs={12} sm={6}>
-                                <Typography variant="subtitle2" sx={typographyTitleStyle}>Languages</Typography>
-                                <Typography variant="body2" sx={typographyStyle}>Italian (mothertongue), English (B1)</Typography>
-                            </Grid>
+                        <Grid container spacing={isMobile ? 1 : 2} sx={{ mb: 3 }}>
+                            {personalData.map((item, index) => (
+                                <Grid item xs={12} sm={6} key={index}>
+                                    <Typography variant="subtitle2" sx={typographyTitleStyle}>{item.title}</Typography>
+                                    <Typography variant="body2" sx={typographyStyle}>{item.value}</Typography>
+                                </Grid>
+                            ))}
                             
-                            {/* E-mail */}
                             <Grid item xs={12} sm={6}>
                                 <Typography variant="subtitle2" sx={typographyTitleStyle}>E-mail</Typography>
                                 <Link
@@ -120,7 +118,6 @@ const About = () => {
                                 </Link>
                             </Grid>
 
-                            {/* Socials */}
                             <Grid item xs={12} sm={6}>
                                 <Typography variant="subtitle2" sx={typographyTitleStyle}>Socials</Typography>
                                 <Box sx={{ display: 'flex', gap: 1 }}>
@@ -156,7 +153,8 @@ const About = () => {
                                 value={tabValue} 
                                 onChange={handleChange} 
                                 aria-label="About sections"
-                                variant="fullWidth" 
+                                variant={isMobile ? "scrollable" : "fullWidth"}
+                                scrollButtons={isMobile ? "auto" : false}
                                 indicatorColor="secondary"
                             >
                                 <Tab label="Skills" value="1" sx={tabStyle} {...a11yProps('1')} />

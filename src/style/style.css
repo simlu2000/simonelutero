@@ -244,15 +244,17 @@ a:hover {
     background: transparent;
 
 }
+
 #tsparticles canvas {
-  display: block !important;
+    display: block !important;
 }
+
 #tsparticles {
-  position: absolute !important;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 
@@ -481,7 +483,7 @@ section {
 footer {
     /*background-color: #000428;*/
     background-color: #d4eca5;
-    color:#000000;
+    color: #000000;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     text-align: center;
@@ -583,7 +585,7 @@ footer {
 
 /*----------------------------------------------------------RESPONSIVE-----------------------------------------------------*/
 /* Aggiunta di regole per i dispositivi di dimensioni inferiori a 768px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
 
     .logo {
@@ -591,6 +593,25 @@ footer {
         /* Imposta la larghezza del logo */
         height: 68px;
         /* Imposta l'altezza del logo */
+    }
+
+    #intro-area {
+        display: flex;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .hero-content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        margin-top: 100px;
     }
 
     .menu {
@@ -613,7 +634,7 @@ footer {
 
     #me {
         width: 45%;
-        margin-top: 15%;
+        margin-top: 0;
     }
 
     #me_button {
@@ -635,6 +656,7 @@ footer {
 
     .container {
         width: 90%;
+
     }
 
     .title {
@@ -737,7 +759,6 @@ footer {
     .footer {
         padding: 10px;
         font-size: 12px;
-
         text-align: center;
     }
 
@@ -755,8 +776,38 @@ footer {
     }
 
     .works-menu {
-        visibility: hidden;
         display: none;
+    }
+
+    .me-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .area-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .cardContent {
+        padding: 10px;
+    }
+
+    .DialogContent {
+        padding: 10px;
+    }
+
+    .MuiDialog-paper {
+        width: 90%;
+    }
+
+    .MuiCard-root {
+        padding: 15px;
     }
 }
 

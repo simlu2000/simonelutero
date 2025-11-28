@@ -14,8 +14,6 @@ function App() {
         <Route path="/" element={<HomeScreen/>} />
       </Routes>
       <Footer/>
-       
-     
     </div>
   );
 }

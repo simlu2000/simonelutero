@@ -1,30 +1,35 @@
+import React, { useState } from 'react';
 import { projects } from "../Utils/datas";
-import { useState } from 'react';
 import { 
-    Card, 
-    CardContent, 
-    CardActions, 
     Typography, 
     Button, 
     Grid, 
     Chip, 
-    Dialog,        
-    DialogTitle,   
+    Dialog,        
+    DialogTitle,   
     DialogContent, 
     DialogActions, 
-    IconButton    
+    IconButton,
+    useMediaQuery,
+    useTheme,
+    Accordion,
+    AccordionSummary,
+    AccordionDetails,
+    Box
 } from '@mui/material';
 
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CloseIcon from '@mui/icons-material/Close'; 
 
 const Works = () => {
     const [selectedProject] = useState(''); 
     
-    // stati per il Dialog (Modale)
     const [open, setOpen] = useState(false);
     const [currentProject, setCurrentProject] = useState(null);
 
-    // Gestori per l'apertura e la chiusura del Dialog
+    const theme = useTheme();
+    const isMobileOrTablet = useMediaQuery(theme.breakpoints.down('md')); 
+
     const handleClickOpen = (project) => {
         setCurrentProject(project);
         setOpen(true);
@@ -39,69 +44,125 @@ const Works = () => {
         ? projects.filter(project => project.name === selectedProject)
         : projects;
 
+    const renderCard = (project, index) => (
+        <Grid item xs={12} sm={6} md={4} key={index} 
+            style={{ display: 'flex', flexDirection: 'column' }}>
+            <Box>
+                <Accordion 
+                    disabled={true} 
+                    onClick={() => handleClickOpen(project)} 
+                    sx={{ 
+                        borderRadius: '25px', 
+                        cursor: 'pointer',
+                        transition: 'transform 0.3s',
+                        '&:hover': {
+                            transform: 'scale(1.03)', 
+                            boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)',
+                        },
+                        backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                        backdropFilter: 'blur(5px)',
+                        color: 'white',
+                        mb: 2,
+                        p: 1
+                    }}
+                >
+                    <AccordionSummary 
+                        expandIcon={<ExpandMoreIcon sx={{ color: '#d4eca5' }} />}
+                        aria-controls={`panel${index}-content`}
+                        id={`panel${index}-header`}
+                    >
+                        <Box sx={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+                            <img 
+                                src={project.logo} 
+                                alt={`${project.name} logo`} 
+                                style={{ width: '40px', height: '40px', objectFit: 'contain', borderRadius:'8px', marginRight: '15px' }}
+                            />
+                            <Box>
+                                <Typography variant="h6" sx={{ color: '#d4eca5', fontSize: '1.1rem' }}>
+                                    {project.name}
+                                </Typography>
+                                <Typography variant="body2" sx={{ color: 'white' }}>
+                                    {project.info}
+                                </Typography>
+                            </Box>
+                        </Box>
+                    </AccordionSummary>
+                </Accordion>
+            </Box>
+        </Grid>
+    );
+
+    const renderAccordion = (project, index) => (
+        <Accordion 
+            key={index}
+            sx={{ 
+                borderRadius: '15px', 
+                backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+                backdropFilter: 'blur(5px)',
+                color: 'white',
+                mb: 2
+            }}
+        >
+            <AccordionSummary
+                expandIcon={<ExpandMoreIcon sx={{ color: '#d4eca5' }} />}
+                aria-controls={`panel${index}-content`}
+                id={`panel${index}-header`}
+                onClick={(e) => { e.stopPropagation(); }}
+                sx={{ 
+                    '&:hover': { backgroundColor: 'rgba(255, 255, 255, 0.05)' },
+                }}
+            >
+                <Box sx={{ display: 'flex', alignItems: 'center', width: '100%' }}>
+                    <img 
+                        src={project.logo} 
+                        alt={`${project.name} logo`} 
+                        style={{ width: '50px', height: '50px', objectFit: 'contain', borderRadius:'8px', marginRight: '15px' }}
+                    />
+                    <Box>
+                        <Typography variant="h6" sx={{ color: '#d4eca5', fontSize: '1.2rem' }}>
+                            {project.name}
+                        </Typography>
+                        <Typography variant="body2" sx={{ color: 'white', fontSize: '0.9rem' }}>
+                            {project.info}
+                        </Typography>
+                    </Box>
+                </Box>
+            </AccordionSummary>
+            <AccordionDetails>
+                <Typography variant="body2" sx={{ color: 'white', mb: 2 }}>
+                    {project.description}
+                </Typography>
+                <Button 
+                    variant="outlined"
+                    onClick={() => handleClickOpen(project)}
+                    sx={{ color: '#d4eca5', borderColor: '#d4eca5' }}
+                >
+                    Vedi Dettagli Completi
+                </Button>
+            </AccordionDetails>
+        </Accordion>
+    );
+    
     return (
         <>
             <section className="works-menu">
-                {/* menu per selezionare i progetti */}
+                {/* Menu per selezionare i progetti */}
             </section>
 
             <div id="project-box" className="me-container">
                 <h1 className="area-title">Projects</h1>
 
-                <Grid container spacing={4}> 
-                    {filteredProjects.map((project, index) => (
-                        <Grid 
-                            item xs={12} sm={6} md={4} key={index} 
-                            style={{ display: 'flex', flexDirection: 'column' }}
-                        >
-                            {/* Card di Anteprima */}
-                            <Card 
-                                onClick={() => handleClickOpen(project)} 
-                                sx={{ 
-                                    borderRadius: '25px', 
-                                    height: '100%', 
-                                    display: 'flex', 
-                                    flexDirection: 'column',
-                                    alignItems:'center', 
-                                    padding: '20px',
-                                    cursor: 'pointer', 
-                                    transition: 'transform 0.3s',
-                                    '&:hover': {
-                                        transform: 'scale(1.03)', 
-                                        boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)',
-                                    },
-                                    backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-                                    backdropFilter: 'blur(5px)',
-                                    color: 'white'
-                                }} 
-                            >
-                                <CardContent style={{ flexGrow: 1, textAlign: 'center' }}>
-                                    <img 
-                                        src={project.logo} 
-                                        alt={`${project.name} logo`} 
-                                        style={{ width: '100px', height: '100px', objectFit: 'contain', borderRadius:'15px', marginBottom: '15px' }}
-                                    />
-                                    <Typography variant="h6" component="div" sx={{ color: '#d4eca5' }}>
-                                        {project.name}
-                                    </Typography>
-                                    <Typography variant="body2" color="white" sx={{ marginTop: '5px' }}>
-                                        {project.info}
-                                    </Typography>
-                                </CardContent>
-                                <CardActions>
-                                    <Button size="small" sx={{ color: '#d4eca5', border: '1px solid #d4eca5' }}>
-                                        Vedi Dettagli
-                                    </Button>
-                                </CardActions>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
+                {isMobileOrTablet ? (
+                    <Box sx={{ width: '100%', px: 2 }}>
+                        {filteredProjects.map(renderAccordion)}
+                    </Box>
+                ) : (
+                    <Grid container spacing={4}> 
+                        {filteredProjects.map(renderCard)}
+                    </Grid>
+                )}
             </div>
 
-            {/* ---------------------------------------------------- */}
-            {/* Dialog per i dettagli del progetto */}
-            {/* ---------------------------------------------------- */}
             <Dialog 
                 open={open} 
                 onClose={handleClose} 
@@ -113,6 +174,7 @@ const Works = () => {
                         backgroundColor: '#010b47', 
                         color: 'white',
                         padding: '20px',
+                        margin: { xs: '20px', sm: '32px' }
                     }
                 }}
             >
@@ -125,7 +187,7 @@ const Works = () => {
                                     alt={`${currentProject.name} logo`} 
                                     style={{ width: '60px', height: '60px', objectFit: 'contain', borderRadius:'10px'}}
                                 />
-                                <Typography variant="h4" sx={{ color: '#d4eca5', fontWeight: 'bold' }}>
+                                <Typography variant="h4" sx={{ color: '#d4eca5', fontWeight: 'bold', fontSize: { xs: '1.5rem', sm: '2.125rem' } }}>
                                     {currentProject.name}
                                 </Typography>
                             </div>

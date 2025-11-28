@@ -63,10 +63,10 @@ a{
     color:#F7F7F7;
 }
 /*Mobile version*/
-@media (max-width:481px) {
+@media (max-width:768px) {
     #navbar {
-        top: 88%;
-        width: auto;
+        top:95%;
+        width: 90%;
         left:0;
         right:0;
         justify-content: center;

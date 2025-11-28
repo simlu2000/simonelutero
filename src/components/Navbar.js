@@ -26,7 +26,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   backdropFilter: 'blur(5px)',
   backgroundColor: 'rgba(255, 255, 255, 0.2)', 
   [theme.breakpoints.down('sm')]: {
-    top: '88%',
+    top: '91%',
     justifyContent: 'center',
     backgroundColor: 'rgba(21, 64, 70, 0.509)',
     marginLeft: 0,
