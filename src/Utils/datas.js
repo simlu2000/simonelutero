@@ -1,13 +1,6 @@
 import {
-    javascript,
-    html,
-    css,
-    reactjs,
     mariadb,
-    figma,
     sql,
-    php,
-    firebase,
     c,
     postgre,
     csharp,
