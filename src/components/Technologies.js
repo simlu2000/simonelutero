@@ -15,7 +15,6 @@ library.add(
 );
 
 const Technologies = () => {
-    const theme = useTheme();
 
     const renderIcon = (tech) => {
         const iconProp = tech.icon;
