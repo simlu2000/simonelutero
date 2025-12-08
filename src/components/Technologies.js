@@ -1,6 +1,6 @@
 import React from 'react';
 import { technologies } from "../Utils/datas";
-import { Grid, Typography, Box, CardMedia, CircularProgress, useTheme } from '@mui/material';
+import { Grid, Typography, Box, CardMedia, CircularProgress} from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faReact, faJs, faPhp, faHtml5, faCss3Alt, faFigma, faPython, faGoogle 
