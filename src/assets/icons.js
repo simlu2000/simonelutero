@@ -31,7 +31,10 @@ import briji from "./briji.png";
 import segno from "./segno.png";
 import dbeaver from "./dbeaver.png";
 import tortoisesvn from "./tortoisesvn.png";
-
+import reactnative from "./reactnative.png";
+import zustand from "./zustand.png";
+import expo from "./expo.png";
+import dayva from "./dayva.png"
 export {
  github, 
  css, 
@@ -64,5 +67,9 @@ export {
  segno,
  briji,
  dbeaver,
- tortoisesvn
+ tortoisesvn,
+ reactnative,
+ expo,
+ zustand,
+ dayva
 };

@@ -18,7 +18,11 @@ import {
     segno,
     circli,
     tortoisesvn,
-    dbeaver
+    dbeaver,
+    dayva,
+    reactnative,
+    expo,
+    zustand
 } from "../assets/icons";
 
 const technologies = [
@@ -27,15 +31,27 @@ const technologies = [
         icon: ['fab', 'react'],
     },
     {
-        name: "Python", 
+        name: "React Native",
+        icon: problemsolving,
+    },
+    {
+        name: "Expo",
+        icon: expo,
+    },
+    {
+        name: "Zustand",
+        icon: zustand,
+    },
+    {
+        name: "Python",
         icon: ['fab', 'python'],
     },
     {
-        name: "DBeaver", 
+        name: "DBeaver",
         icon: dbeaver,
     },
     {
-        name: "TortoiseSVN", 
+        name: "TortoiseSVN",
         icon: tortoisesvn,
     },
     {
@@ -102,19 +118,20 @@ const technologies = [
         name: "Problem solving",
         icon: problemsolving,
     },
+
 ];
 const experiences = [
-     {
+    {
         title: "Junior Software Engineer - IT Consultant",
         company_name: "aizOon Technology Consulting",
         date: "July 2025 - Actually",
         points: [
-        "Developed a demonstrative software for remote control of a train (Back-end: JavaScript, Python, C; Front-end: ReactJS, HTML, CSS).",
-        "Designed and developed reusable and modular components using ReactJS and TypeScript/JavaScript, integrating custom hooks (useState, useEffect, useContext, etc.) for component logic management.",
-        "Integrated external services via REST API (GET) requests, such as OpenWeatherMap.",
-        "Utilized code versioning systems, such as TortoiseSVN.",
-        "Employed Ubuntu virtual machines on Windows via Oracle VirtualBox for the execution and testing of C code.",
-    ],
+            "Developed a demonstrative software for remote control of a train (Back-end: JavaScript, Python, C; Front-end: ReactJS, HTML, CSS).",
+            "Designed and developed reusable and modular components using ReactJS and TypeScript/JavaScript, integrating custom hooks (useState, useEffect, useContext, etc.) for component logic management.",
+            "Integrated external services via REST API (GET) requests, such as OpenWeatherMap.",
+            "Utilized code versioning systems, such as TortoiseSVN.",
+            "Employed Ubuntu virtual machines on Windows via Oracle VirtualBox for the execution and testing of C code.",
+        ],
     },
     {
         title: "Full Stack Developer - IT Consultant",
@@ -131,6 +148,40 @@ const experiences = [
 ];
 
 const projects = [
+    {
+        name: "DAYVA",
+        logo: dayva,
+        info: "Daily Life & Task Organizer App",
+        description:
+            "Introducing DAYVA: your personal daily life manager! I developed this mobile-first app to help people organize tasks, time, and priorities in a simple but powerful way. With DAYVA you can plan your day, manage tasks with reminders, visualize your productivity through insights and charts, and stay focused on what really matters. The app features a clean, minimal UI inspired by modern mobile design and supports dark/light mode, offline usage and sync. DAYVA is designed to feel like a natural extension of your daily routine.",
+        tags: [
+            {
+                name: "react-native",
+            },
+            {
+                name: "expo",
+            },
+            {
+                name: "zustand",
+            },
+            {
+                name: "TypeScript",
+            },
+            {
+                name: "Firebase",
+            },
+        ],
+        features: [
+            "🗓️ Daily agenda with smart task organization",
+            "📊 Weekly insights with productivity charts",
+            "🌙 Automatic dark / light mode",
+            "📴 Offline-first with background sync",
+            "📅 Calendar view with daily task breakdown",
+        ],
+        start: "📅 12/2025",
+        end: "📅 In progress",
+    },
+
     {
         name: "WAPA",
         logo: wapa,
@@ -164,8 +215,8 @@ const projects = [
             "🪐Near-Earth object monitoring ",
             "☀️Solar activity and solar flares ",
         ],
-        start:"📅 04/2024",
-        end:"📅 10/2024",
+        start: "📅 04/2024",
+        end: "📅 10/2024",
         source_code_link: "https://wapaweather.com/",
     },
     {
@@ -197,7 +248,7 @@ const projects = [
             "💻 HTML, CSS, JavaScript"
         ],
         "source_code_link": "https://circli.netlify.app/SignIn"
-    },  
+    },
     {
         name: "PiggyPenny",
         logo: piggypenny,
@@ -221,14 +272,14 @@ const projects = [
             "📱 Progressive Web App (PWA) – install it directly from your browser!"
         ],
         technologies: [
-            "⚛️ React", 
-            "🎨 Material UI", 
-            "📊 ReactApexChart", 
-            "🔥 Firebase", 
+            "⚛️ React",
+            "🎨 Material UI",
+            "📊 ReactApexChart",
+            "🔥 Firebase",
             "💻 HTML, CSS, JavaScript"
         ],
         source_code_link: "https://piggypennyapp.com/"
-    },      
+    },
     {
         "name": "Segno",
         "logo": segno,
@@ -254,7 +305,7 @@ const projects = [
             "🛠️ phpMyAdmin"
         ],
         "source_code_link": "https://github.com/simlu2000/segno"
-    },    
+    },
     {
         name: "YouTodo",
         logo: TODO,
@@ -286,7 +337,7 @@ const projects = [
             "💻 HTML, CSS, JavaScript"
         ],
         source_code_link: "https://youtodoapp.netlify.app/"
-    },    
+    },
     {
         name: "Pomo",
         logo: pomo,
@@ -311,7 +362,7 @@ const projects = [
             "💻 HTML, CSS, JavaScript"
         ],
         source_code_link: "https://focuspomoapp.netlify.app/"
-    },    
+    },
     {
         name: "Briji",
         logo: briji,
@@ -358,20 +409,20 @@ const projects = [
         source_code_link: "https://github.com/simlu2000/SAW",
         start: "📅 02/2022",
         end: "📅 08/2022"
-    }    
+    }
 
 ];
 
 const education = [
     {
-        year:"2019 - Now",
-        school:"University of Genoa, Italy",
-        course:"Computer Science - Bachelor"
+        year: "2019 - Now",
+        school: "University of Genoa, Italy",
+        course: "Computer Science - Bachelor"
     },
     {
-        year:"2014 - 2019",
-        school:"Istituto F. Liceti, Rapallo (Italy)",
-        course:"Corporate Information Systems"
+        year: "2014 - 2019",
+        school: "Istituto F. Liceti, Rapallo (Italy)",
+        course: "Corporate Information Systems"
     },
 ];
 
