@@ -32,7 +32,7 @@ const technologies = [
     },
     {
         name: "React Native",
-        icon: problemsolving,
+        icon: reactnative,
     },
     {
         name: "Expo",
