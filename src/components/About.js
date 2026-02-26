@@ -11,15 +11,15 @@ import {
     Link,
     Box,
     Divider,
-    Tabs, 
-    Tab, 
+    Tabs,
+    Tab,
     useMediaQuery,
     useTheme,
 } from '@mui/material';
 import Education from './Education';
 import Experience from './Experience';
 import Technologies from './Technologies';
-import Interests from './Interests'; 
+import Interests from './Interests';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -49,7 +49,7 @@ function a11yProps(index) {
 }
 
 const About = () => {
-    const [tabValue, setTabValue] = useState('1'); 
+    const [tabValue, setTabValue] = useState('1');
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -60,20 +60,20 @@ const About = () => {
     const tabStyle = {
         color: 'white',
         '&.Mui-selected': {
-            color: '#d4eca5', 
+            color: '#d4eca5',
         },
         fontSize: { xs: '0.75rem', sm: '1rem' }
     };
-    
-    const cardStyle = { 
-        maxWidth: '100%', 
-        width: { xs: '100%', sm: '80%', md: '100%' }, 
-        borderRadius: '25px', 
-        boxShadow: 3, 
-        backgroundColor: 'rgba(255, 255, 255, 0.1)', 
+
+    const cardStyle = {
+        maxWidth: '100%',
+        width: { xs: '100%', sm: '80%', md: '100%' },
+        borderRadius: '25px',
+        boxShadow: 3,
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
         backdropFilter: 'blur(10px)',
-        color: 'white', 
-        padding: 0 
+        color: 'white',
+        padding: 0
     };
 
     const typographyStyle = { fontSize: "1.2rem", color: 'white' };
@@ -96,7 +96,7 @@ const About = () => {
                         <Typography variant="h5" fontWeight="bold" sx={{ mb: 2, color: '#d4eca5' }}>
                             Simone Lutero
                         </Typography>
-                        
+
                         <Divider sx={{ mb: 2, bgcolor: 'rgba(212, 236, 165, 0.5)' }} />
 
                         <Grid container spacing={isMobile ? 1 : 2} sx={{ mb: 3 }}>
@@ -106,13 +106,13 @@ const About = () => {
                                     <Typography variant="body2" sx={typographyStyle}>{item.value}</Typography>
                                 </Grid>
                             ))}
-                            
+
                             <Grid item xs={12} sm={6}>
                                 <Typography variant="subtitle2" sx={typographyTitleStyle}>E-mail</Typography>
                                 <Link
                                     href="mailto:simone.lutero1@gmail.com"
                                     variant="body2"
-                                    sx={{...typographyStyle, color: '#d4eca5'}}
+                                    sx={{ ...typographyStyle, color: '#d4eca5' }}
                                 >
                                     simone.lutero1@gmail.com
                                 </Link>
@@ -122,8 +122,8 @@ const About = () => {
                                 <Typography variant="subtitle2" sx={typographyTitleStyle}>Socials</Typography>
                                 <Box sx={{ display: 'flex', gap: 1 }}>
                                     <Link href="https://github.com/simlu2000" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faGithub} className="social_icon" /></Link>
-                                    <Link href="https://www.linkedin.com/in/simone-lutero-027317216/" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faLinkedin} className="social_icon" /></Link>
-                                    <Link href="https://www.instagram.com/sim0ne_lu" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faInstagram} className="social_icon" /></Link>
+                                    <Link href="https://www.linkedin.com/in/simone-lutero276/" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faLinkedin} className="social_icon" /></Link>
+                                    <Link href="https://www.instagram.com/simo_lut" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faInstagram} className="social_icon" /></Link>
                                     <Link href="mailto:simone.lutero1@gmail.com" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faEnvelope} className="social_icon" /></Link>
                                 </Box>
                             </Grid>
@@ -131,27 +131,27 @@ const About = () => {
                             <Grid item xs={12}>
                                 <Typography variant="subtitle2" sx={typographyTitleStyle}>Who I Am</Typography>
                                 <Typography variant="body2" sx={typographyStyle} >
-                                    I am currently a computer science student at the University of Genoa and I am doing a development training course at Alten Italia. 
-                                    Passionate about consumer electronics and technology since I was a child, I have always found technological 
-                                    advancement a source of inspiration and curiosity. Lately, my interest has also turned to the world of data, as I believe that understanding and using 
-                                    them are essential to make the most of the potential of digital innovation. Besides technology, 
-                                    photography is my second passion, which has allowed me to develop an artistic mind. 
-                                    My goal is to become a full stack developer, combining my passion for technology 
-                                    with my artistic streak. I am determined to create engaging and intuitive digital 
-                                    experiences, developing both the front and back-end for projects that combine 
-                                    innovation and aesthetics.Becoming a full stack web developer is my 
-                                    main focus, but I am also open to other opportunities in the IT world 
-                                    that can help me grow professionally.
+                                    I hold a Bachelor's Degree in Computer Science from the University of Genoa. Currently, 
+                                    I work as a Junior Software Engineer / IT Consultant at aizOon, where I am involved in a
+                                    high-tech project for Hitachi Rail focusing on remote train control systems.
+                                    Passionate about consumer electronics and technology since childhood, I have always found technological
+                                    advancement a source of inspiration and curiosity. My professional focus is now on Web & Mobile Development, with a particular i
+                                    nterest in the intersection of technical logic and UI/UX design.
+                                    Beyond code, photography is my second passion, which has allowed me to
+                                    develop an artistic eye. My goal is to become a developer who can bridge the
+                                    gap between innovation and aesthetics, creating engaging and intuitive digital
+                                    experiences. While my main focus is on mastering the Full-Stack (with a current focus in React and Design Systems), I am always open to opportunities
+                                    that challenge my professional growth in the IT world.
                                 </Typography>
                             </Grid>
                         </Grid>
-                        
-                        <Divider sx={{ my: 3, bgcolor: 'rgba(212, 236, 165, 0.5)' }} />
+
+                        <Divider sx={{ my: 3, bgcolor: 'rgba(155, 169, 128, 0.5)' }} />
 
                         <Box sx={{ borderBottom: 1, borderColor: 'rgba(212, 236, 165, 0.5)' }}>
-                            <Tabs 
-                                value={tabValue} 
-                                onChange={handleChange} 
+                            <Tabs
+                                value={tabValue}
+                                onChange={handleChange}
                                 aria-label="About sections"
                                 variant={isMobile ? "scrollable" : "fullWidth"}
                                 scrollButtons={isMobile ? "auto" : false}

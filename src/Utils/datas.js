@@ -122,16 +122,16 @@ const technologies = [
 ];
 const experiences = [
     {
-        title: "Junior Software Engineer - IT Consultant",
-        company_name: "aizOon Technology Consulting",
+        title: "Junior Software Engineer - IT Consultant for aizOon Consulting / Hitachi Rail",
+        company_name: "aizOon Technology Consulting / Hitachi Rail, Genoa (IT)",
         date: "July 2025 - Actually",
         points: [
-            "Developed a demonstrative software for remote control of a train (Back-end: JavaScript, Python, C; Front-end: ReactJS, HTML, CSS).",
-            "Designed and developed reusable and modular components using ReactJS and TypeScript/JavaScript, integrating custom hooks (useState, useEffect, useContext, etc.) for component logic management.",
-            "Integrated external services via REST API (GET) requests, such as OpenWeatherMap.",
-            "Utilized code versioning systems, such as TortoiseSVN.",
-            "Employed Ubuntu virtual machines on Windows via Oracle VirtualBox for the execution and testing of C code.",
-        ],
+            "Software Development & UI Design: Developed a demonstrative software for remote train control, designing and implementing modular React interfaces with a strong focus on usability, responsiveness, and User Experience (UX).",
+            "Front-end Architecture: Engineered reusable and scalable components using ReactJS and TypeScript/JavaScript, leveraging custom hooks (useState, useEffect, useContext) to manage complex component logic and state.",
+            "Systems Integration: Managed communication between the front-end and external services by consuming REST APIs (GET), including the integration of real-time environmental data like OpenWeatherMap.",
+            "Full-stack Ecosystem: Contributed to both front-end and back-end logic, utilizing a diverse tech stack including JavaScript, Python, and C.",
+            "DevOps & Testing Tools: Streamlined the development workflow using TortoiseSVN for version control and managed testing environments by deploying C code on Ubuntu virtual machines via Oracle VirtualBox."
+        ]
     },
     {
         title: "Full Stack Developer - IT Consultant",
@@ -415,9 +415,9 @@ const projects = [
 
 const education = [
     {
-        year: "2019 - Now",
+        year: "10/2019 - 19/02/2026",
         school: "University of Genoa, Italy",
-        course: "Computer Science - Bachelor"
+        course: "BSc in Computer Science"
     },
     {
         year: "2014 - 2019",
