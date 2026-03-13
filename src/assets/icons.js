@@ -38,11 +38,16 @@ import reactnative from "./reactnative.png";
 import zustand from "./zustand.png";
 import expo from "./expo.png";
 import dayva from "./dayva.png"
+import lumina from "./lumina.png";
+import tailwind from "./tailwind.png";
+import netlify from "./netlify.png";
+import googlegeminiai from "./googlegeminiai.png";
 export {
  github, 
  css, 
  figma, 
  html, 
+ lumina,
  javascript, 
  mariadb, 
  nodejs, 
@@ -77,5 +82,8 @@ export {
  reactnative,
  expo,
  zustand,
- dayva
+ dayva,
+ tailwind,
+ googlegeminiai,
+ netlify
 };

@@ -10,6 +10,7 @@ import {
     webdeveloping,
     problemsolving,
     wapa,
+    lumina,
     TODO,
     piggypenny,
     pomo,
@@ -25,7 +26,10 @@ import {
     zustand,
     d3js,
     apacheECharts,
-    chartjs
+    chartjs,
+    tailwind,
+    netlify,
+    googlegeminiai
 } from "../assets/icons";
 
 const technologies = [
@@ -45,11 +49,11 @@ const technologies = [
         name: "Chart.js",
         icon: chartjs,
     },
-     {
+    {
         name: "D3.js",
         icon: d3js,
     },
-     {
+    {
         name: "Apache ECharts",
         icon: apacheECharts,
     },
@@ -105,7 +109,7 @@ const technologies = [
         name: "C / C++",
         icon: c,
     },
-    
+
     {
         name: "Figma",
         icon: ['fab', 'figma'],
@@ -160,6 +164,40 @@ const experiences = [
 ];
 
 const projects = [
+    {
+        name: "LUMINA",
+        logo: luminaLogo,
+        info: "AI-Powered Weather & Photography Assistant",
+        description:
+            "Lumina è un'applicazione innovativa progettata per fotografi e viaggiatori che desiderano catturare lo scatto perfetto. L'app analizza in tempo reale i dati meteorologici e la posizione geografica per fornire consigli tecnici personalizzati (ISO, Apertura, Tempi) tramite l'intelligenza artificiale di Google Gemini. Con un'interfaccia ultra-moderna e dinamica, Lumina trasforma ogni condizione meteo in un'opportunità creativa.",
+        tags: [
+            {
+                name: "react",
+            },
+            {
+                name: "tailwind",
+            },
+            {
+                name: "googlegeminiai",
+            },
+            {
+                name: "netlify",
+            },
+            {
+                name: "TypeScript",
+            },
+        ],
+        features: [
+            "📸 AI Photography Advice: Technical settings based on real-time weather and lighting",
+            "🌤️ Dynamic Weather Engine: Real-time integration with OpenWeather API",
+            "⏳ Light Timeline: Automatic tracking of Golden Hour, Blue Hour, and Solar Noon",
+            "⚡ Serverless Architecture: Secure AI API management via Netlify Functions",
+        ],
+        start: "",
+        end: "",
+        source_code_link: "https://luminaappshooting.netlify.app/",
+
+    },
     {
         name: "DAYVA",
         logo: dayva,
