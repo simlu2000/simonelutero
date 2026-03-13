@@ -166,7 +166,7 @@ const experiences = [
 const projects = [
     {
         name: "LUMINA",
-        logo: luminaLogo,
+        logo: lumina,
         info: "AI-Powered Weather & Photography Assistant",
         description:
             "Lumina è un'applicazione innovativa progettata per fotografi e viaggiatori che desiderano catturare lo scatto perfetto. L'app analizza in tempo reale i dati meteorologici e la posizione geografica per fornire consigli tecnici personalizzati (ISO, Apertura, Tempi) tramite l'intelligenza artificiale di Google Gemini. Con un'interfaccia ultra-moderna e dinamica, Lumina trasforma ogni condizione meteo in un'opportunità creativa.",
