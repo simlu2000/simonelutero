@@ -23,13 +23,12 @@ import {
     dayva,
     reactnative,
     expo,
-    zustand,
     d3js,
     apacheECharts,
     chartjs,
-    tailwind,
-    netlify,
-    googlegeminiai
+    //tailwind,
+    //netlify,
+    //googlegeminiai
 } from "../assets/icons";
 
 const technologies = [
