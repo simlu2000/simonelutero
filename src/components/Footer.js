@@ -14,10 +14,10 @@ function Footer() {
                         <a href="https://github.com/simlu2000" className="link">
                             <FontAwesomeIcon icon={faGithub} className='social_icon'/>
                         </a>
-                        <a href="https://www.linkedin.com/in/simone-lutero-027317216/" className="link">
+                        <a href="https://www.linkedin.com/in/simone-lutero276/" className="link">
                             <FontAwesomeIcon icon={faLinkedin} className='social_icon'/>
                         </a>
-                        <a href="https://www.instagram.com/sim0ne_lu" className="link">
+                        <a href="https://www.instagram.com/simo_lut" className="link">
                             <FontAwesomeIcon icon={faInstagram} className='social_icon' />
                         </a>
                         <a href="mailto:simone.lutero1@gmail.com" className="link">

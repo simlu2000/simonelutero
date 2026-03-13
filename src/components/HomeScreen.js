@@ -15,14 +15,14 @@ function HomeScreen() {
     fpsLimit: 60,
     detectRetina: true,
     fullScreen: { enable: false, zIndex: 0 },
-    background: { color: "transparent" },
+    background: { color: "transparent" }, 
     particles: {
       number: { value: 80, density: { enable: true, area: 800 } },
-      color: { value: "#d4eca5" },
+      color: { value: "#00BFFF" },
       shape: { type: "circle" },
       opacity: { value: 0.5 },
       size: { value: { min: 1, max: 5 }, random: true },
-      links: { enable: true, distance: 150, color: "#d4eca5", opacity: 0.4, width: 1 },
+      links: { enable: true, distance: 150, color: "#00BFFF", opacity: 0.4, width: 1 },
       move: { enable: true, speed: 2, direction: "none", straight: false, outModes: { default: "out" } }
     },
     interactivity: {
@@ -54,7 +54,7 @@ function HomeScreen() {
             <Button
               variant="outlined"
               href="#works"
-              sx={{ color: "#d4eca5", borderColor: "#d4eca5" }}
+              sx={{ color: "#00BFFF", borderColor: "#00BFFF" }}
             >
               Discover my works
             </Button>

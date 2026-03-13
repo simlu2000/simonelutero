@@ -15,10 +15,12 @@ const Education = () => {
                             key={index}
                             className="vertical-timeline-element--education"
                             date={edu.year}
-                            iconStyle={{ background: '#d4eca5', color: '#000000' }}
+                            iconStyle={{ background: '#00BFFF', color: '#000000' }}
                         >
                             <h3 className="vertical-timeline-element-title">{edu.school}</h3>
                             <h4 className="vertical-timeline-element-subtitle">{edu.course}</h4>
+                            <h5 className="vertical-timeline-element-subtitle">{edu.year}</h5>
+
                         </VerticalTimelineElement>
                     ))}
                 </VerticalTimeline>

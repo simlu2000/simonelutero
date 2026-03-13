@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    /*background: linear-gradient(181deg, #010b47, #000428, #2d3aaf, #d4eca5, #d4eca5);
+    /*background: linear-gradient(181deg, #010b47, #000428, #2d3aaf, #00BFFF, #00BFFF);
     background-size: 300% 300%;
     animation: gradient-animation 20s ease infinite;*/
     background: #000000;
@@ -103,7 +103,7 @@ body {
 }
 
 .name {
-    color: #d4eca5;
+    color: #00BFFF;
 
 }
 
@@ -155,7 +155,7 @@ h3 {
     text-transform: uppercase;
     margin-bottom: 24px;
     margin-top: 15px;
-    color: #d4eca5;
+    color: #00BFFF;
 }
 
 .func {
@@ -164,7 +164,6 @@ h3 {
 }
 
 a {
-
     text-decoration: none;
     color: #F6F6F6;
     text-transform: uppercase;
@@ -172,12 +171,12 @@ a {
 }
 
 a:hover {
-    color: #d4eca5;
+    color: #00BFFF;
 
 }
 
 .link {
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 600px;
     line-height: 28px;
     text-decoration: none;
@@ -186,7 +185,7 @@ a:hover {
 }
 
 .link:hover {
-    color: #d4eca5;
+    color: #00BFFF;
 }
 
 .hero {
@@ -233,7 +232,7 @@ a:hover {
 }
 
 .button:hover {
-    background-color: #d4eca5;
+    background-color: #00BFFF;
     color: white;
 }
 
@@ -392,7 +391,7 @@ section {
 
 .works-item-tags {
     font-size: 24px;
-    color: #d4eca5;
+    color: #00BFFF
 }
 
 .lang_skill {
@@ -408,7 +407,7 @@ section {
 }
 
 .exp {
-    border: 3px solid #d4eca5;
+    border: 3px solid #00BFFF;
     border-radius: 50px;
     font-size: 1em;
     width: 15%;
@@ -429,12 +428,12 @@ section {
 }
 
 .lang_skill:hover {
-    background-color: #d8f3dc;
+    background-color: #00BFFF;
     color: #0B2D32;
 }
 
 .int_emoji {
-    border: 3px solid #d4eca5;
+    border: 3px solid #00BFFF;
     border-radius: 50px;
     font-size: 1em;
     width: 15%;
@@ -447,7 +446,7 @@ section {
 }
 
 .int_emoji:hover {
-    background-color: #d8f3dc;
+    background-color: #00BFFF;
     color: #0B2D32;
 }
 
@@ -464,7 +463,7 @@ section {
 }
 
 .edu:hover {
-    background-color: #d8f3dc;
+    background-color: #00BFFF;
     color: #0B2D32;
 
 }
@@ -482,7 +481,7 @@ section {
 /*-------------------------------------------------FOOTER------------------------------------------------------*/
 footer {
     /*background-color: #000428;*/
-    background-color: #d4eca5;
+    background-color: #00BFFF;
     color: #000000;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -557,7 +556,7 @@ footer {
 }
 
 .footer_link:hover {
-    color: #d4eca5;
+    color: #00BFFF;
 }
 
 #social {
@@ -567,8 +566,7 @@ footer {
 .social_icon {
     margin: 5px;
     display: inline-block;
-    width: 2rem;
-
+    font-size: 1.6rem;
 }
 
 #copyright {

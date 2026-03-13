@@ -67,7 +67,7 @@ const Works = () => {
                     }}
                 >
                     <AccordionSummary 
-                        expandIcon={<ExpandMoreIcon sx={{ color: '#d4eca5' }} />}
+                        expandIcon={<ExpandMoreIcon sx={{ color: '#00BFFF' }} />}
                         aria-controls={`panel${index}-content`}
                         id={`panel${index}-header`}
                     >
@@ -78,7 +78,7 @@ const Works = () => {
                                 style={{ width: '40px', height: '40px', objectFit: 'contain', borderRadius:'8px', marginRight: '15px' }}
                             />
                             <Box>
-                                <Typography variant="h6" sx={{ color: '#d4eca5', fontSize: '1.1rem' }}>
+                                <Typography variant="h6" sx={{ color: '#00BFFF', fontSize: '1.1rem' }}>
                                     {project.name}
                                 </Typography>
                                 <Typography variant="body2" sx={{ color: 'white' }}>
@@ -104,7 +104,7 @@ const Works = () => {
             }}
         >
             <AccordionSummary
-                expandIcon={<ExpandMoreIcon sx={{ color: '#d4eca5' }} />}
+                expandIcon={<ExpandMoreIcon sx={{ color: '#00BFFF' }} />}
                 aria-controls={`panel${index}-content`}
                 id={`panel${index}-header`}
                 onClick={(e) => { e.stopPropagation(); }}
@@ -119,7 +119,7 @@ const Works = () => {
                         style={{ width: '50px', height: '50px', objectFit: 'contain', borderRadius:'8px', marginRight: '15px' }}
                     />
                     <Box>
-                        <Typography variant="h6" sx={{ color: '#d4eca5', fontSize: '1.2rem' }}>
+                        <Typography variant="h6" sx={{ color: '#00BFFF', fontSize: '1.2rem' }}>
                             {project.name}
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'white', fontSize: '0.9rem' }}>
@@ -135,7 +135,7 @@ const Works = () => {
                 <Button 
                     variant="outlined"
                     onClick={() => handleClickOpen(project)}
-                    sx={{ color: '#d4eca5', borderColor: '#d4eca5' }}
+                    sx={{ color: '#00BFFF', borderColor: '#00BFFF' }}
                 >
                     Vedi Dettagli Completi
                 </Button>
@@ -187,7 +187,7 @@ const Works = () => {
                                     alt={`${currentProject.name} logo`} 
                                     style={{ width: '60px', height: '60px', objectFit: 'contain', borderRadius:'10px'}}
                                 />
-                                <Typography variant="h4" sx={{ color: '#d4eca5', fontWeight: 'bold', fontSize: { xs: '1.5rem', sm: '2.125rem' } }}>
+                                <Typography variant="h4" sx={{ color: '#00BFFF', fontWeight: 'bold', fontSize: { xs: '1.5rem', sm: '2.125rem' } }}>
                                     {currentProject.name}
                                 </Typography>
                             </div>
@@ -198,7 +198,7 @@ const Works = () => {
                                     position: 'absolute',
                                     right: 8,
                                     top: 8,
-                                    color: '#d4eca5',
+                                    color: '#00BFFF',
                                 }}
                             >
                                 <CloseIcon />
@@ -206,7 +206,7 @@ const Works = () => {
                         </DialogTitle>
                         
                         <DialogContent dividers>
-                            <Typography gutterBottom variant="subtitle1" sx={{ color: '#d4eca5' }}>
+                            <Typography gutterBottom variant="subtitle1" sx={{ color: '#00BFFF' }}>
                                 {currentProject.info}
                             </Typography>
                             
@@ -214,7 +214,7 @@ const Works = () => {
                                 Description: {currentProject.description}
                             </Typography>
                             
-                            <Typography variant="subtitle2" sx={{ marginTop: '1rem', color: '#d4eca5' }}>
+                            <Typography variant="subtitle2" sx={{ marginTop: '1rem', color: '#00BFFF' }}>
                                 Technologies:
                             </Typography>
                             <div style={{ marginBottom: '1rem' }}>
@@ -224,7 +224,7 @@ const Works = () => {
                                         label={tag.name} 
                                         sx={{ 
                                             margin: '0.2rem', 
-                                            backgroundColor: '#d4eca5', 
+                                            backgroundColor: '#00BFFF', 
                                             color: '#010b47', 
                                             fontWeight: 'bold'
                                         }} 
@@ -232,7 +232,7 @@ const Works = () => {
                                 ))}
                             </div>
 
-                            <Typography variant="subtitle2" sx={{ marginTop: '1rem', color: '#d4eca5' }}>
+                            <Typography variant="subtitle2" sx={{ marginTop: '1rem', color: '#00BFFF' }}>
                                 Main features:
                             </Typography>
                             <ul style={{ paddingLeft: '20px' }}>
@@ -259,7 +259,7 @@ const Works = () => {
                                 href={currentProject.source_code_link} 
                                 sx={{
                                     borderRadius: '25px',
-                                    backgroundColor: '#d4eca5',
+                                    backgroundColor: '#00BFFF',
                                     color: '#010b47',
                                     fontWeight: 'bold',
                                     '&:hover': {

@@ -60,7 +60,7 @@ const About = () => {
     const tabStyle = {
         color: 'white',
         '&.Mui-selected': {
-            color: '#d4eca5',
+            color: '#00BFFF',
         },
         fontSize: { xs: '0.75rem', sm: '1rem' }
     };
@@ -77,7 +77,7 @@ const About = () => {
     };
 
     const typographyStyle = { fontSize: "1.2rem", color: 'white' };
-    const typographyTitleStyle = { fontSize: "1.2rem", color: '#d4eca5', fontWeight: "bold" };
+    const typographyTitleStyle = { fontSize: "1.2rem", color: '#00BFFF', fontWeight: "bold" };
 
     const personalData = [
         { title: "Age", value: "25" },
@@ -93,7 +93,7 @@ const About = () => {
             <Box sx={{ display: 'flex', justifyContent: 'center', p: 3 }}>
                 <Card sx={cardStyle}>
                     <CardContent>
-                        <Typography variant="h5" fontWeight="bold" sx={{ mb: 2, color: '#d4eca5' }}>
+                        <Typography variant="h5" fontWeight="bold" sx={{ mb: 2, color: '#00BFFF' }}>
                             Simone Lutero
                         </Typography>
 
@@ -112,7 +112,7 @@ const About = () => {
                                 <Link
                                     href="mailto:simone.lutero1@gmail.com"
                                     variant="body2"
-                                    sx={{ ...typographyStyle, color: '#d4eca5' }}
+                                    sx={{ ...typographyStyle, color: '#ffffff' }}
                                 >
                                     simone.lutero1@gmail.com
                                 </Link>
@@ -121,10 +121,10 @@ const About = () => {
                             <Grid item xs={12} sm={6}>
                                 <Typography variant="subtitle2" sx={typographyTitleStyle}>Socials</Typography>
                                 <Box sx={{ display: 'flex', gap: 1 }}>
-                                    <Link href="https://github.com/simlu2000" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faGithub} className="social_icon" /></Link>
-                                    <Link href="https://www.linkedin.com/in/simone-lutero276/" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faLinkedin} className="social_icon" /></Link>
-                                    <Link href="https://www.instagram.com/simo_lut" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faInstagram} className="social_icon" /></Link>
-                                    <Link href="mailto:simone.lutero1@gmail.com" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#d4eca5' } }}><FontAwesomeIcon icon={faEnvelope} className="social_icon" /></Link>
+                                    <Link href="https://github.com/simlu2000" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#00BFFF' } }}><FontAwesomeIcon icon={faGithub} className="social_icon" /></Link>
+                                    <Link href="https://www.linkedin.com/in/simone-lutero276/" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#00BFFF' } }}><FontAwesomeIcon icon={faLinkedin} className="social_icon" /></Link>
+                                    <Link href="https://www.instagram.com/simo_lut" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#00BFFF' } }}><FontAwesomeIcon icon={faInstagram} className="social_icon" /></Link>
+                                    <Link href="mailto:simone.lutero1@gmail.com" target="_blank" rel="noopener noreferrer" sx={{ color: 'white', '&:hover': { color: '#00BFFF' } }}><FontAwesomeIcon icon={faEnvelope} className="social_icon" /></Link>
                                 </Box>
                             </Grid>
 

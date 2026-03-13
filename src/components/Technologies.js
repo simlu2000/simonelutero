@@ -47,7 +47,7 @@ const Technologies = () => {
 
     return (
         <div className="work-info">
-            <Typography variant="h6" className="works-item-tags" sx={{ color: '#d4eca5', textAlign: 'center', mb: 3 }}>My Skills</Typography>
+            <Typography variant="h6" className="works-item-tags" sx={{ color: '#00BFFF', textAlign: 'center', mb: 3 }}>My Skills</Typography>
             
             <Grid container spacing={4} justifyContent="center">
                 {technologies.map((tech, index) => {
@@ -80,7 +80,7 @@ const Technologies = () => {
                                     size={SIZE}
                                     thickness={4}
                                     sx={{
-                                        color: '#d4eca5',
+                                        color: '#00BFFF',
                                         transition: 'all 0.5s ease 0s',
                                         transform: 'rotate(-90deg)',
                                     }}

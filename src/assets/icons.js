@@ -6,6 +6,9 @@ import html from "./html.png";
 import javascript from "./javascript.png";
 import mariadb from "./mariadb.png";
 import nodejs from "./nodejs.png";
+import d3js from "./d3js.png";
+import chartjs from "./chartjs.png";
+import apacheECharts from "./apacheECharts.png";
 import reactjs from "./react.png";
 import threejs from "./threejs.png";
 import sql from "./sql.png";
@@ -43,6 +46,9 @@ export {
  javascript, 
  mariadb, 
  nodejs, 
+ d3js,
+ chartjs,
+ apacheECharts,
  reactjs, 
  threejs, 
  sql,

@@ -22,7 +22,10 @@ import {
     dayva,
     reactnative,
     expo,
-    zustand
+    zustand,
+    d3js,
+    apacheECharts,
+    chartjs
 } from "../assets/icons";
 
 const technologies = [
@@ -31,16 +34,32 @@ const technologies = [
         icon: ['fab', 'react'],
     },
     {
+        name: "JavaScript",
+        icon: ['fab', 'js'],
+    },
+    {
+        name: "Firebase",
+        icon: ['fab', 'google'],
+    },
+    {
+        name: "Chart.js",
+        icon: chartjs,
+    },
+     {
+        name: "D3.js",
+        icon: d3js,
+    },
+     {
+        name: "Apache ECharts",
+        icon: apacheECharts,
+    },
+    {
         name: "React Native",
         icon: reactnative,
     },
     {
         name: "Expo",
         icon: expo,
-    },
-    {
-        name: "Zustand",
-        icon: zustand,
     },
     {
         name: "Python",
@@ -59,8 +78,12 @@ const technologies = [
         icon: materialui,
     },
     {
-        name: "JavaScript",
-        icon: ['fab', 'js'],
+        name: "HTML 5",
+        icon: ['fab', 'html5'],
+    },
+    {
+        name: "CSS 3",
+        icon: ['fab', 'css3-alt'],
     },
     {
         name: "SQL",
@@ -75,10 +98,6 @@ const technologies = [
         icon: postgre,
     },
     {
-        name: "Firebase",
-        icon: ['fab', 'google'],
-    },
-    {
         name: "PHP",
         icon: ['fab', 'php'],
     },
@@ -86,14 +105,7 @@ const technologies = [
         name: "C / C++",
         icon: c,
     },
-    {
-        name: "HTML 5",
-        icon: ['fab', 'html5'],
-    },
-    {
-        name: "CSS 3",
-        icon: ['fab', 'css3-alt'],
-    },
+    
     {
         name: "Figma",
         icon: ['fab', 'figma'],
@@ -122,7 +134,7 @@ const technologies = [
 ];
 const experiences = [
     {
-        title: "Junior Software Engineer - IT Consultant for aizOon Consulting / Hitachi Rail",
+        title: "Junior Software Engineer - IT Consultant",
         company_name: "aizOon Technology Consulting / Hitachi Rail, Genoa (IT)",
         date: "July 2025 - Actually",
         points: [

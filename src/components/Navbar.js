@@ -36,10 +36,10 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
 }));
 
 const StyledIconButton = styled(IconButton)(({ theme }) => ({
-  fontSize: '1rem',
+  fontSize: '1.6rem',
   margin: '0 20px',
   borderRadius: '25px',
-  color: '#F7F7F7',
+  color: '#00BFFF',
   width: '10%',
   '&:hover': {
     color: '#F7F7F7',
