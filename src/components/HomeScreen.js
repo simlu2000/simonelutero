@@ -5,6 +5,9 @@ import Works from './Works';
 import { Button } from '@mui/material';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function HomeScreen() {
   const particlesInit = async (main) => {
@@ -15,7 +18,7 @@ function HomeScreen() {
     fpsLimit: 60,
     detectRetina: true,
     fullScreen: { enable: false, zIndex: 0 },
-    background: { color: "transparent" }, 
+    background: { color: "transparent" },
     particles: {
       number: { value: 80, density: { enable: true, area: 800 } },
       color: { value: "#00BFFF" },
@@ -35,7 +38,7 @@ function HomeScreen() {
   return (
     <div className="main-content" style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}>
 
-      <section id="first" className="hero" style={{ height:'100vh',position: 'relative', zIndex: 1, overflow: 'hidden' }}>
+      <section id="first" className="hero" style={{ height: '100vh', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -48,16 +51,38 @@ function HomeScreen() {
           </div>
           <div>
             <h1 className="title">
-              Hello, I'm <br />
-              <span className="name">Simone Lutero</span>
+              Hey, I'm <br />
+              <span className="name">Simone ✨</span> <br></br>
+              A Software Developer
             </h1>
-            <Button
-              variant="outlined"
-              href="#works"
-              sx={{ color: "#00BFFF", borderColor: "#00BFFF" }}
-            >
-              Discover my works
-            </Button>
+            <h2>Jr Software Engineer & CS Graduate specializing in high-performance web applications. Focused on React and TypeScript, I am dedicated to writing clean, scalable code and designing intuitive user interfaces.</h2>
+
+            <div className="container">
+              <div id="social" className="row">
+                <Button
+                  variant="outlined"
+                  href="#works"
+                  sx={{ color: "#00BFFF", borderColor: "#00BFFF" }}
+                >
+                  View Projects
+                </Button>
+                <a href="https://github.com/simlu2000" className="link">
+                  <FontAwesomeIcon icon={faGithub} className='social_icon' />
+                </a>
+                <a href="https://www.linkedin.com/in/simone-lutero276/" className="link">
+                  <FontAwesomeIcon icon={faLinkedin} className='social_icon' />
+                </a>
+                <a href="https://www.instagram.com/simo_lut" className="link">
+                  <FontAwesomeIcon icon={faInstagram} className='social_icon' />
+                </a>
+                <a href="mailto:simone.lutero1@gmail.com" className="link">
+                  <FontAwesomeIcon icon={faEnvelope} className='social_icon' />
+                </a>
+              </div>
+              <div id="copyright" className="row">
+                <div className="footer_info">Simone Lutero copyright @2025</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
