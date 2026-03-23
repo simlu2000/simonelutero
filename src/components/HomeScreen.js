@@ -55,7 +55,7 @@ function HomeScreen() {
               <span className="name"> Simone ✨</span> <br></br>
               A  <span className="name">Software Developer</span>
             </h1>
-            <h5>Jr Software Engineer & CS Graduate specializing in high-performance web applications. Focused on React and TypeScript, I am dedicated to writing clean, scalable code and designing intuitive user interfaces.</h5>
+            <h4>Jr Software Engineer & CS Graduate specializing in high-performance web applications. Focused on React and TypeScript, I am dedicated to writing clean, scalable code and designing intuitive user interfaces.</h4>
 
             <div className="container">
               <div id="social" className="row">
@@ -78,9 +78,6 @@ function HomeScreen() {
                 <a href="mailto:simone.lutero1@gmail.com" className="link">
                   <FontAwesomeIcon icon={faEnvelope} className='social_icon' />
                 </a>
-              </div>
-              <div id="copyright" className="row">
-                <div className="footer_info">Simone Lutero copyright @2025</div>
               </div>
             </div>
           </div>
