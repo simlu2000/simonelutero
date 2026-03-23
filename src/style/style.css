@@ -180,12 +180,12 @@ a:hover {
     font-weight: 600px;
     line-height: 28px;
     text-decoration: none;
-    color: #0e1023;
+    color: #00BFFF;
     text-transform: uppercase;
 }
 
 .link:hover {
-    color: #00BFFF;
+    color: #ffffff;
 }
 
 .hero {
