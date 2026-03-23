@@ -51,11 +51,11 @@ function HomeScreen() {
           </div>
           <div>
             <h1 className="title">
-              Hey, I'm <br />
+              Hey, I'm
               <span className="name">Simone ✨</span> <br></br>
-              A Software Developer
+              A  <span className="name">Software Developer</span>
             </h1>
-            <h2>Jr Software Engineer & CS Graduate specializing in high-performance web applications. Focused on React and TypeScript, I am dedicated to writing clean, scalable code and designing intuitive user interfaces.</h2>
+            <h5>Jr Software Engineer & CS Graduate specializing in high-performance web applications. Focused on React and TypeScript, I am dedicated to writing clean, scalable code and designing intuitive user interfaces.</h5>
 
             <div className="container">
               <div id="social" className="row">
