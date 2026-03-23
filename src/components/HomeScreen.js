@@ -52,7 +52,7 @@ function HomeScreen() {
           <div>
             <h1 className="title">
               Hey, I'm
-              <span className="name">Simone ✨</span> <br></br>
+              <span className="name"> Simone ✨</span> <br></br>
               A  <span className="name">Software Developer</span>
             </h1>
             <h5>Jr Software Engineer & CS Graduate specializing in high-performance web applications. Focused on React and TypeScript, I am dedicated to writing clean, scalable code and designing intuitive user interfaces.</h5>
