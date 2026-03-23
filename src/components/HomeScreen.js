@@ -58,14 +58,15 @@ function HomeScreen() {
             <h4>Jr Software Engineer & CS Graduate specializing in high-performance web applications. Focused on React and TypeScript, I am dedicated to writing clean, scalable code and designing intuitive user interfaces.</h4>
 
             <div className="container">
-              <div id="social" className="row">
-                <Button
+              <Button
                   variant="outlined"
                   href="#works"
                   sx={{ color: "#00BFFF", borderColor: "#00BFFF" }}
                 >
                   View Projects
                 </Button>
+              <div id="social" className="row">
+                
                 <a href="https://github.com/simlu2000" className="link">
                   <FontAwesomeIcon icon={faGithub} className='social_icon' />
                 </a>
