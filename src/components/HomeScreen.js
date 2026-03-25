@@ -61,7 +61,7 @@ function HomeScreen() {
               <Button
                   variant="outlined"
                   href="#works"
-                  sx={{ color: "#00BFFF", borderColor: "#00BFFF" }}
+                  sx={{ color: "#00BFFF", borderColor: "#00BFFF", marginTop:'2%' }}
                 >
                   View Projects
                 </Button>
