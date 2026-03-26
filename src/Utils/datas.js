@@ -165,6 +165,7 @@ const experiences = [
 const projects = [
     {
         name: "LUMINA",
+        demoLink: "https://luminaappshooting.netlify.app/",
         logo: lumina,
         info: "AI-Powered Weather & Photography Assistant",
         description:
@@ -199,6 +200,7 @@ const projects = [
     },
     {
         name: "DAYVA",
+        demoLink: "",
         logo: dayva,
         info: "Daily Life & Task Organizer App",
         description:
@@ -233,6 +235,7 @@ const projects = [
 
     {
         name: "WAPA",
+        demoLink: "https://wapaweather.com/",
         logo: wapa,
         info: "Weather and Advanced Predictions App",
         description:
@@ -270,6 +273,7 @@ const projects = [
     },
     {
         "name": "Circli",
+        demoLink: "https://circli.netlify.app/",
         "logo": circli,
         "info": "🔄📱 Mini social network for sharing thoughts and moments",
         "description": "I'm building this React-based social network where users can share posts, like, and comment, creating a dynamic and interactive community.",
@@ -300,6 +304,7 @@ const projects = [
     },
     {
         name: "PiggyPenny",
+        demoLink: "https://piggypennyapp.com//",
         logo: piggypenny,
         info: "🐷🚀 Finance app to manage your wallet",
         description: "I've developed this React web app to help you track your income and expenses in a simple and intuitive way.",
@@ -357,6 +362,7 @@ const projects = [
     },
     {
         name: "YouTodo",
+        demoLink: "https://piggypennyapp.com/",
         logo: TODO,
         info: "📝🚀 ToDoList app to boost your productivity",
         description: "I've developed this React web app to help you organize your daily tasks and track your productivity with interactive charts.",
@@ -389,6 +395,7 @@ const projects = [
     },
     {
         name: "Pomo",
+        demoLink: "https://focuspomoapp.netlify.app/",
         logo: pomo,
         info: "🍅⏳ Pomodoro timer app to boost your focus",
         description: "I've developed Pomo, a React app based on the Pomodoro technique, to help you stay focused and visualize your progress in a unique way! 🎯",

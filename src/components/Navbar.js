@@ -24,11 +24,11 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   borderRadius: '25px',
   zIndex: 1000,
   backdropFilter: 'blur(5px)',
-  backgroundColor: 'rgba(255, 255, 255, 0.2)', 
+  backgroundColor: 'rgba(255, 255, 255, 0.06)', 
   [theme.breakpoints.down('sm')]: {
     top: '91%',
     justifyContent: 'center',
-    backgroundColor: 'rgba(21, 64, 70, 0.509)',
+    //backgroundColor: 'rgba(21, 64, 70, 0.509)',
     marginLeft: 0,
     marginRight: 0,
     padding: '10px',
@@ -36,11 +36,11 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
 }));
 
 const StyledIconButton = styled(IconButton)(({ theme }) => ({
-  fontSize: '1.6rem',
+  fontSize: '1rem',
   margin: '0 20px',
   borderRadius: '25px',
   color: '#00BFFF',
-  width: '10%',
+  width: '20%',
   '&:hover': {
     color: '#F7F7F7',
   },
@@ -57,13 +57,16 @@ function Navbar() {
     <StyledAppBar position="static">
       <Toolbar>
         <StyledIconButton component={Link} href="#first">
-          <FontAwesomeIcon icon={faHome} />
+          {/*<FontAwesomeIcon icon={faHome} />*/}
+          Home
         </StyledIconButton>
         <StyledIconButton component={Link} href="#about">
-          <FontAwesomeIcon icon={faAddressCard} />
+          {/*<FontAwesomeIcon icon={faAddressCard} />*/}
+          About
         </StyledIconButton>
         <StyledIconButton component={Link} href="https://github.com/simlu2000">
-          <FontAwesomeIcon icon={faGithub} />
+          {/*<FontAwesomeIcon icon={faGithub} />*/}
+          Github
         </StyledIconButton>
       </Toolbar>
     </StyledAppBar>
