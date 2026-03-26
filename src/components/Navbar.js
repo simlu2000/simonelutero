@@ -46,7 +46,7 @@ const StyledIconButton = styled(IconButton)(({ theme }) => ({
   },
   [theme.breakpoints.down('sm')]: {
     width: '20%',
-    fontSize: '1.5rem',
+    fontSize: '1rem',
     backgroundColor: 'rgba(228, 228, 228, 0)',
     padding: '10px',
   },
