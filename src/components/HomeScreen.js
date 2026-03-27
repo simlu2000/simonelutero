@@ -8,6 +8,7 @@ import { loadFull } from 'tsparticles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import LiquidChrome from './LiquidChrome';
 
 function HomeScreen() {
   const particlesInit = async (main) => {
@@ -38,14 +39,22 @@ function HomeScreen() {
   return (
     <div className="main-content" style={{ position: "relative", minHeight: "100vh", overflow: "hidden" }}>
 
-      <section id="first" className="hero" style={{ height: '100vh', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
-        <Particles
+      <section id="first" className="hero" style={{ width: '100%', height: '100vh', position: 'relative', zIndex: 1, overflow: 'hidden' }}>
+        {/*<Particles
           id="tsparticles"
           init={particlesInit}
           options={particlesOptions}
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}
-        />
-        <div id="intro-area" className="container hero-content" style={{ position: 'relative', zIndex: 1 }}>
+        />*/}
+       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+          <LiquidChrome
+            baseColor={[0, 0.1, 0.2]}
+            speed={0.3}
+            amplitude={0.3}
+            interactive={true}
+          />
+        </div>
+        <div id="intro-area" className="container hero-content" style={{ position: 'relative', zIndex: 10 }}>
           <div>
             <img id="me" className="hero-image" src={slImage} alt="Simone Lutero" />
           </div>
@@ -59,14 +68,14 @@ function HomeScreen() {
 
             <div className="container">
               <Button
-                  variant="outlined"
-                  href="#works"
-                  sx={{ color: "#00BFFF", borderColor: "#00BFFF", marginTop:'2%' }}
-                >
-                  View Projects
-                </Button>
+                variant="outlined"
+                href="#works"
+                sx={{ color: "#00BFFF", borderColor: "#00BFFF", marginTop: '2%' }}
+              >
+                View Projects
+              </Button>
               <div id="social" className="row">
-                
+
                 <a href="https://github.com/simlu2000" className="link">
                   <FontAwesomeIcon icon={faGithub} className='social_icon' />
                 </a>
