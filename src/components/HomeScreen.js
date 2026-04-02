@@ -7,7 +7,7 @@ import { loadFull } from 'tsparticles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import GradientBlinds from './GradientBlinds';
+import ColorBends from './ColorBends';
 
 function HomeScreen() {
   const particlesInit = async (main) => {
@@ -52,20 +52,20 @@ function HomeScreen() {
             amplitude={0.3}
             interactive={true}
           />*/}
-          <GradientBlinds
-            gradientColors={['#ff9ffc', '#00BFFF']}
-            angle={20}
-            noise={0.5}
-            blindCount={16}
-            blindMinWidth={0}
-            spotlightRadius={0.5}
-            spotlightSoftness={1}
-            spotlightOpacity={1}
-            mouseDampening={0.15}
-            distortAmount={0}
-            shineDirection="left"
-            mixBlendMode="lighten"
-          />
+          <ColorBends
+  colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+  rotation={0}
+  speed={0.2}
+  scale={1}
+  frequency={1}
+  warpStrength={1}
+  mouseInfluence={1}
+  parallax={0.5}
+  noise={0.1}
+  transparent
+  autoRotate={0}
+  color=""
+/>
         </div>
         <div id="intro-area" className="container hero-content" style={{ position: 'relative', zIndex: 10 }}>
           <div>
