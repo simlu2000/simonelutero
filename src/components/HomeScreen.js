@@ -3,12 +3,10 @@ import slImage from '../img/sl.jpg';
 import About from './About';
 import Works from './Works';
 import { Button } from '@mui/material';
-import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import LiquidChrome from './LiquidChrome';
 import GradientBlinds from './GradientBlinds';
 
 function HomeScreen() {
