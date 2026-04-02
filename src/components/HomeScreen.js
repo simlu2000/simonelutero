@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import LiquidChrome from './LiquidChrome';
+import GradientBlinds from './GradientBlinds';
 
 function HomeScreen() {
   const particlesInit = async (main) => {
@@ -46,12 +47,26 @@ function HomeScreen() {
           options={particlesOptions}
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}
         />*/}
-       <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
-          <LiquidChrome
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+          {/*<LiquidChrome
             baseColor={[0, 0.1, 0.2]}
             speed={0.3}
             amplitude={0.3}
             interactive={true}
+          />*/}
+          <GradientBlinds
+            gradientColors={['#ff9ffc', '#00BFFF']}
+            angle={20}
+            noise={0.5}
+            blindCount={16}
+            blindMinWidth={0}
+            spotlightRadius={0.5}
+            spotlightSoftness={1}
+            spotlightOpacity={1}
+            mouseDampening={0.15}
+            distortAmount={0}
+            shineDirection="left"
+            mixBlendMode="lighten"
           />
         </div>
         <div id="intro-area" className="container hero-content" style={{ position: 'relative', zIndex: 10 }}>
