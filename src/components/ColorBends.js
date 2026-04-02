@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
-import '../style/ColorBends.css';
+import '../style/colorBends.css';
 
 const MAX_COLORS = 8;
 
