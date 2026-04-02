@@ -172,29 +172,100 @@
 }
 
 /* ===== MOBILE ===== */
-
 @media (max-width: 768px) {
 
+    /* ===== NAVBAR → BOTTOM BAR ===== */
+    #navbar {
+        top: auto;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 92%;
+        padding: 8px 12px;
+
+        border-radius: 20px;
+    }
+
+    /* layout interno */
     .bubble-menu {
         justify-content: space-between;
+        gap: 8px;
     }
 
-
+    /* ===== MENU ITEMS ===== */
     .bubble-menu-items {
-        top: 70px;
+        position: absolute;
+        bottom: calc(100% + 10px);
+        /* sopra la navbar */
+        left: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: right;
+        pointer-events: none;
     }
 
+    /* contenitore pill */
     .bubble-menu-items .pill-list {
         flex-direction: column;
         gap: 10px;
-        width: 100%;
-        padding: 0 1rem;
+
+        width: 18%;
+        padding: 15px;
+
+        background: rgba(255, 255, 255, 0.253);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+
+        border-radius: 30px;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     }
 
+    /* ogni item */
+    .bubble-menu-items .pill-col {
+        width: 100%;
+
+    }
+
+    /* bottoni */
     .bubble-menu-items .pill-link {
         width: 100%;
         justify-content: center;
-        padding: 0.7rem;
-        font-size: 1rem;
+
+        padding: 0.9rem;
+        font-size: 1.2rem;
+
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.897);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .bubble-menu-items .pill-link:hover {
+        transform: none;
+    }
+
+    .bubble-menu-items .pill-link:active {
+        transform: scale(0.97);
+    }
+
+
+    .bubble-menu .bubble {
+        --bubble-size: 48px;
+    }
+
+    .pill-text {
+        display: none;
+    }
+
+    .pill-content {
+        justify-content: center;
     }
 }

@@ -28,7 +28,7 @@ const items = [
   {
     label: 'GitHub',
     href: 'https://github.com/simlu2000',
-    ariaLabel: 'Blog',
+    ariaLabel: 'GitHub',
     rotation: 8,
     hoverStyles: { bgColor: '#ef4444', textColor: '#ffffff' }
   },
