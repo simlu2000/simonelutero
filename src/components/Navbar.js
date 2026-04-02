@@ -2,11 +2,38 @@ import React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import { faHome, faAddressCard} from '@fortawesome/free-solid-svg-icons';
+import { faHome, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { styled } from '@mui/material/styles';
 import { Link } from '@mui/material';
+
+import BubbleMenu from './BubbleMenu'
+
+const items = [
+  {
+    label: 'Home',
+    href: '#first',
+    ariaLabel: 'Home',
+    rotation: -8,
+    hoverStyles: { bgColor: '#3b82f6', textColor: '#ffffff' }
+  },
+  {
+    label: 'About',
+    href: '#about',
+    ariaLabel: 'About',
+    rotation: 8,
+    hoverStyles: { bgColor: '#10b981', textColor: '#ffffff' }
+  },
+  {
+    label: 'GitHub',
+    href: 'https://github.com/simlu2000',
+    ariaLabel: 'Blog',
+    rotation: 8,
+    hoverStyles: { bgColor: '#ef4444', textColor: '#ffffff' }
+  },
+
+];
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   position: 'fixed',
@@ -24,7 +51,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
   borderRadius: '25px',
   zIndex: 1000,
   backdropFilter: 'blur(5px)',
-  backgroundColor: 'rgba(255, 255, 255, 0.06)', 
+  backgroundColor: 'rgba(255, 255, 255, 0.06)',
   [theme.breakpoints.down('sm')]: {
     top: '91%',
     justifyContent: 'center',
@@ -55,20 +82,30 @@ const StyledIconButton = styled(IconButton)(({ theme }) => ({
 function Navbar() {
   return (
     <StyledAppBar position="static">
+      {/*
       <Toolbar>
         <StyledIconButton component={Link} href="#first">
-          {/*<FontAwesomeIcon icon={faHome} />*/}
           Home
         </StyledIconButton>
         <StyledIconButton component={Link} href="#about">
-          {/*<FontAwesomeIcon icon={faAddressCard} />*/}
           About
         </StyledIconButton>
         <StyledIconButton component={Link} href="https://github.com/simlu2000">
-          {/*<FontAwesomeIcon icon={faGithub} />*/}
           Github
         </StyledIconButton>
-      </Toolbar>
+      </Toolbar>*/}
+
+      <BubbleMenu
+        logo={<span style={{ fontWeight: 700 }}>RB</span>}
+        items={items}
+        menuAriaLabel="Toggle navigation"
+        menuBg="#ffffff"
+        menuContentColor="#111111"
+        useFixedPosition={false}
+        animationEase="back.out(1.5)"
+        animationDuration={0.5}
+        staggerDelay={0.12}
+      />
     </StyledAppBar>
   );
 }
