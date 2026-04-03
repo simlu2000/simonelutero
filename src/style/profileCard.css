@@ -99,7 +99,7 @@
   inset: 0;
   position: absolute;
   background-image: var(--inner-gradient);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #297e7e78;
   transform: none;
 }
 

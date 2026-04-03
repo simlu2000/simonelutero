@@ -96,7 +96,7 @@ function Navbar() {
       </Toolbar>*/}
 
       <BubbleMenu
-        logo={<span style={{ fontWeight: 700 }}>RB</span>}
+        logo={<span style={{ fontWeight: 700 }}>{"<SL/>"}</span>}
         items={items}
         menuAriaLabel="Toggle navigation"
         menuBg="#ffffff"

@@ -141,7 +141,7 @@ export default function BubbleMenu({
     return (
         <>
             <nav className={containerClassName} style={style} aria-label="Main navigation">
-                <div className="bubble logo-bubble" aria-label="Logo" style={{ background: menuBg }}>
+                <div className="bubble logo-bubble" aria-label="Logo" style={{backgroundColor: '#000000'}}>
                     <span className="logo-content">
                         {typeof logo === 'string' ? <img src={logo} alt="Logo" className="bubble-logo" /> : logo}
                     </span>
@@ -191,6 +191,7 @@ export default function BubbleMenu({
                                         }}
                                     >
                                         <span className="pill-content">
+                                            &nbsp;
 
                                             {item.label === 'Home' ? (
                                                 <FontAwesomeIcon icon={faHome} />

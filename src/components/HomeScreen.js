@@ -96,7 +96,7 @@ function HomeScreen() {
             </h1>
             */}
 
-            <h1 className="title">
+            <h1 className="title" style={{marginTop:'35%'}}>
               Hey, I'm
               <span className="name"> Simone ✨</span> <br></br>
             </h1>
@@ -105,7 +105,7 @@ function HomeScreen() {
               <Button
                 variant="outlined"
                 href="#works"
-                sx={{ color: "#00BFFF", borderColor: "#00BFFF", marginTop: '2%' }}
+                sx={{ color: "#47d3d4", borderColor: "#47d3d4", marginTop: '2%' }}
               >
                 View Projects
               </Button>
