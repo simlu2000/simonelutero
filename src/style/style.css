@@ -99,12 +99,19 @@ body {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    margin-top: 12%;
+    margin-top: 5%;
 }
 
 .name {
     color: #00BFFF;
 
+}
+
+.hero-text {
+  margin-top: 10%;
+  margin-left: 5%;
+  text-align: justify;
+  max-width: 800px; 
 }
 
 .hero-image {
@@ -612,7 +619,13 @@ footer {
         flex-direction: row;
         margin-top: 100px;
     }
-
+.hero-text {
+    margin-top: 15%;  /* Adjust spacing for smaller screens */
+    margin-left: 0;   /* Remove the left offset */
+    text-align: center; /* Center text for better mobile readability */
+    padding: 0 20px;  /* Add side padding so text doesn't touch edges */
+    font-size: 1.1rem; /* Slightly smaller font for mobile */
+  }
     .menu {
         display: none;
     }

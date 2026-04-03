@@ -199,6 +199,7 @@ export default function BubbleMenu({
                                             ) : item.label === 'GitHub' ? (
                                                 <FontAwesomeIcon icon={faGithub} />
                                             ) : null}
+                                            &nbsp;
                                             <span className="pill-text">{item.label}</span>
                                         </span>
                                     </span>

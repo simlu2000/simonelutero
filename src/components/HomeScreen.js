@@ -1,5 +1,5 @@
 import React from 'react';
-import slImage from '../img/sl.jpg';
+import slImage from '../img/sl.png';
 import About from './About';
 import Works from './Works';
 import { Button } from '@mui/material';
@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import ColorBends from './ColorBends';
+import ProfileCard from './ProfileCard';
 
 function HomeScreen() {
   const particlesInit = async (main) => {
@@ -53,31 +54,52 @@ function HomeScreen() {
             interactive={true}
           />*/}
           <ColorBends
-  colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
-  rotation={0}
-  speed={0.2}
-  scale={1}
-  frequency={1}
-  warpStrength={1}
-  mouseInfluence={1}
-  parallax={0.5}
-  noise={0.1}
-  transparent
-  autoRotate={0}
-  color=""
-/>
+            colors={["#ff5c7a", "#8a5cff", "#00ffd1"]}
+            rotation={0}
+            speed={0.2}
+            scale={1}
+            frequency={1}
+            warpStrength={1}
+            mouseInfluence={1}
+            parallax={0.5}
+            noise={0.1}
+            transparent
+            autoRotate={0}
+            color=""
+          />
         </div>
         <div id="intro-area" className="container hero-content" style={{ position: 'relative', zIndex: 10 }}>
-          <div>
-            <img id="me" className="hero-image" src={slImage} alt="Simone Lutero" />
+          <div >
+            {/*<img id="me" className="hero-image" src={slImage} alt="Simone Lutero" />*/}
+            <ProfileCard
+              name="Simone Lutero"
+              title="Software Engineer"
+              handle="simonecodes"
+              status="Online"
+              contactText="Contact Me"
+              avatarUrl={slImage}
+              showUserInfo={false}
+              enableTilt={true}
+              enableMobileTilt={true}
+              onContactClick={() => console.log('Contact clicked')}
+              behindGlowColor="rgba(125, 190, 255, 0.67)"
+              iconUrl="/assets/demo/iconpattern.png"
+              behindGlowEnabled
+              innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+            />
           </div>
           <div>
-            <h1 className="title">
+            {/*<h1 className="title">
               Hey, I'm
               <span className="name"> Simone Lutero✨</span> <br></br>
-              {/*A  <span className="name">Software Developer</span>*/}
+              {/*A  <span className="name">Software Developer</span>}
             </h1>
-            <h4>Jr Software Engineer & CS Graduate specializing in high-performance web applications. Focused on React and TypeScript, I am dedicated to writing clean, scalable code and designing intuitive user interfaces.</h4>
+            */}
+
+            <h1 className="title">
+              Hey, I'm
+              <span className="name"> Simone ✨</span> <br></br>
+            </h1>
 
             <div className="container">
               <Button
