@@ -42,6 +42,11 @@ import lumina from "./lumina.png";
 import tailwind from "./tailwind.png";
 import netlify from "./netlify.png";
 import googlegeminiai from "./googlegeminiai.png";
+import sfumix from "./sfumix.png";
+import reactReanimated from "./react.png";
+import SVG from "./SVG.png";
+import AsyncStorage from "./AsyncStorage.png";
+
 export {
  github, 
  css, 
@@ -85,5 +90,9 @@ export {
  dayva,
  tailwind,
  googlegeminiai,
- netlify
+ netlify,
+ sfumix,
+ SVG,
+ reactReanimated,
+ AsyncStorage
 };

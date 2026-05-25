@@ -26,6 +26,10 @@ import {
     d3js,
     apacheECharts,
     chartjs,
+    sfumix,
+    reactreanimated, 
+    svg,
+    asyncstorage
     //tailwind,
     //netlify,
     //googlegeminiai
@@ -108,7 +112,6 @@ const technologies = [
         name: "C / C++",
         icon: c,
     },
-
     {
         name: "Figma",
         icon: ['fab', 'figma'],
@@ -122,7 +125,7 @@ const technologies = [
         icon: webdeveloping,
     },
     {
-        name: "UX",
+        name: "UX Design",
         icon: ux,
     },
     {
@@ -133,13 +136,13 @@ const technologies = [
         name: "Problem solving",
         icon: problemsolving,
     },
-
 ];
+
 const experiences = [
     {
         title: "Junior Software Engineer - IT Consultant",
         company_name: "aizOon Technology Consulting / Hitachi Rail, Genoa (IT)",
-        date: "July 2025 - Actually",
+        date: "July 2025 - Present",
         points: [
             "Software Development & UI Design: Developed a demonstrative software for remote train control, designing and implementing modular React interfaces with a strong focus on usability, responsiveness, and User Experience (UX).",
             "Front-end Architecture: Engineered reusable and scalable components using ReactJS and TypeScript/JavaScript, leveraging custom hooks (useState, useEffect, useContext) to manage complex component logic and state.",
@@ -151,7 +154,7 @@ const experiences = [
     {
         title: "Full Stack Developer - IT Consultant",
         company_name: "ALTEN Italia",
-        date: "April 2024 - Actually",
+        date: "April 2024 - Present",
         points: [
             "Developed web apps using React.js.",
             "Created a meteorological web app (university thesis) with API integration and Firebase.",
@@ -163,25 +166,69 @@ const experiences = [
 ];
 
 const projects = [
+     {
+        name: "SFUMIX",
+        demoLink: "",
+        logo: sfumix,
+        info: "Sfumix - Generator of gradient wallpapers",
+        description:
+            "Sfumix is a native mobile application dedicated to the generation and cataloging of abstract minimalist wallpapers. The app allows users to create unique linear and radial gradients in real time.",
+        tags: [
+            {
+                name: "React Native",
+                icon: reactnative,
+            },
+            {
+                name: "Expo",
+                icon: expo,
+            },
+            {
+                name: "JavaScript",
+            },
+            {
+                name: "React Reanimated",
+                icon: reactreanimated,
+            },
+            {
+                name: "AsyncStorage",
+                icon: asyncstorage,
+            },
+            {
+                name: "SVG",
+                icon: svg,
+            }
+        ],
+       features: [
+        "🎨 Dual-Mode Generation: Mathematical generation of random colors in hexadecimal format with support for Linear and Radial (SVG) gradients.",
+        "🔮 Dynamic Island UI: A single smart floating pill that dynamically manages both the display of active color codes and system notification banners.",
+        "💎 Glassmorphic Navigation: Floating and centered Tab Bar featuring a frosted-glass effect, real-time background blur, and reflective micro-borders.",
+        "📱 Native Device Sync: High-resolution export system via ViewShot with complete hardware synchronization. Deleting from the app removes the file directly from the device's photo gallery (iOS/Android) using asynchronous permission requests.",
+        "🔄 Local History Management: Archiving and persistence of favorite gradients through AsyncStorage for immediate offline consultation and regeneration.",
+        "✨ Fluid Onboarding: Immersive welcome screen featuring a procedural pulsing animation at 60 FPS delegated entirely to the native UI thread."
+    ],
+        start: "05/2026",
+        end: "",
+        source_code_link: "",
+    },
     {
         name: "LUMINA",
         demoLink: "https://luminaappshooting.netlify.app/",
         logo: lumina,
         info: "AI-Powered Weather & Photography Assistant",
         description:
-            "Lumina è un'applicazione innovativa progettata per fotografi e viaggiatori che desiderano catturare lo scatto perfetto. L'app analizza in tempo reale i dati meteorologici e la posizione geografica per fornire consigli tecnici personalizzati (ISO, Apertura, Tempi) tramite l'intelligenza artificiale di Google Gemini. Con un'interfaccia ultra-moderna e dinamica, Lumina trasforma ogni condizione meteo in un'opportunità creativa.",
+            "Lumina is an innovative application designed for photographers and travelers who want to capture the perfect shot. The app analyzes real-time weather data and geographical location to provide personalized technical recommendations (ISO, Aperture, Shutter Speed) through Google Gemini AI. Featuring an ultra-modern and dynamic interface, Lumina turns any weather condition into a creative opportunity.",
         tags: [
             {
-                name: "react",
+                name: "React",
             },
             {
-                name: "tailwind",
+                name: "Tailwind",
             },
             {
-                name: "googlegeminiai",
+                name: "Google Gemini AI",
             },
             {
-                name: "netlify",
+                name: "Netlify",
             },
             {
                 name: "TypeScript",
@@ -196,7 +243,6 @@ const projects = [
         start: "",
         end: "",
         source_code_link: "https://luminaappshooting.netlify.app/",
-
     },
     {
         name: "DAYVA",
@@ -207,13 +253,13 @@ const projects = [
             "Introducing DAYVA: your personal daily life manager! I developed this mobile-first app to help people organize tasks, time, and priorities in a simple but powerful way. With DAYVA you can plan your day, manage tasks with reminders, visualize your productivity through insights and charts, and stay focused on what really matters. The app features a clean, minimal UI inspired by modern mobile design and supports dark/light mode, offline usage and sync. DAYVA is designed to feel like a natural extension of your daily routine.",
         tags: [
             {
-                name: "react-native",
+                name: "React Native",
             },
             {
-                name: "expo",
+                name: "Expo",
             },
             {
-                name: "zustand",
+                name: "Zustand",
             },
             {
                 name: "TypeScript",
@@ -232,7 +278,6 @@ const projects = [
         start: "📅 12/2025",
         end: "📅 In progress",
     },
-
     {
         name: "WAPA",
         demoLink: "https://wapaweather.com/",
@@ -242,10 +287,10 @@ const projects = [
             "Introducing WAPA: the Weather and Advanced Predictions App! I developed this web app with React as my university thesis project. With WAPA, you can get detailed weather information for the locations you care about, either via GPS or by searching manually. WAPA is a Progressive Web App (PWA), so you can install it directly from your browser for faster access! ⚠️ Responsive design is still being improved, so it may not be perfect on all devices. The app uses weather and astronomical APIs to collect data and charting libraries for clear and interactive representation. Weather and the universe, at your fingertips!",
         tags: [
             {
-                name: "react",
+                name: "React",
             },
             {
-                name: "firebase",
+                name: "Firebase",
             },
             {
                 name: "HTML",
@@ -258,35 +303,35 @@ const projects = [
             },
         ],
         features: [
-            "🌤️Real-time weather data, with temperature graph ",
-            "⏳Up to 5-day forecasts, updated every 3 hours ",
-            "📊Advanced graphs on wind speed, atmospheric pressure, dew point, and air quality ",
-            "💬User accounts to save up to 6 favorite locations ",
-            "🌙Lunar phases and celestial events ",
-            "🌍Natural events, categorized ",
-            "🪐Near-Earth object monitoring ",
-            "☀️Solar activity and solar flares ",
+            "🌤️ Real-time weather data, with temperature graph",
+            "⏳ Up to 5-day forecasts, updated every 3 hours",
+            "📊 Advanced graphs on wind speed, atmospheric pressure, dew point, and air quality",
+            "💬 User accounts to save up to 6 favorite locations",
+            "🌙 Lunar phases and celestial events",
+            "🌍 Natural events, categorized",
+            "🪐 Near-Earth object monitoring",
+            "☀️ Solar activity and solar flares",
         ],
         start: "📅 04/2024",
         end: "📅 10/2024",
         source_code_link: "https://wapaweather.com/",
     },
     {
-        "name": "Circli",
+        name: "Circli",
         demoLink: "https://circli.netlify.app/",
-        "logo": circli,
-        "info": "🔄📱 Mini social network for sharing thoughts and moments",
-        "description": "I'm building this React-based social network where users can share posts, like, and comment, creating a dynamic and interactive community.",
-        "tags": [
-            { "name": "React" },
-            { "name": "Firebase" },
-            { "name": "Auth0" },
-            { "name": "Material UI" },
-            { "name": "JavaScript" },
-            { "name": "HTML" },
-            { "name": "CSS" }
+        logo: circli,
+        info: "🔄📱 Mini social network for sharing thoughts and moments",
+        description: "I'm building this React-based social network where users can share posts, like, and comment, creating a dynamic and interactive community.",
+        tags: [
+            { name: "React" },
+            { name: "Firebase" },
+            { name: "Auth0" },
+            { name: "Material UI" },
+            { name: "JavaScript" },
+            { name: "HTML" },
+            { name: "CSS" }
         ],
-        "features": [
+        features: [
             "🔐 Secure authentication with Firebase/Auth0",
             "📝 Share messages and images with the community",
             "❤️ Like and comment on posts in real time",
@@ -294,13 +339,13 @@ const projects = [
             "📱 Mobile-friendly and responsive design",
             "🚀⚠️ The project is still under development!"
         ],
-        "technologies": [
+        technologies: [
             "⚛️ React",
             "🔥 Firebase/Auth0",
             "🎨 Material UI",
             "💻 HTML, CSS, JavaScript"
         ],
-        "source_code_link": "https://circli.netlify.app/SignIn"
+        source_code_link: "https://circli.netlify.app/SignIn"
     },
     {
         name: "PiggyPenny",
@@ -335,30 +380,30 @@ const projects = [
         source_code_link: "https://piggypennyapp.com/"
     },
     {
-        "name": "Segno",
-        "logo": segno,
-        "info": "📝📂 A simple web app for managing your notes",
-        "description": "I've developed this PHP-based web application to help you create, organize, and manage your notes efficiently. Currently, it is not hosted.",
-        "tags": [
-            { "name": "PHP" },
-            { "name": "HTML" },
-            { "name": "CSS" },
-            { "name": "MySQL" },
-            { "name": "phpMyAdmin" }
+        name: "Segno",
+        logo: segno,
+        info: "📝📂 A simple web app for managing your notes",
+        description: "I've developed this PHP-based web application to help you create, organize, and manage your notes efficiently. Currently, it is not hosted.",
+        tags: [
+            { name: "PHP" },
+            { name: "HTML" },
+            { name: "CSS" },
+            { name: "MySQL" },
+            { name: "phpMyAdmin" }
         ],
-        "features": [
+        features: [
             "🔐 User authentication for secure note management",
             "📝 Add notes with categories and tags for better organization",
             "❌ Delete notes when no longer needed",
             "📖 View and read all your saved notes easily"
         ],
-        "technologies": [
+        technologies: [
             "🐘 PHP",
             "🗄️ MySQL",
             "🌐 HTML, CSS",
             "🛠️ phpMyAdmin"
         ],
-        "source_code_link": "https://github.com/simlu2000/segno"
+        source_code_link: "https://github.com/simlu2000/segno"
     },
     {
         name: "YouTodo",
@@ -466,7 +511,6 @@ const projects = [
         start: "📅 02/2022",
         end: "📅 08/2022"
     }
-
 ];
 
 const education = [
