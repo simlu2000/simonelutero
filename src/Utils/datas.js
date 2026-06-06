@@ -168,11 +168,11 @@ const experiences = [
 const projects = [
      {
         name: "SFUMIX",
-        demoLink: "",
+        demoLink: "https://apps.apple.com/it/app/sfumix/id6775259800sfumix",
         logo: sfumix,
         info: "Sfumix - Generator of gradient wallpapers",
         description:
-            "Sfumix is a native mobile application dedicated to the generation and cataloging of abstract minimalist wallpapers. The app allows users to create unique linear and radial gradients in real time.",
+            "Sfumix is a native mobile application dedicated to the generation and cataloging of abstract minimalist wallpapers. The app allows users to create unique linear and radial gradients in real time. Now is available in the App store",
         tags: [
             {
                 name: "React Native",
